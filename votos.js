@@ -2,7 +2,7 @@ var ano = "2021";
 var temporada = "Winter"
 var dados;
 
-fetch('../votos' + ano + temporada + '.json')
+fetch('votos' + ano + temporada + '.json')
     .then(response => response.json())
     .then(data =>
     {
@@ -30,7 +30,7 @@ function colocar()
 }
 
 // Enviando os dados atualizados de volta para o servidor
-fetch('../votos' + ano + temporada + '.json', {
+fetch('votos' + ano + temporada + '.json', {
     method: 'PUT',
     body: JSON.stringify(dados),
     headers: {
@@ -46,3 +46,6 @@ fetch('../votos' + ano + temporada + '.json', {
     {
         console.error('Erro ao salvar dados:', error);
     });
+
+
+    

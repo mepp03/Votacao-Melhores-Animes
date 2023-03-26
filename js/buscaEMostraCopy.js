@@ -259,8 +259,6 @@ function passarEscolha()
         // checando se o click pega um id que é um número, para não bugar e ficar pegando tudo
         if (!isNaN(anime.id))
         {
-
-
             idAnime = anime.id;
 
             imagemVoto.src = escolhido.src;

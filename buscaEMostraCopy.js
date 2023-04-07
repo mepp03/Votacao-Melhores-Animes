@@ -15,7 +15,8 @@ const criaCardAnime = (id, large, medium, season, SeasonYear, english, romaji, o
     novoCardAnime.classList.add('lista__item');
     const conteudo =
         `
-        <img src="${large}" class="lista__item--img" id="${id}" data-nomeJ="${romaji}" data-nomeE="${english}" onclick="passarEscolha()">        
+        <img src="${large}" class="lista__item--img" id="${id}" data-nomeJ="${romaji}" data-nomeE="${english}" 
+            onclick="passarEscolha('${id}', '${romaji}', '${english}', '${large}')">        
         <h3 class="lista__item--nome" id="nomeJ">${romaji}</h3>
         <h3 class="lista__item--nome" id="nomeE">${english}</h3>
         <a class="esconder" href="#">${op}</a>
@@ -89,14 +90,14 @@ const criaCardExtra = (id, romaji, english, gender, full, large) =>
     const novoCardExtra = document.createElement('div');
     novoCardExtra.classList.add('lista__item');
     const conteudo =
-        `<img src="${large}" class="lista__item--img" onclick="passarEscolhaExtra('${full}')">        
+        `<img src="${large}" class="lista__item--img" onclick="passarEscolhaExtra('${full}', '${large}')">        
         <h3 class="lista__item--nome" id="nomeFull">${full}</h3>
         <h3 class="lista__item--nome" id="genero">${genero}</h3>
         `
 
     novoCardExtra.innerHTML = conteudo;
     novoCardExtra.dataset.id = id;
-    
+
     return novoCardExtra;
 }
 
@@ -186,14 +187,14 @@ function resetarLista()
     var videos = document.querySelectorAll('a');
     for (var i = 0; i < videos.length; i++)
     {
-            videos[i].parentElement.classList.remove("esconder");
+        videos[i].parentElement.classList.remove("esconder");
     }
 
     var videos = document.querySelectorAll('p');
     for (var i = 0; i < videos.length; i++)
     {
 
-            videos[i].parentElement.classList.remove("esconder");
+        videos[i].parentElement.classList.remove("esconder");
     }
 }
 
@@ -244,183 +245,151 @@ function fechar()
     modal.style.display = "none";
 }
 
-function passarEscolha()
+function passarEscolha(id, nomeJ, nomeE, imagem)
 {
-    var idAnime;
-    document.addEventListener('click', function (e)
+    idAnime = id;
+    imagemVoto.src = imagem;
+    imagemVoto.setAttribute("data-identificacao", idAnime);
+    imagemVoto.setAttribute("data-nomeJ", nomeJ);
+    imagemVoto.setAttribute("data-nomeE", nomeE);
+    nomeJVoto.innerHTML = nomeJ;
+    nomeEVoto.innerHTML = nomeE;
+
+    switch (escolhaExtra)
     {
-        // black magic, não entendo essa parte
-        e = e || window.event;
-        var target = e.target || e.srcElement,
-            anime = target || target.nid;
+        case 'abertura':
+            mostrarExtra();
 
-        var escolhido = document.getElementById(anime.id);
+            var aberturas = animes.filter(item => item.id == idAnime);
 
-        // checando se o click pega um id que é um número, para não bugar e ficar pegando tudo
-        if (!isNaN(anime.id))
-        {
-
-
-            idAnime = anime.id;
-
-            imagemVoto.src = escolhido.src;
-            nomeJVoto.innerHTML = escolhido.getAttribute("data-nomeJ");
-            nomeEVoto.innerHTML = escolhido.getAttribute("data-nomeE");
-
-            switch (escolhaExtra)
+            // var aberturasFiltradas = aberturas[0].opening;
+            // console.log(aberturasFiltradas);
+            aberturas.forEach(elemento => 
             {
-                case 'abertura':
-                    mostrarExtra();
+                var quantidade = elemento.opening.edges.length;
+                // console.log(quantidade);
+                for (var i = 0; i < quantidade; i++)
+                {
+                    // console.log(elemento.opening.edges[i].node.op.name);
+                    tabelaExtra.appendChild(criaCardAbertura(elemento.id, elemento.opening.edges[i].node.op.name,
+                        elemento.opening.edges[i].node.op.video));
+                }
+            });
+            break;
 
-                    var aberturas = animes.filter(item => item.id == idAnime);
+        case 'encerramento':
+            mostrarExtra();
 
-                    // var aberturasFiltradas = aberturas[0].opening;
-                    // console.log(aberturasFiltradas);
-                    aberturas.forEach(elemento => 
-                    {
-                        var quantidade = elemento.opening.edges.length;
-                        // console.log(quantidade);
-                        for (var i = 0; i < quantidade; i++)
-                        {
-                            // console.log(elemento.opening.edges[i].node.op.name);
-                            tabelaExtra.appendChild(criaCardAbertura(elemento.id, elemento.opening.edges[i].node.op.name, 
-                                elemento.opening.edges[i].node.op.video));
-                        }
-                    });
-                    break;
+            var aberturas = animes.filter(item => item.id == idAnime);
 
-                case 'encerramento':
-                    mostrarExtra();
+            aberturas.forEach(elemento => 
+            {
+                var quantidade = elemento.ending.edges.length;
+                for (var i = 0; i < quantidade; i++)
+                {
+                    tabelaExtra.appendChild(criaCardEncerramento(elemento.id, elemento.ending.edges[i].node.ed.name,
+                        elemento.ending.edges[i].node.ed.video));
+                }
+            });
+            break;
 
-                    var aberturas = animes.filter(item => item.id == idAnime);
+        case 'personagemFeminino':
+            mostrarExtra();
 
-                    aberturas.forEach(elemento => 
-                    {
-                        var quantidade = elemento.ending.edges.length;
-                        for (var i = 0; i < quantidade; i++)
-                        {
-                            tabelaExtra.appendChild(criaCardEncerramento(elemento.id, elemento.ending.edges[i].node.ed.name, 
-                                elemento.ending.edges[i].node.ed.video));
-                        }
-                    });
-                    break;
+            var personagens = animes.filter(item => item.id == idAnime);
 
-                case 'personagemFeminino':
-                    mostrarExtra();
+            personagensFiltrados = personagens[0].characters.edges;
+            personagensFiltrados.forEach(elemento => 
+            {
+                if (elemento.node.gender != "Male")
+                {
+                    tabelaExtra.appendChild(criaCardExtra(elemento.id, animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full,
+                        elemento.node.image.large));
+                }
+            });
+            break;
 
-                    var personagens = animes.filter(item => item.id == idAnime);
+        case 'personagemMasculino':
+            mostrarExtra();
 
-                    // console.log(personagens[0].characters);
-                    personagensFiltrados = personagens[0].characters.edges;
-                    personagensFiltrados.forEach(elemento => 
-                    {
-                        if (elemento.node.gender != "Male")
-                        {
-                            tabelaExtra.appendChild(criaCardExtra(elemento.id, animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full, 
-                                elemento.node.image.large));
-                        }
-                    });
-                    break;
+            var personagens = animes.filter(item => item.id == idAnime);
 
-                case 'personagemMasculino':
-                    mostrarExtra();
+            personagensFiltrados = personagens[0].characters.edges;
+            personagensFiltrados.forEach(elemento => 
+            {
+                if (elemento.node.gender != "Female")
+                {
+                    tabelaExtra.appendChild(criaCardExtra(elemento.id, animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full,
+                        elemento.node.image.large));
+                }
+            });
+            break;
 
-                    var personagens = animes.filter(item => item.id == idAnime);
+        case 'personagem':
+            mostrarExtra();
 
-                    personagensFiltrados = personagens[0].characters.edges;
-                    personagensFiltrados.forEach(elemento => 
-                    {
-                        if (elemento.node.gender != "Female")
-                        {
-                            tabelaExtra.appendChild(criaCardExtra(elemento.id, animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full, 
-                                elemento.node.image.large));
-                        }
-                    });
-                    break;
+            // console.log(idAnime);
+            // console.log(animes);
+            var personagens = animes.filter(item => item.id == idAnime);
+            // console.log(personagens);
+            var animeNomeE = personagens[0].title.english;
+            var animeNomeJ = personagens[0].title.romaji;
 
-                case 'personagem':
-                    mostrarExtra();
+            personagensFiltrados = personagens[0].characters.edges;
+            personagensFiltrados.forEach(elemento => 
+            {
+                tabelaExtra.appendChild(criaCardExtra(elemento.id, animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full,
+                    elemento.node.image.large));
+            });
+            break;
 
-                    // console.log(idAnime);
-                    // console.log(animes);
-                    var personagens = animes.filter(item => item.id == idAnime);
-                    // console.log(personagens);
-                    var animeNomeE = personagens[0].title.english;
-                    var animeNomeJ = personagens[0].title.romaji;
+        case 'par':
+            mostrarExtra();
 
-                    personagensFiltrados = personagens[0].characters.edges;
-                    personagensFiltrados.forEach(elemento => 
-                    {
-                        tabelaExtra.appendChild(criaCardExtra(elemento.id, animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full, 
-                            elemento.node.image.large));
-                    });
-                    break;
+            // console.log(idAnime);
+            // console.log(animes);
+            var personagens = animes.filter(item => item.id == idAnime);
+            // console.log(personagens);
+            var animeNomeE = personagens[0].title.english;
+            var animeNomeJ = personagens[0].title.romaji;
 
-                case 'par':
-                    mostrarExtra();
+            personagensFiltrados = personagens[0].characters.edges;
+            personagensFiltrados.forEach(elemento => 
+            {
+                tabelaExtra.appendChild(criaCardExtra(animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full, elemento.node.image.large));
+            });
+            break;
 
-                    // console.log(idAnime);
-                    // console.log(animes);
-                    var personagens = animes.filter(item => item.id == idAnime);
-                    // console.log(personagens);
-                    var animeNomeE = personagens[0].title.english;
-                    var animeNomeJ = personagens[0].title.romaji;
-
-                    personagensFiltrados = personagens[0].characters.edges;
-                    personagensFiltrados.forEach(elemento => 
-                    {
-                        tabelaExtra.appendChild(criaCardExtra(animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full, elemento.node.image.large));
-                    });
-                    break;
-
-                default:
-                    modal.style.display = "none";
-                    break;
-            }
-
-            // if (escolhaExtra == "abertura") 
-            // {
-            //     document.getElementById("secaoLista").classList.add("esconder");
-            //     document.getElementById("secaoExtra").classList.remove("esconder");
-
-            //     console.log(idAnime);
-            //     console.log(animes);
-            //     var personagens = animes.filter(item => item.id == idAnime);
-            //     console.log(personagens);
-            //     var animeNomeE = personagens[0].title.english;
-            //     var animeNomeJ = personagens[0].title.romaji;
-
-            //     personagensFiltrados = personagens[0].characters.edges;
-            //     personagensFiltrados.forEach(elemento => 
-            //     {
-            //         tabelaExtra.appendChild(criaCardExtra(animeNomeE, animeNomeJ, elemento.node.gender, elemento.node.name.full, elemento.node.image.large));
-            //     });
-            // }
-            // else
-            // {
-            //     modal.style.display = "none";
-            // }
-
-        }
-
-    }, false);
-    resetarLista();
+        default:
+            modal.style.display = "none";
+            break;
+    }
+    resetarLista();    
 }
 
-function passarEscolhaExtra(info)
-{        
-        extraVoto.innerHTML = info;
+function passarEscolhaExtra(info, imagemPersonagem)
+{
+    if (imagemPersonagem != null)
+    {
+        imagemVoto.src = imagemPersonagem;
+    }
+
+    extraVoto.innerHTML = info;
+    imagemVoto.setAttribute("data-identificacao", idAnime);
+    imagemVoto.setAttribute("data-extra", info);
 
     // escolhaExtra = true;
-    
+
     // console.log(document.getElementById("secaoExtra").classList.value);
     document.getElementById("secaoExtra").classList.add("esconder");
 
-    
+
     // console.log(document.getElementById("secaoLista").classList.value);
     document.getElementById("secaoLista").classList.remove("esconder");
 
     modal.style.display = "none";
+    
+    // votar("anime3", imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
 }
 
 function filtrarVideo(video)
@@ -433,7 +402,6 @@ function filtrarVideo(video)
             {
                 if (videos[i].textContent == "")
                 {
-
                     videos[i].parentElement.classList.add("esconder");
                 }
             }
@@ -445,7 +413,6 @@ function filtrarVideo(video)
             {
                 if (videos[i].textContent == "")
                 {
-
                     videos[i].parentElement.classList.add("esconder");
                 }
             }
@@ -459,15 +426,17 @@ function filtrarVideo(video)
 {
     {
         function aberturaEscolherVoto1()
-        {            
+        {
             esconderExtra();
             filtrarVideo("op");
             escolhaExtra = "abertura";
             modal.style.display = "block";
+            idVoto = document.getElementById("aberturaImg1").dataset.identificacao;
             imagemVoto = document.getElementById("aberturaImg1");
             nomeJVoto = document.getElementById("aberturaNomeJapones1");
             nomeEVoto = document.getElementById("aberturaNomeIngles1");
             extraVoto = document.getElementById("aberturaNomeMusica1");
+            // votar("abertura1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function aberturaEscolherVoto2()
@@ -480,6 +449,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("aberturaNomeJapones2");
             nomeEVoto = document.getElementById("aberturaNomeIngles2");
             extraVoto = document.getElementById("aberturaNomeMusica2");
+            // votar("abertura2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function aberturaEscolherVoto3()
@@ -492,6 +462,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("aberturaNomeJapones3");
             nomeEVoto = document.getElementById("aberturaNomeIngles3");
             extraVoto = document.getElementById("aberturaNomeMusica3");
+            // votar("abertura3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -506,6 +477,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("encerramentoNomeJapones1");
             nomeEVoto = document.getElementById("encerramentoNomeIngles1");
             extraVoto = document.getElementById("encerramentoNomeMusica1");
+            // votar("encerramento1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function encerramentoEscolherVoto2()
@@ -518,6 +490,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("encerramentoNomeJapones2");
             nomeEVoto = document.getElementById("encerramentoNomeIngles2");
             extraVoto = document.getElementById("encerramentoNomeMusica2");
+            // votar("encerramento2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function encerramentoEscolherVoto3()
@@ -530,6 +503,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("encerramentoNomeJapones3");
             nomeEVoto = document.getElementById("encerramentoNomeIngles3");
             extraVoto = document.getElementById("encerramentoNomeMusica3");
+            // votar("encerramento3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -543,6 +517,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("femininoNomeJapones1");
             nomeEVoto = document.getElementById("femininoNomeIngles1");
             extraVoto = document.getElementById("femininoNomePersonagem1");
+            // votar("feminino1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function femininoEscolherVoto2()
@@ -554,6 +529,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("femininoNomeJapones2");
             nomeEVoto = document.getElementById("femininoNomeIngles2");
             extraVoto = document.getElementById("femininoNomePersonagem2");
+            // votar("feminino2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function femininoEscolherVoto3()
@@ -565,6 +541,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("femininoNomeJapones3");
             nomeEVoto = document.getElementById("femininoNomeIngles3");
             extraVoto = document.getElementById("femininoNomePersonagem3");
+            // votar("feminino3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -578,6 +555,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("masculinoNomeJapones1");
             nomeEVoto = document.getElementById("masculinoNomeIngles1");
             extraVoto = document.getElementById("masculinoNomePersonagem1");
+            // votar("masculino1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function masculinoEscolherVoto2()
@@ -589,6 +567,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("masculinoNomeJapones2");
             nomeEVoto = document.getElementById("masculinoNomeIngles2");
             extraVoto = document.getElementById("masculinoNomePersonagem2");
+            // votar("masculino2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function masculinoEscolherVoto3()
@@ -600,6 +579,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("masculinoNomeJapones3");
             nomeEVoto = document.getElementById("masculinoNomeIngles3");
             extraVoto = document.getElementById("masculinoNomePersonagem3");
+            // votar("masculino3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -611,6 +591,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("surpresaImg1");
             nomeJVoto = document.getElementById("surpresaNomeJapones1");
             nomeEVoto = document.getElementById("surpresaNomeIngles1");
+            // votar("surpresa1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function surpresaEscolherVoto2()
@@ -620,6 +601,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("surpresaImg2");
             nomeJVoto = document.getElementById("surpresaNomeJapones2");
             nomeEVoto = document.getElementById("surpresaNomeIngles2");
+            // votar("surpresa2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function surpresaEscolherVoto3()
@@ -629,6 +611,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("surpresaImg3");
             nomeJVoto = document.getElementById("surpresaNomeJapones3");
             nomeEVoto = document.getElementById("surpresaNomeIngles3");
+            // votar("surpresa3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -640,6 +623,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("decepcaoImg1");
             nomeJVoto = document.getElementById("decepcaoNomeJapones1");
             nomeEVoto = document.getElementById("decepcaoNomeIngles1");
+            // votar("decepcao1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function decepcaoEscolherVoto2()
@@ -649,6 +633,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("decepcaoImg2");
             nomeJVoto = document.getElementById("decepcaoNomeJapones2");
             nomeEVoto = document.getElementById("decepcaoNomeIngles2");
+            // votar("decepcao2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function decepcaoEscolherVoto3()
@@ -658,6 +643,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("decepcaoImg3");
             nomeJVoto = document.getElementById("decepcaoNomeJapones3");
             nomeEVoto = document.getElementById("decepcaoNomeIngles3");
+            // votar("decepcao3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -669,6 +655,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("animacaoImg1");
             nomeJVoto = document.getElementById("animacaoNomeJapones1");
             nomeEVoto = document.getElementById("animacaoNomeIngles1");
+            // votar("animacao1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function animacaoEscolherVoto2()
@@ -678,6 +665,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("animacaoImg2");
             nomeJVoto = document.getElementById("animacaoNomeJapones2");
             nomeEVoto = document.getElementById("animacaoNomeIngles2");
+            // votar("animacao2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function animacaoEscolherVoto3()
@@ -687,6 +675,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("animacaoImg3");
             nomeJVoto = document.getElementById("animacaoNomeJapones3");
             nomeEVoto = document.getElementById("animacaoNomeIngles3");
+            // votar("animacao3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -700,6 +689,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("antagonistaNomeJapones1");
             nomeEVoto = document.getElementById("antagonistaNomeIngles1");
             extraVoto = document.getElementById("antagonistaNomePersonagem1");
+            // votar("antagonista1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function antagonistaEscolherVoto2()
@@ -711,6 +701,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("antagonistaNomeJapones2");
             nomeEVoto = document.getElementById("antagonistaNomeIngles2");
             extraVoto = document.getElementById("antagonistaNomePersonagem2");
+            // votar("antagonista2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function antagonistaEscolherVoto3()
@@ -722,6 +713,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("antagonistaNomeJapones3");
             nomeEVoto = document.getElementById("antagonistaNomeIngles3");
             extraVoto = document.getElementById("antagonistaNomePersonagem3");
+            // votar("antagonista3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -735,6 +727,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("parNomeJapones1");
             nomeEVoto = document.getElementById("parNomeIngles1");
             extraVoto = document.getElementById("parNomePar1");
+            // votar("par1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function parEscolherVoto2()
@@ -746,6 +739,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("parNomeJapones2");
             nomeEVoto = document.getElementById("parNomeIngles2");
             extraVoto = document.getElementById("parNomePar2");
+            // votar("par2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function parEscolherVoto3()
@@ -757,6 +751,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("parNomeJapones3");
             nomeEVoto = document.getElementById("parNomeIngles3");
             extraVoto = document.getElementById("parNomePar3");
+            // votar("par3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -770,6 +765,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("doenteNomeJapones1");
             nomeEVoto = document.getElementById("doenteNomeIngles1");
             extraVoto = document.getElementById("doenteNomePersonagem1");
+            // votar("doente1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function doenteEscolherVoto2()
@@ -781,6 +777,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("doenteNomeJapones2");
             nomeEVoto = document.getElementById("doenteNomeIngles2");
             extraVoto = document.getElementById("doenteNomePersonagem2");
+            // votar("doente2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function doenteEscolherVoto3()
@@ -792,6 +789,7 @@ function filtrarVideo(video)
             nomeJVoto = document.getElementById("doenteNomeJapones3");
             nomeEVoto = document.getElementById("doenteNomeIngles3");
             extraVoto = document.getElementById("doenteNomePersonagem3");
+            // votar("doente3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -803,6 +801,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("emocaoImg1");
             nomeJVoto = document.getElementById("emocaoNomeJapones1");
             nomeEVoto = document.getElementById("emocaoNomeIngles1");
+            // votar("emocao1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function emocaoEscolherVoto2()
@@ -812,6 +811,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("emocaoImg2");
             nomeJVoto = document.getElementById("emocaoNomeJapones2");
             nomeEVoto = document.getElementById("emocaoNomeIngles2");
+            // votar("emocao2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function emocaoEscolherVoto3()
@@ -821,6 +821,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("emocaoImg3");
             nomeJVoto = document.getElementById("emocaoNomeJapones3");
             nomeEVoto = document.getElementById("emocaoNomeIngles3");
+            // votar("emocao3", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
 
@@ -832,6 +833,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("animeImg1");
             nomeJVoto = document.getElementById("animeNomeJapones1");
             nomeEVoto = document.getElementById("animeNomeIngles1");
+            // votar("anime1", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function animeEscolherVoto2()
@@ -841,6 +843,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("animeImg2");
             nomeJVoto = document.getElementById("animeNomeJapones2");
             nomeEVoto = document.getElementById("animeNomeIngles2");
+            // votar("anime2", idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
 
         function animeEscolherVoto3()
@@ -850,6 +853,7 @@ function filtrarVideo(video)
             imagemVoto = document.getElementById("animeImg3");
             nomeJVoto = document.getElementById("animeNomeJapones3");
             nomeEVoto = document.getElementById("animeNomeIngles3");
+            // votar("anime3", imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
     }
     // =======================================escolherVoto.js=================================================

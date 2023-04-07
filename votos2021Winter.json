@@ -1,1669 +1,1549 @@
-[{
-		"abertura": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			}
-		}
-	}
-	,
-	{
-		"encerramento": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"musica": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"feminino": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"masculino": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"surpresa": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"surpresa": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"decepcao": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"animacao": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"antagonista": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"par": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"doente": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"personagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"emocao": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	},
-	{
-		"anime": {
-			"leandro": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"lucas": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"thiago": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"nil": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			},
-			"vencedor": {
-				"primeiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"segundo": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				},
-				"terceiro": {
-					"id": "",
-					"nomeJ": "",
-					"nomeE": "",
-					"imagem": "",
-					"ponto": ""
-				}
-			}
-		}
-	}
-]
+{
+  "votos2021Winter": [
+    {
+      "id": "01",
+      "abertura": {
+        "leandro": {
+          "primeiro": {
+            "id": "124080",
+            "nomeJ": "Horimiya",
+            "nomeE": "Horimiya",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124080-h8EPH92nyRfS.jpg",
+            "musica": null,
+            "ponto": "3"
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "02",
+      "encerramento": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "musica": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "03",
+      "feminino": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "04",
+      "masculino": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "05",
+      "surpresa": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "06",
+      "decepcao": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "07",
+      "animacao": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "08",
+      "antagonista": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "09",
+      "par": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "10",
+      "doente": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "personagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "11",
+      "emocao": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    },
+    {
+      "id": "12",
+      "anime": {
+        "leandro": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "lucas": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "thiago": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "nil": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        },
+        "vencedor": {
+          "primeiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "segundo": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          },
+          "terceiro": {
+            "id": "",
+            "nomeJ": "",
+            "nomeE": "",
+            "imagem": "",
+            "ponto": ""
+          }
+        }
+      }
+    }
+  ]
+}

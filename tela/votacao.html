@@ -11,21 +11,21 @@
 
 <body>
     <main>
-        <!-- The Modal -->
+        <!-- Os Modais -->
         <div id="listaModal" class="modal">
             <!-- Modal content -->
             <div class="modal__conteudo">
                 <span class="close"></span>
                 <section class="lista" id="secaoLista">
                     <div class="lista__busca">
-                        <input name="busca" class="busca" id="busca" value=""></input>
+                        <input name="busca" class="busca" id="busca" value="" onkeyup="procurar()"></input>
                     </div>
                     <div class="lista__lista" id="lista"></div>
                 </section>
 
                 <section class="extra esconder" id="secaoExtra">
                     <div class="lista__busca">
-                        <input name="extra__busca" class="busca" id="extra__busca" value=""></input>
+                        <input name="extra__busca" class="busca" id="extra__busca" value="" onkeyup="procurar()"></input>
                     </div>
                     <div class="lista__lista" id="extra"></div>
                 </section>
@@ -39,7 +39,6 @@
         </div>
         <section class="categoria op">
             <h1 class="categoria--h2Nome">Inverno 2021</h1>
-
             <table class="tabela">
                 <h2 class="categoria--h2Nome">Melhor Abertura</h2>
                 <tr class="tabela__linha">
@@ -81,13 +80,13 @@
                         <div class="tabela__coluna__img"><img src="../imagem/1333.jpg" id="encerramentoImg1"></div>
                         <h4 id="encerramentoNomeJapones1">1º Lugar</h4>
                         <h4 id="encerramentoNomeIngles1"></h4>
-                        <h4 id="encerramentoNomeMusica3">musica</h4>
+                        <h4 id="encerramentoNomeMusica1">musica</h4>
                     </td>
                     <td class="tabela__coluna" id="voto2" onclick="encerramentoEscolherVoto2()">
                         <div class="tabela__coluna__img"><img src="../imagem/1333.jpg" id="encerramentoImg2"></div>
                         <h4 id="encerramentoNomeJapones2">2º Lugar</h4>
                         <h4 id="encerramentoNomeIngles2"></h4>
-                        <h4 id="encerramentoNomeMusica3">musica</h4>
+                        <h4 id="encerramentoNomeMusica2">musica</h4>
                     </td>
                     <td class="tabela__coluna" id="voto3" onclick="encerramentoEscolherVoto3()">
                         <div class="tabela__coluna__img"><img src="../imagem/1333.jpg" id="encerramentoImg3"></div>
@@ -139,19 +138,19 @@
                         <div class="tabela__coluna__img"><img src="../imagem/1333.jpg" id="masculinoImg1"></div>
                         <h4 id="masculinoNomeJapones1">1º Lugar</h4>
                         <h4 id="masculinoNomeIngles1"></h4>
-                        <h4 id="masculinoNomePersonagem1">Bróder</h4>
+                        <h4 id="masculinoNomePersonagem1"></h4>
                     </td>
                     <td class="tabela__coluna" id="voto2" onclick="masculinoEscolherVoto2()">
                         <div class="tabela__coluna__img"><img src="../imagem/1333.jpg" id="masculinoImg2"></div>
                         <h4 id="masculinoNomeJapones2">2º Lugar</h4>
                         <h4 id="masculinoNomeIngles2"></h4>
-                        <h4 id="masculinoNomePersonagem2">Bróder</h4>
+                        <h4 id="masculinoNomePersonagem2"></h4>
                     </td>
                     <td class="tabela__coluna" id="voto3" onclick="masculinoEscolherVoto3()">
                         <div class="tabela__coluna__img"><img src="../imagem/1333.jpg" id="masculinoImg3"></div>
                         <h4 id="masculinoNomeJapones3">3º Lugar</h4>
                         <h4 id="masculinoNomeIngles3"></h4>
-                        <h4 id="masculinoNomePersonagem3">Bróder</h4>
+                        <h4 id="masculinoNomePersonagem3"></h4>
                     </td>
                 </tr>
             </table>
@@ -183,7 +182,7 @@
             </table>
             
             <table class="tabela">
-                <h2 class="categoria--h2Nome">Maior Decepção</h2>
+                <h2 class="categoria--h2Nome">Maior Decepcao</h2>
                 <tr class="tabela__linha">
                     <th class="tabela__cabecalho">1º Lugar</th>
                     <th class="tabela__cabecalho">2º Lugar</th>
@@ -252,13 +251,13 @@
                         <div class="tabela__coluna__img"><img src="../imagem/1333.jpg" id="antagonistaImg2"></div>
                         <h4 id="antagonistaNomeJapones2">2º Lugar</h4>
                         <h4 id="antagonistaNomeIngles2"></h4>
-                        <h4 id="antagonistaNomePersonagem"></h4>
+                        <h4 id="antagonistaNomePersonagem2"></h4>
                     </td>
                     <td class="tabela__coluna" id="voto3" onclick="antagonistaEscolherVoto3()">
                         <div class="tabela__coluna__img"><img src="../imagem/1333.jpg" id="antagonistaImg3"></div>
                         <h4 id="antagonistaNomeJapones3">3º Lugar</h4>
                         <h4 id="antagonistaNomeIngles3"></h4>
-                        <h4 id="antagonistaNomePersonagem"></h4>
+                        <h4 id="antagonistaNomePersonagem3"></h4>
                     </td>
                 </tr>
             </table>
@@ -376,7 +375,8 @@
     </main>
     <script src="../js/principal.js"></script>
     <script src="../js/escolherVoto.js"></script>
-    <script src="../js/buscaEMostra.js"></script>
+    <script src="../js/buscaEMostraCopy.js"></script>    
+    <script src="../js/votos.js"></script>
 </body>
 
 </html>

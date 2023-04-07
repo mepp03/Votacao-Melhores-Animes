@@ -2,47 +2,74 @@ var ano = "2021";
 var temporada = "Winter"
 var dados;
 
-fetch('../votos' + ano + temporada + '.json')
-    .then(response => response.json())
-    .then(data =>
-    {
-        // data[0].abertura.leandro.primeiro.id = '123';
-        // data[0].abertura.leandro.primeiro.nomeJ = 'Nome em japonês';
-        // data[0].abertura.leandro.primeiro.nomeE = 'Nome em inglês';
-        // data[0].abertura.leandro.primeiro.imagem = 'imagem.jpg';
-        // data[0].abertura.leandro.primeiro.musica = 'música.mp3';
-        // data[0].abertura.leandro.primeiro.ponto = 'ponto';
-        dados = data;
-        colocar();
-        console.log(data[0].abertura.leandro);
-    });
+const elements = document.querySelectorAll('[data-identificacao]');
 
-function colocar()
+elements.forEach(function(element) {
+  const observer = new MutationObserver(function(mutations) {
+    mutations.forEach(function(mutation) {
+      if (mutation.attributeName === 'data-identificacao') {
+        var categoria = mutation.target.id;
+        var idVoto = mutation.target.getAttribute('data-identificacao');
+        var imagemVoto = mutation.target.src;
+        var nomeJVoto = mutation.target.getAttribute('data-nomeJ');
+        var nomeEVoto = mutation.target.getAttribute('data-nomeE');
+        var extraVoto = mutation.target.getAttribute('data-extra');
+
+        votar(categoria, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
+
+      }
+    });
+  });
+
+  observer.observe(element, { attributes: true });
+});
+
+function votar(categoria, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto)
 {
-    dados[0].abertura.leandro.primeiro = Object.assign(dados[0].abertura.leandro.primeiro, {
-        id: '123',
-        nomeJ: 'Horimiya',
-        nomeE: 'Horimiya',
-        imagem: 'algo.jpg',
-        musica: 'Iro Kousui',
-        ponto: '3'
-    });
-}
+    const votos = document.querySelectorAll('[data-identificacao]');
 
-// Enviando os dados atualizados de volta para o servidor
-fetch('../votos' + ano + temporada + '.json', {
-    method: 'PUT',
-    body: JSON.stringify(dados),
-    headers: {
-        'Content-Type': 'application/json'
+    // for (var i = 0; i < votos.length; i++)
+    // {
+        // console.log(votos[i].getAttribute('data-identificacao'));
+
+        fetch('http://localhost:3000/votos2021Winter/01')
+            .then(response => response.json())
+            .then(data =>
+            {
+                dados = data;
+                colocar();
+            });
+
+        function colocar()
+        {
+            dados.abertura.leandro.primeiro = Object.assign(dados.abertura.leandro.primeiro, {
+                id: idVoto,
+                nomeJ: nomeJVoto,
+                nomeE: nomeEVoto,
+                imagem: imagemVoto,
+                musica: extraVoto,
+                ponto: '3'
+            });
+
+            console.log(dados.abertura.leandro.primeiro);
+            // Enviando os dados atualizados de volta para o servidor
+                fetch('http://localhost:3000/votos2021Winter/01', {
+                    method: 'PUT',
+                    body: JSON.stringify(dados),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(response => response.json())
+                    .then(dados =>
+                    {
+                        console.log('Dados salvos com sucesso:', dados);
+                    })
+                    .catch(error =>
+                    {
+                        console.error('Erro ao salvar dados:', error);
+                    });
+            // }
+
+        }
     }
-})
-    .then(response => response.json())
-    .then(dados =>
-    {
-        console.log('Dados salvos com sucesso:', dados);
-    })
-    .catch(error =>
-    {
-        console.error('Erro ao salvar dados:', error);
-    });

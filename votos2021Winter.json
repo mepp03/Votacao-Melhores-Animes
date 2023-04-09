@@ -9,24 +9,24 @@
             "nomeJ": "Horimiya",
             "nomeE": "Horimiya",
             "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124080-h8EPH92nyRfS.jpg",
-            "musica": null,
-            "ponto": "3"
+            "ponto": "3",
+            "extra": "Iro Kousui"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "musica": "",
-            "ponto": ""
+            "id": "114194",
+            "nomeJ": "BEASTARS 2",
+            "nomeE": "BEASTARS Season 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx114194-uMuA92X6JHSj.jpg",
+            "ponto": "2",
+            "extra": "Kaibutsu"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "musica": "",
-            "ponto": ""
+            "id": "119661",
+            "nomeJ": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+            "nomeE": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx119661-GDbUZxrZMz01.png",
+            "ponto": "1",
+            "extra": "Long shot"
           }
         },
         "lucas": {
@@ -34,24 +34,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -60,24 +57,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -86,24 +80,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -112,24 +103,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -140,28 +128,28 @@
       "encerramento": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "musica": "",
-            "ponto": ""
+            "id": "108465",
+            "nomeJ": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+            "nomeE": "Mushoku Tensei: Jobless Reincarnation",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108465-B9S9zC68eS5j.jpg",
+            "ponto": "3",
+            "extra": "Only"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "musica": "",
-            "ponto": ""
+            "id": "114194",
+            "nomeJ": "BEASTARS 2",
+            "nomeE": "BEASTARS Season 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx114194-uMuA92X6JHSj.jpg",
+            "ponto": "2",
+            "extra": "Yasashii Suisei"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "musica": "",
-            "ponto": ""
+            "id": "104459",
+            "nomeJ": "Yuru Camp△ SEASON 2",
+            "nomeE": "LAID-BACK CAMP SEASON2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx104459-pywEKGQON613.jpg",
+            "ponto": "1",
+            "extra": "Haru no Tonari"
           }
         },
         "lucas": {
@@ -169,24 +157,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -195,24 +180,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -221,24 +203,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -247,24 +226,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "musica": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -275,28 +251,28 @@
       "feminino": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "124080",
+            "nomeJ": "Horimiya",
+            "nomeE": "Horimiya",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b72449-wTynovkFnQpC.png",
+            "ponto": "3",
+            "extra": "Sakura Kouno"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "108465",
+            "nomeJ": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+            "nomeE": "Mushoku Tensei: Jobless Reincarnation",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b206392-BKJ4J3S2FzpF.png",
+            "ponto": "2",
+            "extra": "Ghislaine Dedoldia"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
+            "id": "104329",
+            "nomeJ": "BEAN BANDIT",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b3821-rE8f7MrIcXIe.png",
+            "ponto": "1",
+            "extra": "Rally Vincent"
           }
         },
         "lucas": {
@@ -304,24 +280,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -330,24 +303,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -356,24 +326,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -382,24 +349,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -410,28 +374,28 @@
       "masculino": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "114194",
+            "nomeJ": "BEASTARS 2",
+            "nomeE": "BEASTARS Season 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b125168-cOydxRHEbAYb.png",
+            "ponto": "3",
+            "extra": "Legoshi"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "108465",
+            "nomeJ": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+            "nomeE": "Mushoku Tensei: Jobless Reincarnation",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b88348-bIe5XnXdRpmX.png",
+            "ponto": "2",
+            "extra": "Rudeus Greyrat"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "124080",
+            "nomeJ": "Horimiya",
+            "nomeE": "Horimiya",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b66173-g8eU1LGWPB8O.png",
+            "ponto": "1",
+            "extra": "Izumi Miyamura"
           }
         },
         "lucas": {
@@ -439,24 +403,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -465,24 +426,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -491,24 +449,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -517,24 +472,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -545,25 +497,30 @@
       "surpresa": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "124080",
+            "nomeJ": "Horimiya",
+            "nomeE": "Horimiya",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124080-h8EPH92nyRfS.jpg",
+            "ponto": "3",
+            "musica": null,
+            "extra": "sem"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "124845",
+            "nomeJ": "Wonder Egg Priority",
+            "nomeE": "WONDER EGG PRIORITY",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124845-sD8ZA0RGLRWT.jpg",
+            "ponto": "2",
+            "musica": null,
+            "extra": "sem"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "117696",
+            "nomeJ": "Tenchi Souzou Design-bu",
+            "nomeE": "Heaven’s Design Team",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx117696-oqodbcesiazN.jpg",
+            "ponto": "1",
+            "extra": "sem"
           }
         },
         "lucas": {
@@ -571,21 +528,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -594,21 +551,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -617,21 +574,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -640,21 +597,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -665,25 +622,28 @@
       "decepcao": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "124845",
+            "nomeJ": "Wonder Egg Priority",
+            "nomeE": "WONDER EGG PRIORITY",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124845-sD8ZA0RGLRWT.jpg",
+            "ponto": "3",
+            "extra": "sem"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "108725",
+            "nomeJ": "Yakusoku no Neverland 2",
+            "nomeE": "The Promised Neverland Season 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108725-KM8SqUyaUd1o.jpg",
+            "ponto": "2",
+            "extra": "sem"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "112649",
+            "nomeJ": "Tatoeba Last Dungeon Mae no Mura no Shounen ga Joban no Machi de Kurasu Youna Monogatari",
+            "nomeE": "Suppose a Kid from the Last Dungeon Boonies moved to a starter town?",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx112649-Wdcxo6cQZbhx.jpg",
+            "ponto": "1",
+            "extra": "sem"
           }
         },
         "lucas": {
@@ -691,21 +651,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -714,21 +674,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -737,21 +697,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -760,21 +720,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -785,25 +745,28 @@
       "animacao": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "108465",
+            "nomeJ": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+            "nomeE": "Mushoku Tensei: Jobless Reincarnation",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108465-B9S9zC68eS5j.jpg",
+            "ponto": "3",
+            "extra": "sem"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "117067",
+            "nomeJ": "Maiko-san Chi no Makanai-san",
+            "nomeE": "Kiyo in Kyoto: From the Maiko House",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx117067-ez4mvOwk5PSn.jpg",
+            "ponto": "2",
+            "extra": "sem"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "114194",
+            "nomeJ": "BEASTARS 2",
+            "nomeE": "BEASTARS Season 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx114194-uMuA92X6JHSj.jpg",
+            "ponto": "1",
+            "extra": "sem"
           }
         },
         "lucas": {
@@ -811,21 +774,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -834,21 +797,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -857,21 +820,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -880,21 +843,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -905,28 +868,28 @@
       "antagonista": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "110277",
+            "nomeJ": "Shingeki no Kyojin: The Final Season",
+            "nomeE": "Attack on Titan Final Season",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b40882-dsj7IP943WFF.jpg",
+            "ponto": "3",
+            "extra": "Eren Yeager"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "119661",
+            "nomeJ": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+            "nomeE": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b90180-YXbXfcSlalav.png",
+            "ponto": "2",
+            "extra": "Elsa Granhiert"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "117533",
+            "nomeJ": "Hataraku Saibou BLACK",
+            "nomeE": "Cells at Work! CODE BLACK",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b36309-yRLEQYd2dDI5.jpg",
+            "ponto": "1",
+            "extra": "Narrator"
           }
         },
         "lucas": {
@@ -934,24 +897,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -960,24 +920,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -986,24 +943,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1012,24 +966,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -1040,27 +991,25 @@
       "par": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "124080",
+            "nomeJ": "Horimiya",
+            "nomeE": "Horimiya",
+            "imagem": "http://127.0.0.1:5500/tela/undefined",
+            "ponto": "3",
+            "extra": "https://s4.anilist.co/file/anilistcdn/character/large/b66961-VZV5IwKUwYfp.png"
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1069,24 +1018,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1095,24 +1041,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1121,24 +1064,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1147,24 +1087,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -1175,28 +1112,28 @@
       "doente": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "113425",
+            "nomeJ": "Kaifuku Jutsushi no Yarinaoshi",
+            "nomeE": "Redo of Healer",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b139400-yNnS77psdh6a.jpg",
+            "ponto": "3",
+            "extra": "Keyaru"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "119661",
+            "nomeJ": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+            "nomeE": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b90182-Ho0NS06tc6NL.png",
+            "ponto": "2",
+            "extra": "Roswaal Mathers"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "personagem": "",
-            "ponto": ""
+            "id": "114194",
+            "nomeJ": "BEASTARS 2",
+            "nomeE": "BEASTARS Season 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/character/large/b132983-hOgSO3VJ9Bmx.png",
+            "ponto": "1",
+            "extra": "Riz"
           }
         },
         "lucas": {
@@ -1204,24 +1141,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1230,24 +1164,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1256,24 +1187,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1282,24 +1210,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
-            "personagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -1310,25 +1235,29 @@
       "emocao": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "124080",
+            "nomeJ": "Horimiya",
+            "nomeE": "Horimiya",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx124080-h8EPH92nyRfS.jpg",
+            "ponto": "3",
+            "musica": null,
+            "extra": "sem"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "108465",
+            "nomeJ": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+            "nomeE": "Mushoku Tensei: Jobless Reincarnation",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108465-B9S9zC68eS5j.jpg",
+            "ponto": "2",
+            "extra": "sem"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "119661",
+            "nomeJ": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+            "nomeE": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx119661-GDbUZxrZMz01.png",
+            "ponto": "1",
+            "extra": "sem"
           }
         },
         "lucas": {
@@ -1336,21 +1265,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1359,21 +1288,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1382,21 +1311,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1405,21 +1334,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }
@@ -1430,25 +1359,28 @@
       "anime": {
         "leandro": {
           "primeiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "108465",
+            "nomeJ": "Mushoku Tensei: Isekai Ittara Honki Dasu",
+            "nomeE": "Mushoku Tensei: Jobless Reincarnation",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx108465-B9S9zC68eS5j.jpg",
+            "ponto": "3",
+            "extra": "sem"
           },
           "segundo": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "110277",
+            "nomeJ": "Shingeki no Kyojin: The Final Season",
+            "nomeE": "Attack on Titan Final Season",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx110277-qDRIhu50PXzz.jpg",
+            "ponto": "2",
+            "extra": "sem"
           },
           "terceiro": {
-            "id": "",
-            "nomeJ": "",
-            "nomeE": "",
-            "imagem": "",
-            "ponto": ""
+            "id": "119661",
+            "nomeJ": "Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 2",
+            "nomeE": "Re:ZERO -Starting Life in Another World- Season 2 Part 2",
+            "imagem": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx119661-GDbUZxrZMz01.png",
+            "ponto": "1",
+            "extra": "sem"
           }
         },
         "lucas": {
@@ -1456,21 +1388,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1479,21 +1411,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1502,21 +1434,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         },
@@ -1525,21 +1457,21 @@
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "segundo": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           },
           "terceiro": {
             "id": "",
             "nomeJ": "",
             "nomeE": "",
-            "imagem": "",
+            "imagem": "../imagem/1333.jpg",
             "ponto": ""
           }
         }

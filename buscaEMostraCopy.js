@@ -193,7 +193,6 @@ function resetarLista()
     var videos = document.querySelectorAll('p');
     for (var i = 0; i < videos.length; i++)
     {
-
         videos[i].parentElement.classList.remove("esconder");
     }
 }
@@ -233,6 +232,228 @@ function procurar()
     }
 }
 
+
+function mostrarVotos()
+{
+    var nome = "leandro";
+    fetch("http://127.0.0.1:5500/votos2021Winter.json")
+        .then(function (response)
+        {
+            return response.json();
+        })
+        .then(function (data)
+        {
+            data = data.votos2021Winter;
+
+            const abertura = Object.values(data[0].abertura[nome]);
+            const encerramento = Object.values(data[1].encerramento[nome]);
+            const feminino = Object.values(data[2].feminino[nome]);
+            const masculino = Object.values(data[3].masculino[nome]);
+            const surpresa = Object.values(data[4].surpresa[nome]);
+            const decepcao = Object.values(data[5].decepcao[nome]);
+            const animacao = Object.values(data[6].animacao[nome]);
+            const antagonista = Object.values(data[7].antagonista[nome]);
+            const par = Object.values(data[8].par[nome]);
+            const doente = Object.values(data[9].doente[nome]);
+            const emocao = Object.values(data[10].emocao[nome]);
+            const anime = Object.values(data[11].anime[nome]);
+
+            abertura.map((item, index) =>
+            {
+                const img = document.querySelector(`#aberturaImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#aberturaNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#aberturaNomeIngles${index + 1}`);
+                const nomeMusica = document.querySelector(`#aberturaNomeMusica${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+                nomeMusica.innerHTML = item.extra;
+            });
+
+            encerramento.map((item, index) =>
+            {
+                const img = document.querySelector(`#encerramentoImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#encerramentoNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#encerramentoNomeIngles${index + 1}`);
+                const nomeMusica = document.querySelector(`#encerramentoNomeMusica${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+                nomeMusica.innerHTML = item.extra;
+            });
+
+            feminino.map((item, index) =>
+            {
+                const img = document.querySelector(`#femininoImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#femininoNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#femininoNomeIngles${index + 1}`);
+                const nomePersonagem = document.querySelector(`#femininoNomePersonagem${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+                nomePersonagem.innerHTML = item.extra;
+            });
+
+            masculino.map((item, index) =>
+            {
+                const img = document.querySelector(`#masculinoImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#masculinoNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#masculinoNomeIngles${index + 1}`);
+                const nomePersonagem = document.querySelector(`#masculinoNomePersonagem${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+                nomePersonagem.innerHTML = item.extra;
+            });
+
+            surpresa.map((item, index) =>
+            {
+                const img = document.querySelector(`#surpresaImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#surpresaNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#surpresaNomeIngles${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+            });
+
+            decepcao.map((item, index) =>
+            {
+                const img = document.querySelector(`#decepcaoImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#decepcaoNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#decepcaoNomeIngles${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+            });
+
+            animacao.map((item, index) =>
+            {
+                const img = document.querySelector(`#animacaoImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#animacaoNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#animacaoNomeIngles${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+            });
+
+            antagonista.map((item, index) =>
+            {
+                const img = document.querySelector(`#antagonistaImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#antagonistaNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#antagonistaNomeIngles${index + 1}`);
+                const nomePersonagem = document.querySelector(`#antagonistaNomePersonagem${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+                nomePersonagem.innerHTML = item.extra;
+            });
+
+            par.map((item, index) =>
+            {
+                const img = document.querySelector(`#parImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#parNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#parNomeIngles${index + 1}`);
+                const nomePar = document.querySelector(`#parNomePar${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+                nomePar.innerHTML = item.extra;
+            });
+
+            doente.map((item, index) =>
+            {
+                const img = document.querySelector(`#doenteImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#doenteNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#doenteNomeIngles${index + 1}`);
+                const nomePersonagem = document.querySelector(`#doenteNomePersonagem${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+                nomePersonagem.innerHTML = item.extra;
+            });
+
+            emocao.map((item, index) =>
+            {
+                const img = document.querySelector(`#emocaoImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#emocaoNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#emocaoNomeIngles${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+            });
+
+            anime.map((item, index) =>
+            {
+                const img = document.querySelector(`#animeImg${index + 1}`);
+                const nomeJapones = document.querySelector(`#animeNomeJapones${index + 1}`);
+                const nomeIngles = document.querySelector(`#animeNomeIngles${index + 1}`);
+
+                img.src = item.imagem;
+                nomeJapones.innerHTML = item.nomeJ;
+                nomeIngles.innerHTML = item.nomeE;
+            });
+
+
+
+
+        });
+}
+
+// function mostrarVotos()
+// {
+//     var nome = "leandro"
+//     fetch("http://127.0.0.1:5500/votos2021Winter.json")
+//     .then(function (response)
+//     {
+//         return response.json();
+//     })
+//     .then(function (data)
+//     {
+//         data = data.votos2021Winter;
+
+
+//             document.getElementById("aberturaImg1").src = data[0].abertura[nome].primeiro.imagem;
+//             document.getElementById("aberturaNomeJapones1").innerHTML = data[0].abertura[nome].primeiro.nomeJ;
+//             document.getElementById("aberturaNomeIngles1").innerHTML = data[0].abertura[nome].primeiro.nomeE;
+//             document.getElementById("aberturaNomeMusica1").innerHTML = data[0].abertura[nome].primeiro.extra;
+
+//             document.getElementById("aberturaImg2").src = data[0].abertura[nome].segundo.imagem;
+//             document.getElementById("aberturaNomeJapones2").innerHTML = data[0].abertura[nome].segundo.nomeJ;
+//             document.getElementById("aberturaNomeIngles2").innerHTML = data[0].abertura[nome].segundo.nomeE;
+//             document.getElementById("aberturaNomeMusica2").innerHTML = data[0].abertura[nome].segundo.extra;
+
+//             document.getElementById("aberturaImg3").src = data[0].abertura[nome].terceiro.imagem;
+//             document.getElementById("aberturaNomeJapones3").innerHTML = data[0].abertura[nome].terceiro.nomeJ;
+//             document.getElementById("aberturaNomeIngles3").innerHTML = data[0].abertura[nome].terceiro.nomeE;
+//             document.getElementById("aberturaNomeMusica3").innerHTML = data[0].abertura[nome].terceiro.extra;
+
+//             document.getElementById("encerramentoImg1").src = data[1].encerramento[nome].primeiro.imagem;
+//             document.getElementById("encerramentoNomeJapones1").innerHTML = data[1].encerramento[nome].primeiro.nomeJ;
+//             document.getElementById("encerramentoNomeIngles1").innerHTML = data[1].encerramento[nome].primeiro.nomeE;
+//             document.getElementById("encerramentoNomeMusica1").innerHTML = data[1].encerramento[nome].primeiro.extra;
+
+//             document.getElementById("encerramentoImg2").src = data[1].encerramento[nome].segundo.imagem;
+//             document.getElementById("encerramentoNomeJapones2").innerHTML = data[1].encerramento[nome].segundo.nomeJ;
+//             document.getElementById("encerramentoNomeIngles2").innerHTML = data[1].encerramento[nome].segundo.nomeE;
+//             document.getElementById("encerramentoNomeMusica2").innerHTML = data[1].encerramento[nome].segundo.extra;
+
+//             document.getElementById("encerramentoImg3").src = data[1].encerramento[nome].terceiro.imagem;
+//             document.getElementById("encerramentoNomeJapones3").innerHTML = data[1].encerramento[nome].terceiro.nomeJ;
+//             document.getElementById("encerramentoNomeIngles3").innerHTML = data[1].encerramento[nome].terceiro.nomeE;
+//             document.getElementById("encerramentoNomeMusica3").innerHTML = data[1].encerramento[nome].terceiro.extra;
+//     });
+// }
 // =======================================escolherVoto.js=================================================
 
 var imagemVoto;
@@ -254,6 +475,7 @@ function passarEscolha(id, nomeJ, nomeE, imagem)
     imagemVoto.setAttribute("data-nomeE", nomeE);
     nomeJVoto.innerHTML = nomeJ;
     nomeEVoto.innerHTML = nomeE;
+    imagemVoto.setAttribute("data-extra", "sem");
 
     switch (escolhaExtra)
     {
@@ -364,7 +586,7 @@ function passarEscolha(id, nomeJ, nomeE, imagem)
             modal.style.display = "none";
             break;
     }
-    resetarLista();    
+    resetarLista();
 }
 
 function passarEscolhaExtra(info, imagemPersonagem)
@@ -388,8 +610,6 @@ function passarEscolhaExtra(info, imagemPersonagem)
     document.getElementById("secaoLista").classList.remove("esconder");
 
     modal.style.display = "none";
-    
-    // votar("anime3", imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
 }
 
 function filtrarVideo(video)
@@ -423,6 +643,7 @@ function filtrarVideo(video)
     }
 }
 
+// escolhas
 {
     {
         function aberturaEscolherVoto1()

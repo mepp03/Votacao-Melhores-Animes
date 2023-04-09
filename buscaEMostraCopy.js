@@ -236,7 +236,7 @@ function procurar()
 function mostrarVotos()
 {
     var nome = "leandro";
-    fetch("http://127.0.0.1:5500/votos2021Winter.json")
+    fetch("http://127.0.0.1:5500/votos2021WinterCopy.json")
         .then(function (response)
         {
             return response.json();

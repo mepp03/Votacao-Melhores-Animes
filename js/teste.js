@@ -21,7 +21,7 @@ function mostrarVotos()
 
                 fetch("https://mepp03.github.io/Votacao-Melhores-Animes/votos2021Winter.json",
                 {
-                    method: 'PUT',
+                    method: 'POST',
                     body: JSON.stringify(data),
                     headers: {
                         'Content-Type': 'application/json'

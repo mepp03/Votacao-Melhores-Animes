@@ -34,7 +34,7 @@ function mostrarVotos()
                 })
                 .catch(error =>
                 {
-                    console.error('Erro ao salvar dados:', error);
+                    console.error(error);
                 });
         });
 }

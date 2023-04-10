@@ -19,7 +19,7 @@ function mostrarVotos()
                 });
                 console.log(data[0].abertura[nome].primeiro.nomeJ);
 
-                fetch(`https://mepp03.github.io/Votacao-Melhores-Animes/votos2021Winter.json`,
+                fetch("https://mepp03.github.io/Votacao-Melhores-Animes/votos2021Winter.json",
                 {
                     method: 'PUT',
                     body: JSON.stringify(data),

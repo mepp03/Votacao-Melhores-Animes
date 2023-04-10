@@ -17,10 +17,11 @@ function mostrarVotos()
                     extra: "extraVoto",
                     ponto: "pontuacao"
                 });
+                console.log(data[0].abertura[nome].primeiro.nomeJ);
 
-                fetch(`https://mepp03.github.io/Votacao-Melhores-Animes/votos2021Winter.json`,
+                fetch("https://mepp03.github.io/Votacao-Melhores-Animes/votos2021Winter.json",
                 {
-                    method: 'PUT',
+                    method: 'POST',
                     body: JSON.stringify(data),
                     headers: {
                         'Content-Type': 'application/json'
@@ -33,7 +34,7 @@ function mostrarVotos()
                 })
                 .catch(error =>
                 {
-                    console.error('Erro ao salvar dados:', error);
+                    console.error(error);
                 });
         });
 }

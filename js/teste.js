@@ -17,6 +17,7 @@ function mostrarVotos()
                     extra: "extraVoto",
                     ponto: "pontuacao"
                 });
+                console.log(data[0].abertura[nome].primeiro.nomeJ);
 
                 fetch(`https://mepp03.github.io/Votacao-Melhores-Animes/votos2021Winter.json`,
                 {

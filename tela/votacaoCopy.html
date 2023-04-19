@@ -13,30 +13,25 @@
     <main>
         <!-- Os Modais -->
         <div id="listaModal" class="modal">
-            <!-- Modal content -->
+            <!-- Modal principal -->
             <div class="modal__conteudo">
                 <span class="close"></span>
                 <section class="lista" id="secaoLista">
                     <div class="lista__busca">
-                        <input name="busca" class="busca" id="busca" value="" onkeyup="procurar()"></input>
+                        <input name="busca" class="busca" id="busca" value="" onkeyup="filtrar()"></input>
                     </div>
                     <div class="lista__lista" id="lista"></div>
                 </section>
 
+                <!-- Modal extra -->
                 <section class="extra esconder" id="secaoExtra">
                     <div class="lista__busca">
                         <input name="extra__busca" class="busca" id="extra__busca" value=""
-                            onkeyup="procurar()"></input>
+                            onkeyup="filtrarPersonagem()"></input>
                     </div>
                     <div class="lista__lista" id="extra"></div>
                 </section>
             </div>
-        </div>
-
-        <!-- <video class="esconder" id="video" width="720" height="480" controls autoplay>
-    <source src="https://staging.animethemes.moe/video/Kokkoku-OP1v2-BD1080.webm" type="video/webm">
-</video> -->
-
         </div>
 
         <section class="categoria op">
@@ -297,22 +292,28 @@
                 </tr>
                 <tr class="tabela__linha">
                     <td class="tabela__coluna" id="voto1" onclick="parEscolherVoto1()">
-                        <div class="tabela__coluna__img"><img data-identificacao="" src="../imagem/1333.jpg"
-                                id="parImg1"></div>
+                        <div class="tabela__coluna__img">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par1Img1">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par2Img1">
+                        </div>
                         <h4 id="parNomeJapones1">1º Lugar</h4>
                         <h4 id="parNomeIngles1"></h4>
                         <h4 id="parNomePar1"></h4>
                     </td>
                     <td class="tabela__coluna" id="voto2" onclick="parEscolherVoto2()">
-                        <div class="tabela__coluna__img"><img data-identificacao="" src="../imagem/1333.jpg"
-                                id="parImg2"></div>
+                        <div class="tabela__coluna__img">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par1Img2">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par2Img2">
+                        </div>
                         <h4 id="parNomeJapones2">2º Lugar</h4>
                         <h4 id="parNomeIngles2"></h4>
                         <h4 id="parNomePar2"></h4>
                     </td>
                     <td class="tabela__coluna" id="voto3" onclick="parEscolherVoto3()">
-                        <div class="tabela__coluna__img"><img data-identificacao="" src="../imagem/1333.jpg"
-                                id="parImg3"></div>
+                        <div class="tabela__coluna__img">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par1Img3">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par2Img3">
+                        </div>
                         <h4 id="parNomeJapones3">3º Lugar</h4>
                         <h4 id="parNomeIngles3"></h4>
                         <h4 id="parNomePar3"></h4>
@@ -419,6 +420,7 @@
     <script src="../js/escolherVoto.js"></script>
     <script src="../js/buscaEMostraCopy.js"></script>
     <script src="../js/votos.js"></script>
+    <script src="../js/filtro.js"></script>
 </body>
 
 </html>

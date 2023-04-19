@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<body>
+<body onload="checarUsuario()">
     <header>
         <div class="cabecalho">
-            <div class="cabecalho__temporadas">
+            <div class="cabecalho__temporadas" id="cabecalho__temporadas">
                 <div class="cabecalho__temporadas ano">
                     <select name="" id="">
                         <option value="2019">2019</option>
@@ -20,7 +20,7 @@
                         <option value="2022">2022</option>
                     </select>
                 </div>
-                <a href="../tela/votacao.html">
+                <a href="./votacao.html">
                     <div class="cabecalho__temporadas inverno">
                         <p class="cabecalho__temporadas--estacao">Inverno</p>
                     </div>
@@ -47,8 +47,33 @@
                 </a>
             </div>
 
-            <div class="cabecalho__login">
-                <button class="cabecalho__login--botaoLogar botao">Entrar</button>
+            <div class="cabecalho__login">                
+                <button class="cabecalho__login--botaoLogar botao esconder" id="botaoVotar" onclick="votar()">Votar</button>    
+                <button class="cabecalho__login--botaoLogar botao" id="botaoEntrar" onclick="abrirLogin()">Entrar</button>                
+                <button class="cabecalho__login--botaoLogar botao esconder" id="botaoSair" onclick="deslogar()">Sair</button>
+            </div>
+        </div>
+
+
+        <!-- Os Modais -->
+        <div id="listaModal" class="modal">
+            <!-- Modal logar -->
+            <div class="modal__conteudo">
+                <span class="close"></span>
+                <section class="lista" id="secaoLista">
+                    <div class="lista__busca">
+                        <p>Usuário:</p>
+                        <input id="usuario">
+                    </div>
+                    <div class="lista__busca">
+
+                        <p>Senha:</p>
+                        <input id="senha">
+                    </div>
+                    <div class="lista__lista" id="lista">
+                        <button onclick="logar()">Entrar</button>
+                    </div>
+                </section>
             </div>
         </div>
     </header>
@@ -123,7 +148,8 @@
                         <h4>2º Lugar</h4>
                     </td>
                     <td class="tabela__coluna">
-                        <div class="tabela__coluna__img" id="img5"><img src="../imagem/1333.jpg" id="imgResultado2"></div>
+                        <div class="tabela__coluna__img" id="img5"><img src="../imagem/1333.jpg" id="imgResultado2">
+                        </div>
                         <h4>2º Lugar</h4>
                     </td>
                 </tr>
@@ -147,15 +173,16 @@
                         <h4>3º Lugar</h4>
                     </td>
                     <td class="tabela__coluna">
-                        <div class="tabela__coluna__img" id="img5"><img src="../imagem/1333.jpg" id="imgResultado3"></div>
+                        <div class="tabela__coluna__img" id="img5"><img src="../imagem/1333.jpg" id="imgResultado3">
+                        </div>
                         <h4>3º Lugar</h4>
                     </td>
                 </tr>
             </table>
         </section>
     </main>
+    <script src="../js/teste.js"></script>
     <script src="../js/principal.js"></script>
-    <script src="../js/chatgpt.js"></script>
 </body>
 
 </html>

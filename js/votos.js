@@ -1,6 +1,7 @@
 var ano = "2021";
 var temporada = "Winter"
 var dados;
+var nome = localStorage.getItem("usuario");
 
 const elements = document.querySelectorAll('[data-identificacao]');
 
@@ -22,14 +23,14 @@ elements.forEach(function (element)
         var partes = categoria.split("Img");
         var tipo = partes[0];
         var posicao = partes[1];
-
-        console.log(tipo);
-        if (tipo == "abertura" || tipo == "encerramento" || tipo == "feminino" || tipo == "masculino" || tipo == "antagonista" || tipo == "par" ||
+        
+        if (tipo == "abertura" || tipo == "encerramento" || tipo == "feminino" || tipo == "masculino" || tipo == "antagonista" || tipo == "par1" ||
           tipo == "doente") 
         {
           if (extraVoto != "sem") 
           {
-            votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
+            var imagemVoto2 = mutation.target.getAttribute('data-imagem2');
+            votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto, imagemVoto2);
           }
         } else
         {
@@ -42,7 +43,7 @@ elements.forEach(function (element)
   observer.observe(element, { attributes: true });
 });
 
-function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto)
+function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto, imagemVoto2)
 {
   var idCat;
   var ordinal;
@@ -74,8 +75,9 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
     case "antagonista":
       idCat = "08";
       break;
-    case "par":
+    case "par1":
       idCat = "09";
+      console.log(idCat);
       break;
     case "doente":
       idCat = "10";
@@ -86,6 +88,10 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
     case "anime":
       idCat = "12";
       break;
+    default:
+      console.log("deu ruim");
+      idCat = "09";
+      break
   }
 
   fetch(`http://localhost:3000/votos2021Winter/${idCat}`)
@@ -110,15 +116,31 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
           break;
       }
 
-      dados[tipo].leandro[ordinal] = Object.assign(dados[tipo].leandro[ordinal],
-        {
-          id: idVoto,
-          nomeJ: nomeJVoto,
-          nomeE: nomeEVoto,
-          imagem: imagemVoto,
-          extra: extraVoto,
-          ponto: pontuacao
-        });
+      if (idCat == "09") 
+      {
+        console.log(dados.par[nome][ordinal]);
+        dados.par[nome][ordinal] = Object.assign(dados.par[nome][ordinal],
+          {
+            id: idVoto,
+            nomeJ: nomeJVoto,
+            nomeE: nomeEVoto,
+            imagem: imagemVoto,
+            imagem2: imagemVoto2,
+            extra: extraVoto,
+            ponto: pontuacao
+          });
+      } else 
+      {
+        dados[tipo][nome][ordinal] = Object.assign(dados[tipo][nome][ordinal],
+          {
+            id: idVoto,
+            nomeJ: nomeJVoto,
+            nomeE: nomeEVoto,
+            imagem: imagemVoto,
+            extra: extraVoto,
+            ponto: pontuacao
+          });
+      }
 
       fetch(`http://localhost:3000/votos2021Winter/${idCat}`,
         {
@@ -138,112 +160,4 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
           console.error('Erro ao salvar dados:', error);
         });
     });
-
-  // function colocar(categoria)
-  // {
-  //   dados.abertura.leandro.primeiro = Object.assign(dados.abertura.leandro.primeiro,
-  //     {
-  //       id: idVoto,
-  //       nomeJ: nomeJVoto,
-  //       nomeE: nomeEVoto,
-  //       imagem: imagemVoto,
-  //       musica: extraVoto,
-  //       if (condition) 
-  //       {          
-  //         ponto: '3'
-  //       }
-  //     });
-
-  //   // switch (categoria)
-  //   // {
-  //   //   case "aberturaImg1":
-  //   //     dados.abertura.leandro.primeiro = Object.assign(dados.abertura.leandro.primeiro,
-  //   //       {
-  //   //         id: idVoto,
-  //   //         nomeJ: nomeJVoto,
-  //   //         nomeE: nomeEVoto,
-  //   //         imagem: imagemVoto,
-  //   //         musica: extraVoto,
-  //   //         ponto: '3'
-  //   //       });
-  //   //     break;
-  //   //   case "aberturaImg2":
-  //   //     dados.abertura.leandro.segundo = Object.assign(dados.abertura.leandro.segundo,
-  //   //       {
-  //   //         id: idVoto,
-  //   //         nomeJ: nomeJVoto,
-  //   //         nomeE: nomeEVoto,
-  //   //         imagem: imagemVoto,
-  //   //         musica: extraVoto,
-  //   //         ponto: '2'
-  //   //       });
-  //   //     break;
-  //   //   case "aberturaImg3":
-  //   //     dados.abertura.leandro.terceiro = Object.assign(dados.abertura.leandro.terceiro,
-  //   //       {
-  //   //         id: idVoto,
-  //   //         nomeJ: nomeJVoto,
-  //   //         nomeE: nomeEVoto,
-  //   //         imagem: imagemVoto,
-  //   //         musica: extraVoto,
-  //   //         ponto: '1'
-  //   //       });
-  //   //     break;
-
-  //   //   case "encerramentoImg1":
-  //   //     dados.encerramento.leandro.primeiro = Object.assign(dados.encerramento.leandro.primeiro,
-  //   //       {
-  //   //         id: idVoto,
-  //   //         nomeJ: nomeJVoto,
-  //   //         nomeE: nomeEVoto,
-  //   //         imagem: imagemVoto,
-  //   //         musica: extraVoto,
-  //   //         ponto: '3'
-  //   //       });
-  //   //     break;
-  //   //   case "encerramentoImg2":
-  //   //     dados.encerramento.leandro.segundo = Object.assign(dados.encerramento.leandro.segundo,
-  //   //       {
-  //   //         id: idVoto,
-  //   //         nomeJ: nomeJVoto,
-  //   //         nomeE: nomeEVoto,
-  //   //         imagem: imagemVoto,
-  //   //         musica: extraVoto,
-  //   //         ponto: '2'
-  //   //       });
-  //   //     break;
-  //   //   case "encerramentoImg3":
-  //   //     dados.encerramento.leandro.terceiro = Object.assign(dados.encerramento.leandro.terceiro,
-  //   //       {
-  //   //         id: idVoto,
-  //   //         nomeJ: nomeJVoto,
-  //   //         nomeE: nomeEVoto,
-  //   //         imagem: imagemVoto,
-  //   //         musica: extraVoto,
-  //   //         ponto: '1'
-  //   //       });
-  //   //     break;
-  //   //   default:
-  //   //     break;
-  //   // }
-
-  //   // Enviando os dados atualizados de volta para o servidor
-  //   fetch(`http://localhost:3000/votos2021Winter/${idCat}`,
-  //     {
-  //       method: 'PUT',
-  //       body: JSON.stringify(dados),
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       }
-  //     })
-  //     .then(response => response.json())
-  //     .then(dados =>
-  //     {
-  //       console.log('Dados salvos com sucesso:', dados);
-  //     })
-  //     .catch(error =>
-  //     {
-  //       console.error('Erro ao salvar dados:', error);
-  //     });
-  // }
 }

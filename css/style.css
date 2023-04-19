@@ -158,3 +158,8 @@ background-color: #97784d;
   .esconder{
     display: none;
 }
+
+.desabilitar{
+    pointer-events: none;
+  opacity: 0.5;
+}

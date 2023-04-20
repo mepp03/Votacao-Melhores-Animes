@@ -7,6 +7,49 @@
     <title>É hora de votar</title>
     <link rel="stylesheet" href="../css/style.css">
 
+    <div class="cabecalho">
+        <div class="cabecalho__temporadas" id="cabecalho__temporadas">
+            <div class="cabecalho__temporadas ano">
+                <select name="" id="">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021" selected>2021</option>
+                    <option value="2022">2022</option>
+                </select>
+            </div>
+            <a href="./votacao.html">
+                <div class="cabecalho__temporadas inverno">
+                    <p class="cabecalho__temporadas--estacao">Inverno</p>
+                </div>
+            </a>
+            <a href="./primavera.html">
+                <div class="cabecalho__temporadas primavera">
+                    <p class="cabecalho__temporadas--estacao">Primavera</p>
+                </div>
+            </a>
+            <a href="./verao.html">
+                <div class="cabecalho__temporadas verao">
+                    <p class="cabecalho__temporadas--estacao">Verão</p>
+                </div>
+            </a>
+            <a href="./outono.html">
+                <div class="cabecalho__temporadas outono">
+                    <p class="cabecalho__temporadas--estacao">Outono</p>
+                </div>
+            </a>
+            <a href="./inverno.html">
+                <div class="cabecalho__temporadas melhor">
+                    <p class="cabecalho__temporadas--estacao">Ano</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="cabecalho__login">
+            <button class="cabecalho__login--botaoLogar botao" id="botaoSair"
+                onclick="deslogar()">Sair</button>
+        </div>
+    </div>
+
 </head>
 
 <body onload="mostrarVotos()">
@@ -419,8 +462,10 @@
     <script src="../js/principal.js"></script>
     <script src="../js/escolherVoto.js"></script>
     <script src="../js/buscaEMostraCopy.js"></script>
-    <script src="../js/votos.js"></script>
+    <!-- <script src="../js/votos.js"></script> -->
     <script src="../js/filtro.js"></script>
+    <!-- <script src="../js/mostrarVotos.js"></script> -->
+    <script src="../js/teste.js"></script>
 </body>
 
 </html>

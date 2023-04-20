@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pegar informações da temporada no Anilist</title>
+</head>
+<body>
+		<label for="ano">Ano:</label>
+		<select id="ano" name="ano">
+			<option value="2019">2019</option>
+			<option value="2020">2020</option>
+			<option value="2021">2021</option>
+			<option value="2022">2022</option>
+			<option value="2023">2023</option>
+		</select>
+
+		<label for="temporada">Temporada:</label>
+		<select id="temporada" name="temporada">
+			<option value="WINTER">Inverno</option>
+			<option value="SPRING">Primavera</option>
+			<option value="SUMMER">Verão</option>
+			<option value="FALL">Outono</option>
+		</select>
+
+		<button onclick="pegarInfo()">Enviar</button>
+		<button onclick="mostrar()">mostrar</button>
+
+    <script src="../js/pegarInfoAnilist.js"></script>
+</body>
+</html>

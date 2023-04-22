@@ -138,7 +138,9 @@ const criaCardPar = (id, romaji, english, gender, full, large) =>
 
 function busca1()
 {
-    fetch("http://127.0.0.1:5500/winter2019.json")
+    var temporada = localStorage.getItem('temporada');
+
+    fetch(`http://127.0.0.1:5500/${temporada}.json`)
         .then(function (response)
         {
             return response.json();

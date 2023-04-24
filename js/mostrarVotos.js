@@ -1,6 +1,13 @@
 var nome = localStorage.getItem("usuario");
+const pegarDados = document.querySelector('#cabecalho__temporadas');
 
-// carregar e mostrar os votos do BD
+pegarDados.addEventListener('click', function ()
+{
+        mostrarVotos();
+});
+
+
+// carregar e mostrar os votos do usuario
 function mostrarVotos()
 {
     if (nome == "null")
@@ -8,14 +15,17 @@ function mostrarVotos()
         window.location.href = "index.html";
     }
 
-    fetch("http://127.0.0.1:5500/votos2021Winter.json")
+
+    var temporada = localStorage.getItem('temporada');
+
+    fetch(`http://127.0.0.1:5500/votos${temporada}.json`)
         .then(function (response)
         {
             return response.json();
         })
         .then(function (data)
         {
-            data = data.votos2021Winter;
+            data = data.votos;
 
             const abertura = Object.values(data[0].abertura[nome]);
             const encerramento = Object.values(data[1].encerramento[nome]);
@@ -179,3 +189,4 @@ function mostrarVotos()
             });
         });
 }
+

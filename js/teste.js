@@ -45,7 +45,7 @@ function deslogar()
 }
 
 function votar()
-{
-    
+{    
     window.location.href = "votacaoCopy.html";
 }
+

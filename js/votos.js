@@ -1,9 +1,13 @@
-var ano = "2021";
-var temporada = "Winter"
+var temporada = localStorage.getItem('temporada');
 var dados;
 var nome = localStorage.getItem("usuario");
 
 const elements = document.querySelectorAll('[data-identificacao]');
+
+function testar(){
+  console.log(localStorage.getItem("teste"));
+}
+
 
 elements.forEach(function (element)
 {
@@ -34,6 +38,8 @@ elements.forEach(function (element)
           }
         } else
         {
+          localStorage.setItem('teste', "usuario");
+          console.log(localStorage.getItem("teste"));
           votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
         }
       }
@@ -94,7 +100,8 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
       break
   }
 
-  fetch(`http://localhost:3000/votos2021Winter/${idCat}`)
+  fetch(`http://localhost:3000/votos${ano}${temporada}/${idCat}`)
+  // fetch(`http://127.0.0.1:5500/votos${ano}${estacao}Teste.json`)
     .then(response => response.json())
     .then(data =>
     {
@@ -142,7 +149,7 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
           });
       }
 
-      fetch(`http://localhost:3000/votos2021Winter/${idCat}`,
+      fetch(`http://localhost:3000/votos${ano}${estacao}Teste/${idCat}`,
         {
           method: 'PUT',
           body: JSON.stringify(dados),

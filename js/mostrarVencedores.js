@@ -1,18 +1,27 @@
-function mostrarVotos()
+const pegarDados = document.querySelector('#cabecalho__temporadas');
+
+pegarDados.addEventListener('click', function ()
 {
-    // const nome = "vencedor";
-    const nomes = ["leandro", "lucas", "thiago", "nil", "vencedor"]
-    fetch("http://127.0.0.1:5500/votos2021Winter.json")
+    mostrarVencedores();
+});
+
+//carregar e mostrar os votos dos vencedores
+function mostrarVencedores()
+{
+    var temporada = localStorage.getItem('temporada');
+
+    fetch(`http://127.0.0.1:5500/votos${temporada}.json`)
         .then(function (response)
         {
             return response.json();
         })
         .then(function (data)
         {
-            data = data.votos2021Winter;
+            data = data.votos;
 
             //abertura
             {
+                // console.log(data);
                 const leandroAbertura = Object.values(data[0].abertura.leandro);
                 const lucasAbertura = Object.values(data[0].abertura.lucas);
                 const thiagoAbertura = Object.values(data[0].abertura.thiago);
@@ -642,7 +651,7 @@ function mostrarVotos()
                 imgPar2Thiago1.src = thiagoPar[0].imagem2;
                 imgPar2Nil1.src = nilPar[0].imagem2;
                 imgPar2Vencedor1.src = vencedorPar[0].imagem2;
-                
+
                 nomeJaponesParLeandro1.innerHTML = leandroPar[0].nomeJ;
                 nomeJaponesParLucas1.innerHTML = lucasPar[0].nomeJ;
                 nomeJaponesParThiago1.innerHTML = thiagoPar[0].nomeJ;
@@ -937,4 +946,5 @@ function mostrarVotos()
         });
 }
 
-mostrarVotos();
+//mostrando os vencedores na inicialização
+mostrarVencedores();

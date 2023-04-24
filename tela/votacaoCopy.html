@@ -6,53 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>É hora de votar</title>
     <link rel="stylesheet" href="../css/style.css">
-
-    <div class="cabecalho">
-        <div class="cabecalho__temporadas" id="cabecalho__temporadas">
-            <div class="cabecalho__temporadas ano">
-                <select name="" id="">
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021" selected>2021</option>
-                    <option value="2022">2022</option>
-                </select>
-            </div>
-            <a href="./votacao.html">
-                <div class="cabecalho__temporadas inverno">
-                    <p class="cabecalho__temporadas--estacao">Inverno</p>
-                </div>
-            </a>
-            <a href="./primavera.html">
-                <div class="cabecalho__temporadas primavera">
-                    <p class="cabecalho__temporadas--estacao">Primavera</p>
-                </div>
-            </a>
-            <a href="./verao.html">
-                <div class="cabecalho__temporadas verao">
-                    <p class="cabecalho__temporadas--estacao">Verão</p>
-                </div>
-            </a>
-            <a href="./outono.html">
-                <div class="cabecalho__temporadas outono">
-                    <p class="cabecalho__temporadas--estacao">Outono</p>
-                </div>
-            </a>
-            <a href="./inverno.html">
-                <div class="cabecalho__temporadas melhor">
-                    <p class="cabecalho__temporadas--estacao">Ano</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="cabecalho__login">
-            <button class="cabecalho__login--botaoLogar botao" id="botaoSair"
-                onclick="deslogar()">Sair</button>
-        </div>
-    </div>
-
 </head>
 
 <body onload="mostrarVotos()">
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho__temporadas" id="cabecalho__temporadas">
+                <div class="cabecalho__temporadas ano">
+                    <select id="ano">
+                        <option value="2019" selected>2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select>
+                </div>
+
+
+                <div class="cabecalho__temporadas inverno">
+                    <input type="radio" id="inverno" name="estacoes" value="inverno" checked>
+                    <label for="inverno">Inverno</label>
+                </div>
+                <div class="cabecalho__temporadas primavera">
+                    <input type="radio" id="primavera" name="estacoes" value="primavera">
+                    <label for="primavera">Primavera</label>
+                </div>
+                <div class="cabecalho__temporadas verao">
+                    <input type="radio" id="verao" name="estacoes" value="verao">
+                    <label for="verao">Verão</label>
+                </div>
+                <div class="cabecalho__temporadas outono">
+                    <input type="radio" id="outono" name="estacoes" value="outono">
+                    <label for="outono">Outono</label>
+                </div>
+            </div>
+
+            <div class="cabecalho__login">
+                <button class="cabecalho__login--botaoLogar botao" id="botaoSair"
+                    onclick="deslogar()">Sair</button>
+            </div>
+        </div>
+
+
+
+    </header>
     <main>
         <!-- Os Modais -->
         <div id="listaModal" class="modal">
@@ -77,8 +73,8 @@
             </div>
         </div>
 
-        <section class="categoria op">
-            <h1 class="categoria--h2Nome">Inverno 2021</h1>
+        <h1 class="temporada" id="temporada"></h1>
+        <section class="categoria">
             <table class="tabela">
                 <h2 class="categoria--h2Nome">Melhor Abertura</h2>
                 <tr class="tabela__linha">
@@ -455,17 +451,29 @@
             </table>
         </section>
 
+
+
+
+
+        <!-- tirar -->
         <div style="text-align:center;">
-            <button onclick="votar()"> Votar </button>
+            <button onclick="testar()"> Votar </button>
         </div>
+        <!-- tirar -->
+
+
+
+
+
     </main>
     <script src="../js/principal.js"></script>
     <script src="../js/escolherVoto.js"></script>
     <script src="../js/buscaEMostraCopy.js"></script>
-    <!-- <script src="../js/votos.js"></script> -->
+    <script src="../js/votos.js"></script>
     <script src="../js/filtro.js"></script>
-    <!-- <script src="../js/mostrarVotos.js"></script> -->
+    <script src="../js/mostrarVotos.js"></script>
     <script src="../js/teste.js"></script>
+    <script src="../js/pegarTemporada.js"></script>
 </body>
 
 </html>

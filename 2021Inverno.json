@@ -1,4 +1,5 @@
-[{
+[
+  {
     "id": 128527,
     "averageScore": 42,
     "title": {
@@ -12,10 +13,16 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b128527-gpi8HTRLrWxW.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
       "edges": []
@@ -35,10 +42,16 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b128526-P6r52PcCaKRM.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
       "edges": []
@@ -58,27 +71,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113231-R7qcGbDQgwBZ.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Mahi",
-            "video": "https://animethemes.moe/video/243SeiinVolleyBu-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Mahi",
+        "video": "https://animethemes.moe/video/243SeiinVolleyBu-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Undulation",
-            "video": "https://animethemes.moe/video/243SeiinVolleyBu-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Undulation",
+        "video": "https://animethemes.moe/video/243SeiinVolleyBu-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Yuusuke Okuma"
@@ -304,20 +310,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127692-J64CxPiN0omG.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Happy Boshuu-chuu",
-            "video": "https://animethemes.moe/video/AbcieeShuugyouNikki-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Happy Boshuu-chuu",
+        "video": "https://animethemes.moe/video/AbcieeShuugyouNikki-OP1.webm"
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "ABCiee"
@@ -422,13 +428,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128872-8L5yg4OGSfwQ.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Ruli Tamaki"
@@ -720,20 +733,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx21569-WBJkaNY2pgTB.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "Kizuna",
+        "video": "https://animethemes.moe/video/AliceInDeadlySchool-ED1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Kizuna",
-            "video": "https://animethemes.moe/video/AliceInDeadlySchool-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Nobuko Momomura"
@@ -882,27 +895,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx117556-SbGBjNw0MDp2.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Felicita",
-            "video": "https://animethemes.moe/video/AriaTheCrepuscolo-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Felicita",
+        "video": "https://animethemes.moe/video/AriaTheCrepuscolo-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "echoes",
-            "video": "https://animethemes.moe/video/AriaTheCrepuscolo-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "echoes",
+        "video": "https://animethemes.moe/video/AriaTheCrepuscolo-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Athena Glory"
@@ -1139,29 +1145,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114473-vnLrwMEZ9OfI.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "Longing for!",
+        "video": "https://animethemes.moe/video/AzurLaneBisokuZenshin-ED1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Longing for!",
-              "video": "https://animethemes.moe/video/AzurLaneBisokuZenshin-ED1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-            "ed": {
-              "name": "Mahiruiro Siesta",
-              "video": "https://v.animethemes.moe/AzurLaneBisokuZenshin-ED2-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Javelin"
@@ -1453,20 +1450,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx102498-RvxWEf7fAqFy.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Be Down",
-            "video": "https://animethemes.moe/video/BTheBeginningSuccession-ed1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Be Down",
+        "video": "https://animethemes.moe/video/BTheBeginningSuccession-ED1.webm"
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Keith Kazama  Flick "
@@ -1659,47 +1656,28 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114307-hZFz35Nh7YuS.jpg"
     },
     "opening": {
-      "edges": [{
-          "node": {
-            "op": {
-              "name": "dawn",
-              "video": "https://animethemes.moe/video/BackArrow-op1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Kodou",
-              "video": "https://animethemes.moe/video/BackArrow-op2-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "op1": {
+        "name": "dawn",
+        "video": "https://animethemes.moe/video/BackArrow-OP1-NCBD1080.webm"
+      },
+      "op2": {
+        "name": "Kodou",
+        "video": "https://animethemes.moe/video/BackArrow-OP2-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Sekai no Hate",
-              "video": "https://animethemes.moe/video/BackArrow-ed1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "United Sparrows",
-              "video": "https://animethemes.moe/video/BackArrow-ed2-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Sekai no Hate",
+        "video": "https://animethemes.moe/video/BackArrow-ED1-NCBD1080.webm"
+      },
+      "ed2": {
+        "name": "United Sparrows",
+        "video": "https://animethemes.moe/video/BackArrow-ED2-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Back Arrow"
@@ -1991,13 +1969,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131096-h8aDl2NjJoNM.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Dan Kouzo"
@@ -2124,13 +2109,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/nx104329-GozJjHEk3TdS.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Bean Bandit"
@@ -2191,13 +2183,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127863-5LxF2b5b6GrF.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Noir Fochrosé"
@@ -2269,27 +2268,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114194-uMuA92X6JHSj.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Kaibutsu",
-            "video": "https://animethemes.moe/video/BeastarsS2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Kaibutsu",
+        "video": "https://animethemes.moe/video/BeastarsS2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Yasashii Suisei",
-            "video": "https://animethemes.moe/video/BeastarsS2-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Yasashii Suisei",
+        "video": "https://animethemes.moe/video/BeastarsS2-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Legoshi"
@@ -2581,30 +2573,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx103712-631ErMZsKSpp.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Tsuki-iro Chainon",
-              "video": "https://animethemes.moe/video/SailorMoonEternalMovie2-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Rashiku Ikimasho",
-              "video": "https://animethemes.moe/video/SailorMoonEternalMovie2-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Tsuki-iro Chainon",
+        "video": "https://animethemes.moe/video/SailorMoonEternalMovie2-ED1.webm"
+      },
+      "ed2": {
+        "name": "Rashiku Ikimasho",
+        "video": "https://animethemes.moe/video/SailorMoonEternalMovie2-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Usagi Tsukino"
@@ -2852,30 +2838,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx103713-GZ5LKEkW7Lz2.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Tsuki-iro Chainon",
-              "video": "https://animethemes.moe/video/SailorMoonEternalMovie1-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Watashi-tachi ni Naritakute",
-              "video": "https://animethemes.moe/video/SailorMoonEternalMovie1-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Tsuki-iro Chainon",
+        "video": "https://animethemes.moe/video/SailorMoonEternalMovie1-ED1.webm"
+      },
+      "ed2": {
+        "name": "Watashi-tachi ni Naritakute",
+        "video": "https://animethemes.moe/video/SailorMoonEternalMovie1-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Chibiusa"
@@ -2955,7 +2935,7 @@
         {
           "node": {
             "name": {
-              "full": "Tiger's Eye"
+              "full": "Tigers Eye"
             },
             "image": {
               "large": "https://s4.anilist.co/file/anilistcdn/character/large/9122.jpg"
@@ -2999,7 +2979,7 @@
         {
           "node": {
             "name": {
-              "full": "Hawk's Eye"
+              "full": "Hawks Eye"
             },
             "image": {
               "large": "https://s4.anilist.co/file/anilistcdn/character/large/b12410-mDBegP9jkBDH.png"
@@ -3156,30 +3136,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx120150-hxvcRrYzgP2F.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Namae wo Yobu yo",
-              "video": "https://animethemes.moe/video/BungouStrayDogsWan-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Kaze ga Fuku Machi",
-              "video": "https://animethemes.moe/video/BungouStrayDogsWan-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Namae wo Yobu yo",
+        "video": "https://animethemes.moe/video/BungouStrayDogsWan-ED1.webm"
+      },
+      "ed2": {
+        "name": "Kaze ga Fuku Machi",
+        "video": "https://animethemes.moe/video/BungouStrayDogsWan-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Osamu Dazai"
@@ -3460,13 +3434,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129627-GiVeOqDUAqUC.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Tengen Uzui"
@@ -3615,13 +3596,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124612-lhQFycfhZfwU.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Suwaru Doge"
@@ -3803,13 +3791,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b128367-e4rG4FEjxWAu.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Noir Stardia"
@@ -3925,27 +3920,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113936-41Lz6Vtmfh1A.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Rakuen",
-            "video": "https://animethemes.moe/video/DrStoneS2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Rakuen",
+        "video": "https://animethemes.moe/video/DrStoneS2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Koe?",
-            "video": "https://animethemes.moe/video/DrStoneS2-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Koe?",
+        "video": "https://animethemes.moe/video/DrStoneS2-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Senkuu Ishigami"
@@ -4237,13 +4225,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128390-mAZM9djmgPEi.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Shinra Kusakabe"
@@ -4392,27 +4387,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx106503-7pbrod3B9HJF.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Rise Again",
-            "video": "https://animethemes.moe/video/ExArm-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Rise Again",
+        "video": "https://animethemes.moe/video/ExArm-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Diamonds Shine",
-            "video": "https://animethemes.moe/video/ExArm-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Diamonds Shine",
+        "video": "https://animethemes.moe/video/ExArm-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Alma"
@@ -4539,7 +4527,7 @@
               "full": "Yggdrasil"
             },
             "image": {
-              "large": "https://s4.anilist.co/file/anilistcdn/character/large/b228227-s7qreduoCgJ.jpg"
+              "large": "https://s4.anilist.co/file/anilistcdn/character/large/b228227-s7qred9uoCgJ.jpg"
             },
             "gender": "Female"
           }
@@ -4561,13 +4549,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128535-gYYBO6bbDewt.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "King"
@@ -4749,65 +4744,36 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124131-lLxOgvF6jgu9.jpg"
     },
     "opening": {
-      "edges": [{
-          "node": {
-            "op": {
-              "name": "Gekidol!",
-              "video": "https://animethemes.moe/video/Gekidol-op1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Toki no Tsubasa Chrono Geizer",
-              "video": "https://animethemes.moe/video/Gekidol-op2-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "op1": {
+        "name": "Gekidol!",
+        "video": "https://animethemes.moe/video/Gekidol-OP1-NCBD1080.webm"
+      },
+      "op2": {
+        "name": "Toki no Tsubasa Chrono Geizer",
+        "video": "https://animethemes.moe/video/Gekidol-OP2-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Kizuna",
-              "video": "https://animethemes.moe/video/Gekidol-ed1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Seifuku DOLL",
-              "video": "https://animethemes.moe/video/Gekidol-ed2-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Tokyo Lonely Girl",
-              "video": "https://animethemes.moe/video/Gekidol-ed3-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Dandelion Girl",
-              "video": "https://animethemes.moe/video/Gekidol-ed4-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Kizuna",
+        "video": "https://animethemes.moe/video/Gekidol-ED1-NCBD1080.webm"
+      },
+      "ed2": {
+        "name": "Seifuku DOLL",
+        "video": "https://animethemes.moe/video/Gekidol-ED2-NCBD1080.webm"
+      },
+      "ed3": {
+        "name": "Tokyo Lonely Girl",
+        "video": "https://animethemes.moe/video/Gekidol-ED3-NCBD1080.webm"
+      },
+      "ed4": {
+        "name": "Dandelion Girl",
+        "video": "https://animethemes.moe/video/Gekidol-ED4-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Seria Morino"
@@ -4945,20 +4911,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114129-RLgSuh6YbeYx.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Wadachi",
-            "video": "https://animethemes.moe/video/GintamaTheFinal-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Wadachi",
+        "video": "https://animethemes.moe/video/GintamaTheFinal-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Gintoki Sakata"
@@ -5250,27 +5216,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126819-KlcARzqDMjvf.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "I Wanna Be...",
-            "video": "https://animethemes.moe/video/GintamaShiroganeNoTamashiiHenS2-op1v2-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "I Wanna Be...",
+        "video": "https://animethemes.moe/video/GintamaShiroganeNoTamashiiHenS2-OP1v2-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Wadachi",
-            "video": "https://animethemes.moe/video/GintamaTheSemiFinal-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Wadachi",
+        "video": "https://animethemes.moe/video/GintamaTheSemiFinal-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Gintoki Sakata"
@@ -5562,37 +5521,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx109261-65rKxMDlcU9r.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Gotoubun no Katachi",
-            "video": "https://animethemes.moe/video/GotoubunNoHanayomeS2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Gotoubun no Katachi",
+        "video": "https://animethemes.moe/video/GotoubunNoHanayomeS2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Hatsukoi",
-              "video": "https://animethemes.moe/video/GotoubunNoHanayomeS2-ed1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Gotoubun no Kimochi",
-              "video": "https://animethemes.moe/video/GotoubunNoHanayomeS2-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Hatsukoi",
+        "video": "https://animethemes.moe/video/GotoubunNoHanayomeS2-ED1-NCBD1080.webm"
+      },
+      "ed2": {
+        "name": "Gotoubun no Kimochi",
+        "video": "https://animethemes.moe/video/GotoubunNoHanayomeS2-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Yotsuba Nakano"
@@ -5840,10 +5786,16 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b136138-XINueCwL12Ps.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
       "edges": []
@@ -5863,27 +5815,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx117533-Niown8l6NAWk.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Hashire!",
-            "video": "https://animethemes.moe/video/HatarakuSaibouBlack-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Hashire!",
+        "video": "https://animethemes.moe/video/HatarakuSaibouBlack-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Ue wo Muite Hakobou",
-            "video": "https://animethemes.moe/video/HatarakuSaibouBlack-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Ue wo Muite Hakobou",
+        "video": "https://animethemes.moe/video/HatarakuSaibouBlack-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Hakkekkyuu U-1196"
@@ -6164,27 +6109,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108631-R3yjfHmOJDET.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "GO! GO! Saibou Fiesta",
-            "video": "https://animethemes.moe/video/HatarakuSaibouS2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "GO! GO! Saibou Fiesta",
+        "video": "https://animethemes.moe/video/HatarakuSaibouS2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Fight!!",
-            "video": "https://animethemes.moe/video/HatarakuSaibouS2-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Fight!!",
+        "video": "https://animethemes.moe/video/HatarakuSaibouS2-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Hakkekkyuu U-1146"
@@ -6476,13 +6414,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124472-T7mIM61Wbfbn.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Tokiyo Himote"
@@ -6576,13 +6521,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx130846-cSednft9mlwC.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Cyane"
@@ -6621,27 +6573,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124080-h8EPH92nyRfS.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Iro Kousui",
-            "video": "https://animethemes.moe/video/Horimiya-op1-BD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Iro Kousui",
+        "video": "https://animethemes.moe/video/Horimiya-OP1-BD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Yakusoku",
-            "video": "https://animethemes.moe/video/Horimiya-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Yakusoku",
+        "video": "https://animethemes.moe/video/Horimiya-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Izumi Miyamura"
@@ -6933,37 +6878,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114301-Qig3ulYPd9ur.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "LEADER",
-            "video": "https://animethemes.moe/video/HortensiaSaga-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "LEADER",
+        "video": "https://animethemes.moe/video/HortensiaSaga-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Yasou to Hakuchuumu",
-              "video": "https://animethemes.moe/video/HortensiaSaga-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Veil",
-              "video": "https://animethemes.moe/video/HortensiaSaga-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Yasou to Hakuchuumu",
+        "video": "https://animethemes.moe/video/HortensiaSaga-ED1.webm"
+      },
+      "ed2": {
+        "name": "Veil",
+        "video": "https://animethemes.moe/video/HortensiaSaga-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Marius Casterede"
@@ -7156,13 +7088,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b129789-pGR5ZygOj0XD.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Ryouta Chiba"
@@ -7223,27 +7162,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124555-SQ8hWERIBU6L.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "WE ARE THE ONE",
-            "video": "https://animethemes.moe/video/Idolls-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "WE ARE THE ONE",
+        "video": "https://animethemes.moe/video/Idolls-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Yumemite Samete mo",
-            "video": "https://animethemes.moe/video/Idolls-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Yumemite Samete mo",
+        "video": "https://animethemes.moe/video/Idolls-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Aina"
@@ -7304,82 +7236,44 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113814-HvgpmDKpgHql.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Idoly Pride",
-            "video": "https://animethemes.moe/video/IdolyPride-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Idoly Pride",
+        "video": "https://animethemes.moe/video/IdolyPride-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "video": "https://animethemes.moe/video/IdolyPride-ed1-NCBD1080.webm",
-              "name": "The Sun, Moon and Stars"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "The Last Chance",
-              "video": "https://animethemes.moe/video/IdolyPride-ed2-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "réaliser",
-              "video": "https://animethemes.moe/video/IdolyPride-ed3-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Shining Days",
-              "video": "https://animethemes.moe/video/IdolyPride-ed4-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Daytime Moon",
-              "video": "https://animethemes.moe/video/IdolyPride-ed5-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "song for you (Sunny Peace ver.)",
-              "video": "https://animethemes.moe/video/IdolyPride-ed6-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Pray for you",
-              "video": "https://animethemes.moe/video/IdolyPride-ed7-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "video": "https://animethemes.moe/video/IdolyPride-ED1-NCBD1080.webm",
+        "name": "The Sun, Moon and Stars"
+      },
+      "ed2": {
+        "name": "The Last Chance",
+        "video": "https://animethemes.moe/video/IdolyPride-ED2-NCBD1080.webm"
+      },
+      "ed3": {
+        "name": "réaliser",
+        "video": "https://animethemes.moe/video/IdolyPride-ED3-NCBD1080.webm"
+      },
+      "ed4": {
+        "name": "Shining Days",
+        "video": "https://animethemes.moe/video/IdolyPride-ED4-NCBD1080.webm"
+      },
+      "ed5": {
+        "name": "Daytime Moon",
+        "video": "https://animethemes.moe/video/IdolyPride-ED5-NCBD1080.webm"
+      },
+      "ed6": {
+        "name": "song for you (Sunny Peace ver.)",
+        "video": "https://animethemes.moe/video/IdolyPride-ED6-NCBD1080.webm"
+      },
+      "ed7": {
+        "name": "Pray for you",
+        "video": "https://animethemes.moe/video/IdolyPride-ED7-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Kotono Nagase"
@@ -7627,13 +7521,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132634-ePR2y63z2sZO.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Keisuke Takahashi"
@@ -7859,13 +7760,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx130296-GxrpPv7wuFrW.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Jindou Kiriya"
@@ -7948,47 +7856,28 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx109010-VzJFTkkhwa8X.jpg"
     },
     "opening": {
-      "edges": [{
-          "node": {
-            "op": {
-              "name": "Ichibanboshi no Uta ~Mirai no Legend Densetsu~",
-              "video": "https://animethemes.moe/video/IChu-op1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Rainbow☆Harmony",
-              "video": "https://animethemes.moe/video/IChu-op2.webm"
-            }
-          }
-        }
-      ]
+      "op1": {
+        "name": "Ichibanboshi no Uta ~Mirai no Legend Densetsu~",
+        "video": "https://animethemes.moe/video/IChu-OP1.webm"
+      },
+      "op2": {
+        "name": "Rainbow☆Harmony",
+        "video": "https://animethemes.moe/video/IChu-OP2.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Singing! Swinging!",
-              "video": "https://animethemes.moe/video/IChu-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "We Are I-Chu! (29Hito Ver.)",
-              "video": "https://animethemes.moe/video/IChu-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Singing! Swinging!",
+        "video": "https://animethemes.moe/video/IChu-ED1.webm"
+      },
+      "ed2": {
+        "name": "We Are I-Chu! (29Hito Ver.)",
+        "video": "https://animethemes.moe/video/IChu-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Kanata Minato"
@@ -8280,64 +8169,36 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112443-UVB1oKdblsIx.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Jinsei Easy?",
-            "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Jinsei Easy?",
+        "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Ayafuwa Asterisk",
-              "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Ayafuwa Asterisk (for Yuzu Izumi)",
-              "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ed2.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Ayafuwa Asterisk (for Minami Nanami)",
-              "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ed3.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Ayafuwa Asterisk (for Fuuka Kikuchi)",
-              "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ed4.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Ayafuwa Asterisk (for Aoi Hinami)",
-              "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ed5.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Ayafuwa Asterisk",
+        "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ED1.webm"
+      },
+      "ed2": {
+        "name": "Ayafuwa Asterisk (for Yuzu Izumi)",
+        "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ED2.webm"
+      },
+      "ed3": {
+        "name": "Ayafuwa Asterisk (for Minami Nanami)",
+        "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ED3.webm"
+      },
+      "ed4": {
+        "name": "Ayafuwa Asterisk (for Fuuka Kikuchi)",
+        "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ED4.webm"
+      },
+      "ed5": {
+        "name": "Ayafuwa Asterisk (for Aoi Hinami)",
+        "video": "https://animethemes.moe/video/JakuCharaTomozakiKun-ED5.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Aoi Hinami"
@@ -8475,27 +8336,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx123779-AbSom3C7nPQn.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "SHAKE!SHAKE!SHAKE!",
-            "video": "https://animethemes.moe/video/KaiByouiRamune-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "SHAKE!SHAKE!SHAKE!",
+        "video": "https://animethemes.moe/video/KaiByouiRamune-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Arcacia",
-            "video": "https://animethemes.moe/video/KaiByouiRamune-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Arcacia",
+        "video": "https://animethemes.moe/video/KaiByouiRamune-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Kuro"
@@ -8743,27 +8597,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113425-tYGRUa5pgZje.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Zankoku na Yume to Nemure",
-            "video": "https://animethemes.moe/video/Kaiyari-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Zankoku na Yume to Nemure",
+        "video": "https://animethemes.moe/video/Kaiyari-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Yume de Sekai wo Kaeru nara",
-            "video": "https://animethemes.moe/video/Kaiyari-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Yume de Sekai wo Kaeru nara",
+        "video": "https://animethemes.moe/video/Kaiyari-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Flare Arlgrande Jioral"
@@ -9055,27 +8902,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114085-2w5rYZTOa7ER.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Kemono Michi",
-            "video": "https://animethemes.moe/video/KemonoJihen-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Kemono Michi",
+        "video": "https://animethemes.moe/video/KemonoJihen-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Shirushi",
-            "video": "https://animethemes.moe/video/KemonoJihen-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Shirushi",
+        "video": "https://animethemes.moe/video/KemonoJihen-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Akira"
@@ -9303,7 +9143,7 @@
     "averageScore": 71,
     "title": {
       "romaji": "Kumo desu ga, Nani ka?",
-      "english": "So I'm a Spider, So What?"
+      "english": "So Im a Spider, So What?"
     },
     "seasonYear": 2021,
     "season": "WINTER",
@@ -9312,47 +9152,28 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx103632-XRXP3uB17FMg.jpg"
     },
     "opening": {
-      "edges": [{
-          "node": {
-            "op": {
-              "name": "Keep weaving your spider way",
-              "video": "https://animethemes.moe/video/KumoDesuGaNaniKa-op1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Bursty Greedy Spider",
-              "video": "https://animethemes.moe/video/KumoDesuGaNaniKa-op2-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "op1": {
+        "name": "Keep weaving your spider way",
+        "video": "https://animethemes.moe/video/KumoDesuGaNaniKa-OP1-NCBD1080.webm"
+      },
+      "op2": {
+        "name": "Bursty Greedy Spider",
+        "video": "https://animethemes.moe/video/KumoDesuGaNaniKa-OP2-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Ganbare! Kumoko-san no Theme",
-              "video": "https://animethemes.moe/video/KumoDesuGaNaniKa-ed1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Genjitsu Totsugeki Hierarchy",
-              "video": "https://animethemes.moe/video/KumoDesuGaNaniKa-ed2-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Ganbare! Kumoko-san no Theme",
+        "video": "https://animethemes.moe/video/KumoDesuGaNaniKa-ED1-NCBD1080.webm"
+      },
+      "ed2": {
+        "name": "Genjitsu Totsugeki Hierarchy",
+        "video": "https://animethemes.moe/video/KumoDesuGaNaniKa-ED2-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Kumoko"
@@ -9644,27 +9465,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114862-DTRU67Z1gJ9N.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Different",
-            "video": "https://animethemes.moe/video/LogHorizonS3-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Different",
+        "video": "https://animethemes.moe/video/LogHorizonS3-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Blue Horizon",
-            "video": "https://animethemes.moe/video/LogHorizonS3-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Blue Horizon",
+        "video": "https://animethemes.moe/video/LogHorizonS3-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Shiroe"
@@ -9956,27 +9770,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx117067-ez4mvOwk5PSn.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Asu Kitto",
-            "video": "https://animethemes.moe/video/MaikoSanChiNoMakanaiSan-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Asu Kitto",
+        "video": "https://animethemes.moe/video/MaikoSanChiNoMakanaiSan-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Encerramento",
-            "video": "https://animethemes.moe/video/MaikoSanChiNoMakanaiSan-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Encerramento",
+        "video": "https://animethemes.moe/video/MaikoSanChiNoMakanaiSan-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Kiyo Nozuki"
@@ -10158,27 +9965,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx117085-7FG9dalYKI0N.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "LIGHT of JUSTICE",
-            "video": "https://animethemes.moe/video/MajutsushiOrphenHagureTabiS2-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "LIGHT of JUSTICE",
+        "video": "https://animethemes.moe/video/MajutsushiOrphenHagureTabiS2-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "video": "https://animethemes.moe/video/MajutsushiOrphenHagureTabiS2-ed1.webm",
-            "name": "Marionette Coup d'etat"
-          }
-        }
-      }]
+      "ed1": {
+        "video": "https://animethemes.moe/video/MajutsushiOrphenHagureTabiS2-ED1.webm",
+        "name": "Marionette Coup detat"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Orphen"
@@ -10360,13 +10160,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131770-thmn0mH6eDS7.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Shuuichi Akai"
@@ -10471,37 +10278,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108465-B9S9zC68eS5j.jpg"
     },
     "opening": {
-      "edges": [{
-          "node": {
-            "op": {
-              "name": "Tabibito no Uta",
-              "video": "https://animethemes.moe/video/MushokuTensei-op1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Mezame no Uta",
-              "video": "https://animethemes.moe/video/MushokuTensei-op2-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "op1": {
+        "name": "Tabibito no Uta",
+        "video": "https://animethemes.moe/video/MushokuTensei-OP1-NCBD1080.webm"
+      },
+      "op2": {
+        "name": "Mezame no Uta",
+        "video": "https://animethemes.moe/video/MushokuTensei-OP2-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Only",
-            "video": "https://animethemes.moe/video/MushokuTensei-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Only",
+        "video": "https://animethemes.moe/video/MushokuTensei-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Sylphiette"
@@ -10784,7 +10578,7 @@
     "averageScore": 65,
     "title": {
       "romaji": "Nanatsu no Taizai: Funnu no Shinpan",
-      "english": "The Seven Deadly Sins: Dragon's Judgement"
+      "english": "The Seven Deadly Sins: Dragons Judgement"
     },
     "seasonYear": 2021,
     "season": "WINTER",
@@ -10793,47 +10587,28 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx116752-yIJuKp88adqt.jpg"
     },
     "opening": {
-      "edges": [{
-          "node": {
-            "op": {
-              "name": "Hikari Are",
-              "video": "https://animethemes.moe/video/NanatsuNoTaizaiFunnuNoShinpan-op1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Eien no Aria",
-              "video": "https://animethemes.moe/video/NanatsuNoTaizaiFunnuNoShinpan-op2.webm"
-            }
-          }
-        }
-      ]
+      "op1": {
+        "name": "Hikari Are",
+        "video": "https://animethemes.moe/video/NanatsuNoTaizaiFundoNoShinpan-OP1.webm"
+      },
+      "op2": {
+        "name": "Eien no Aria",
+        "video": "https://animethemes.moe/video/NanatsuNoTaizaiFundoNoShinpan-OP2.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "time",
-              "video": "https://animethemes.moe/video/NanatsuNoTaizaiFunnuNoShinpan-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "NAMELY",
-              "video": "https://animethemes.moe/video/NanatsuNoTaizaiFunnuNoShinpan-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "time",
+        "video": "https://animethemes.moe/video/NanatsuNoTaizaiFundoNoShinpan-ED1.webm"
+      },
+      "ed2": {
+        "name": "NAMELY",
+        "video": "https://animethemes.moe/video/NanatsuNoTaizaiFundoNoShinpan-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Gowther"
@@ -11125,27 +10900,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124132-1CMeg6ZKv09Q.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Tsugihagi Moyou",
-            "video": "https://animethemes.moe/video/NonNonBiyoriS3-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Tsugihagi Moyou",
+        "video": "https://animethemes.moe/video/NonNonBiyoriS3-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Seishun ~Star Wink~",
-            "video": "https://animethemes.moe/video/NatsumeYuujinchouMovie2-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Seishun ~Star Wink~",
+        "video": "https://animethemes.moe/video/NatsumeYuujinchouMovie2-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Madara"
@@ -11294,27 +11062,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx109403-g6QqMkqV1ayu.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Pyramid Daigyakuten",
-            "video": "https://animethemes.moe/video/OreDakeHaireruKakushiDungeon-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Pyramid Daigyakuten",
+        "video": "https://animethemes.moe/video/OreDakeHaireruKakushiDungeon-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Tadaima",
-            "video": "https://animethemes.moe/video/NonNonBiyoriS3-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Tadaima",
+        "video": "https://animethemes.moe/video/NonNonBiyoriS3-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Hotaru Ichijou"
@@ -11540,20 +11301,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx118375-95ClbAh2EQMD.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Nemophila",
-            "video": "https://animethemes.moe/video/OreDakeHaireruKakushiDungeon-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Nemophila",
+        "video": "https://animethemes.moe/video/OreDakeHaireruKakushiDungeon-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Lola Metrose"
@@ -11625,7 +11386,7 @@
               "full": "Lenore Bludon"
             },
             "image": {
-              "large": "https://s4.anilist.co/file/anilistcdn/character/large/b203671-vtedQX3YoMm.png"
+              "large": "https://s4.anilist.co/file/anilistcdn/character/large/b203671-vtEd3QX3YoMm.png"
             },
             "gender": ""
           }
@@ -11845,13 +11606,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124136-vmrRRFsjwcD8.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Ririetta"
@@ -11912,20 +11680,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113595-2xZa6aoYq0ck.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Snow Globe",
-            "video": "https://animethemes.moe/video/PlanetarianSnowGlobe-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Snow Globe",
+        "video": "https://animethemes.moe/video/PlanetarianSnowGlobe-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Yumemi Hoshino"
@@ -12008,27 +11776,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx123785-ciGZuIesWH7l.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Praeter no Kizu",
-            "video": "https://animethemes.moe/video/ProjectScard-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Praeter no Kizu",
+        "video": "https://animethemes.moe/video/ProjectScard-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "BUSTLING SHOW",
-            "video": "https://animethemes.moe/video/ProjectScard-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "BUSTLING SHOW",
+        "video": "https://animethemes.moe/video/ProjectScard-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Eiji Arashiba"
@@ -12199,27 +11960,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx101595-j3Q3RiRYTFFV.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "LIES & TIES",
-            "video": "https://animethemes.moe/video/PrincessPrincipalCrownHandlerMovie1-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "LIES & TIES",
+        "video": "https://animethemes.moe/video/PrincessPrincipalCrownHandlerMovie1-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Nowhere Land",
-            "video": "https://animethemes.moe/video/PrincessPrincipalCrownHandlerMovie1-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Nowhere Land",
+        "video": "https://animethemes.moe/video/PrincessPrincipalCrownHandlerMovie1-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Ange le Carré"
@@ -12368,13 +12122,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127690-v9vKElA1Wv1y.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Potato"
@@ -12457,55 +12218,32 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx119661-GDbUZxrZMz01.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Long shot",
-            "video": "https://animethemes.moe/video/ReZeroS2Part2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Long shot",
+        "video": "https://animethemes.moe/video/ReZeroS2Part2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Memento",
-              "video": "https://animethemes.moe/video/ReZeroS2-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Door",
-              "video": "https://animethemes.moe/video/ReZeroS2Part2-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Believe in you",
-              "video": "https://animethemes.moe/video/ReZeroS2Part2-ed2-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Anata no Shiranai Koto",
-              "video": "https://animethemes.moe/video/ReZeroS2Part2-ed3.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Memento",
+        "video": "https://animethemes.moe/video/ReZeroS2-ED1.webm"
+      },
+      "ed2": {
+        "name": "Door",
+        "video": "https://animethemes.moe/video/ReZeroS2Part2-ED1.webm"
+      },
+      "ed3": {
+        "name": "Believe in you",
+        "video": "https://animethemes.moe/video/ReZeroS2Part2-ED2-NCBD1080.webm"
+      },
+      "ed4": {
+        "name": "Anata no Shiranai Koto",
+        "video": "https://animethemes.moe/video/ReZeroS2Part2-ED3.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Subaru Natsuki"
@@ -12797,13 +12535,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b128306-94Zyoqy2fA4X.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Subaru Natsuki"
@@ -13073,13 +12818,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129123-ntClioaA2UZ5.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Mint Rondo"
@@ -13151,13 +12903,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113692-N7hUICpi9sIa.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Suzu Hagimura"
@@ -13328,27 +13087,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114304-MnBLCqwyVIKe.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Tough Heart",
-            "video": "https://animethemes.moe/video/ShinChuukaIchibanS2-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Tough Heart",
+        "video": "https://animethemes.moe/video/ShinChuukaIchibanS2-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "COLORS",
-            "video": "https://animethemes.moe/video/ShinChuukaIchibanS2-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "COLORS",
+        "video": "https://animethemes.moe/video/ShinChuukaIchibanS2-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Maoxing Liu"
@@ -13508,17 +13260,14 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx3786-FPo09WTuoTCV.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {}
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {}
-        }
-      }]
+      "ed1": {}
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Rei Ayanami"
@@ -13810,37 +13559,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx123476-XuSWViuKvndL.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "video": "https://animethemes.moe/video/ShinTennisNoOujiSamaHyouteiVsRikkai-op1.webm",
-            "name": "1/2 no Mirai e"
-          }
-        }
-      }]
+      "op1": {
+        "video": "https://animethemes.moe/video/ShinTennisNoOujiSamaHyouteiVsRikkai-OP1.webm",
+        "name": "1/2 no Mirai e"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "ONE and ONLY",
-              "video": "https://animethemes.moe/video/ShinTennisNoOujiSamaHyouteiVsRikkai-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Rally Good Luck",
-              "video": "https://animethemes.moe/video/ShinTennisNoOujiSamaHyouteiVsRikkai-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "ONE and ONLY",
+        "video": "https://animethemes.moe/video/ShinTennisNoOujiSamaHyouteiVsRikkai-ED1.webm"
+      },
+      "ed2": {
+        "name": "Rally Good Luck",
+        "video": "https://animethemes.moe/video/ShinTennisNoOujiSamaHyouteiVsRikkai-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Ryou Shishido"
@@ -14044,27 +13780,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110277-qDRIhu50PXzz.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Boku no Sensou",
-            "video": "https://animethemes.moe/anime/shingeki_no_kyojin_the_final_season/OP-NCBD1080"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Boku no Sensou",
+        "video": "https://animethemes.moe/anime/shingeki_no_kyojin_the_final_season/OP-NCBD1080"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Shougeki",
-            "video": "https://animethemes.moe/anime/shingeki_no_kyojin_the_final_season/ED-NCBD1080"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Shougeki",
+        "video": "https://animethemes.moe/anime/shingeki_no_kyojin_the_final_season/ED-NCBD1080"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Eren Yeager"
@@ -14356,37 +14085,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113476-X0y7eSl4TAHd.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Do Re Mi Fa STARS!!",
-            "video": "https://animethemes.moe/video/ShowByRockStars-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Do Re Mi Fa STARS!!",
+        "video": "https://animethemes.moe/video/ShowByRockStars-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Hoshizora Light Story",
-              "video": "https://animethemes.moe/video/ShowByRockStars-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Yell and Response",
-              "video": "https://animethemes.moe/video/ShowByRockStars-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Hoshizora Light Story",
+        "video": "https://animethemes.moe/video/ShowByRockStars-ED1.webm"
+      },
+      "ed2": {
+        "name": "Yell and Response",
+        "video": "https://animethemes.moe/video/ShowByRockStars-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Moa"
@@ -14678,27 +14394,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113585-AJKXZnpnAX0w.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Chase the core",
-            "video": "https://animethemes.moe/video/SkateLeadingStars-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Chase the core",
+        "video": "https://animethemes.moe/video/SkateLeadingStars-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "JUMP",
-            "video": "https://animethemes.moe/video/SkateLeadingStars-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "JUMP",
+        "video": "https://animethemes.moe/video/SkateLeadingStars-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Hayato Sasugai"
@@ -14880,27 +14589,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124153-Gieu6QnICXj1.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Paradise",
-            "video": "https://animethemes.moe/video/SK8-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Paradise",
+        "video": "https://animethemes.moe/video/SK8-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Infinity",
-            "video": "https://animethemes.moe/video/SK8-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Infinity",
+        "video": "https://animethemes.moe/video/SK8-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Langa Hasegawa"
@@ -15137,27 +14839,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx119123-KmxEMsv7q0uR.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Dream hopper",
-            "video": "https://animethemes.moe/video/SoukouMusumeSenki-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Dream hopper",
+        "video": "https://animethemes.moe/video/SoukouMusumeSenki-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Compass Song",
-            "video": "https://animethemes.moe/video/SoukouMusumeSenki-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Compass Song",
+        "video": "https://animethemes.moe/video/SoukouMusumeSenki-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Suzuno"
@@ -15229,13 +14924,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx136642-hTNYzwC9DE63.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Momiji Rurigaki"
@@ -15296,27 +14998,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112649-Wdcxo6cQZbhx.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Tatoeba Sore wa Yuuki no Mahou",
-            "video": "https://animethemes.moe/video/LasDan-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Tatoeba Sore wa Yuuki no Mahou",
+        "video": "https://animethemes.moe/video/LasDan-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "video": "https://animethemes.moe/video/LasDan-ed1.webm",
-            "name": "I'mpossible?"
-          }
-        }
-      }]
+      "ed1": {
+        "video": "https://animethemes.moe/video/LasDan-ED1.webm",
+        "name": "Impossible?"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Lloyd Belladonna"
@@ -15608,37 +15303,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx117696-oqodbcesiazN.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Give It Up?",
-            "video": "https://animethemes.moe/video/TenchiSouzouDesignBu-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Give It Up?",
+        "video": "https://animethemes.moe/video/TenchiSouzouDesignBu-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "DESIGNED BY HEAVEN!",
-              "video": "https://animethemes.moe/video/TenchiSouzouDesignBu-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "video": "https://animethemes.moe/video/TenchiSouzouDesignBu-ed2.webm",
-              "name": "DESIGNED BY HEAVEN!\" TECNOBOYS PULCRAFT GREEN-FUND Ver"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "DESIGNED BY HEAVEN!",
+        "video": "https://animethemes.moe/video/TenchiSouzouDesignBu-ED1.webm"
+      },
+      "ed2": {
+        "video": "https://animethemes.moe/video/TenchiSouzouDesignBu-ED2.webm",
+        "name": "DESIGNED BY HEAVEN!\" TECNOBOYS PULCRAFT GREEN-FUND Ver"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Shimoda"
@@ -15853,27 +15535,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx125428-eXVYIlRnCOtB.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "HON-NO",
-            "video": "https://animethemes.moe/video/TenkuuShinpan-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "HON-NO",
+        "video": "https://animethemes.moe/video/TenkuuShinpan-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Watashi no na wa Blue",
-            "video": "https://animethemes.moe/video/TenkuuShinpan-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Watashi no na wa Blue",
+        "video": "https://animethemes.moe/video/TenkuuShinpan-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Yuri Honjou"
@@ -16165,27 +15840,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108511-PufFordLNyIb.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Storyteller",
-            "video": "https://animethemes.moe/video/TensuraS2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Storyteller",
+        "video": "https://animethemes.moe/video/TensuraS2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "STORYSEEKER",
-            "video": "https://animethemes.moe/video/TensuraS2-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "STORYSEEKER",
+        "video": "https://animethemes.moe/video/TensuraS2-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Veldora Tempest"
@@ -16477,27 +16145,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx116069-W773lKgeElXP.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Star☆Glitter",
-            "video": "https://animethemes.moe/video/Tokyo7thSisters-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Star☆Glitter",
+        "video": "https://animethemes.moe/video/Tokyo7thSisters-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Departures -Ashita no Uta- ",
-            "video": "https://animethemes.moe/video/Tokyo7thSisters-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Departures -Ashita no Uta- ",
+        "video": "https://animethemes.moe/video/Tokyo7thSisters-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Musubi Tendouji"
@@ -16690,13 +16351,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx123474-goJkeXu38bhV.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Bastet"
@@ -16867,56 +16535,32 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126905-8l6vC6uItfJ2.png"
     },
     "opening": {
-      "edges": [{
-          "node": {
-            "op": {
-              "name": "Viva! Spark! Tropical-Rouge! Precure",
-              "video": "https://animethemes.moe/video/TropicalRougePrecure-op1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Viva! Spark! Tropical-Rouge! Precure with Tropical-bu",
-              "video": "https://animethemes.moe/video/TropicalRougePrecure-op2.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Viva! Spark! Tropical-Rouge! Precure ~Tropical-bu Ver.~",
-              "video": "https://animethemes.moe/video/TropicalRougePrecure-op3.webm"
-            }
-          }
-        }
-      ]
+      "op1": {
+        "name": "Viva! Spark! Tropical-Rouge! Precure",
+        "video": "https://animethemes.moe/video/TropicalRougePrecure-OP1.webm"
+      },
+      "op2": {
+        "name": "Viva! Spark! Tropical-Rouge! Precure with Tropical-bu",
+        "video": "https://animethemes.moe/video/TropicalRougePrecure-OP2.webm"
+      },
+      "op3": {
+        "name": "Viva! Spark! Tropical-Rouge! Precure ~Tropical-bu Ver.~",
+        "video": "https://animethemes.moe/video/TropicalRougePrecure-OP3.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Tripica I・N・G",
-              "video": "https://animethemes.moe/video/TropicalRougePrecure-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Akogare Go My Way!!",
-              "video": "https://animethemes.moe/video/TropicalRougePrecure-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Tripica I・N・G",
+        "video": "https://animethemes.moe/video/TropicalRougePrecure-ED1.webm"
+      },
+      "ed2": {
+        "name": "Akogare Go My Way!!",
+        "video": "https://animethemes.moe/video/TropicalRougePrecure-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Asuka Takizawa"
@@ -17208,64 +16852,36 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124223-A1D1ZAW0KQnH.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Yume wo Kakeru!",
-            "video": "https://animethemes.moe/video/UmaMusumeS2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Yume wo Kakeru!",
+        "video": "https://animethemes.moe/video/UmaMusumeS2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "winning the soul",
-              "video": "https://animethemes.moe/video/UmaMusumeS2-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Komorebi no Yell",
-              "video": "https://animethemes.moe/video/UmaMusumeS2-ed2-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Sasayaka na Inori",
-              "video": "https://animethemes.moe/video/UmaMusumeS2-ed3-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Negai no Katachi",
-              "video": "https://animethemes.moe/video/UmaMusumeS2-ed4-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Umapyoi Densetsu",
-              "video": "https://animethemes.moe/video/UmaMusumeS2-ed5.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "winning the soul",
+        "video": "https://animethemes.moe/video/UmaMusumeS2-ED1.webm"
+      },
+      "ed2": {
+        "name": "Komorebi no Yell",
+        "video": "https://animethemes.moe/video/UmaMusumeS2-ED2-NCBD1080.webm"
+      },
+      "ed3": {
+        "name": "Sasayaka na Inori",
+        "video": "https://animethemes.moe/video/UmaMusumeS2-ED3-NCBD1080.webm"
+      },
+      "ed4": {
+        "name": "Negai no Katachi",
+        "video": "https://animethemes.moe/video/UmaMusumeS2-ED4-NCBD1080.webm"
+      },
+      "ed5": {
+        "name": "Umapyoi Densetsu",
+        "video": "https://animethemes.moe/video/UmaMusumeS2-ED5.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Toukai Teiou"
@@ -17557,37 +17173,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx116287-LCcICfn2FhwL.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Minikui Ikimono",
-            "video": "https://animethemes.moe/video/UrasekaiPicnic-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Minikui Ikimono",
+        "video": "https://animethemes.moe/video/UrasekaiPicnic-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "You & Me",
-              "video": "https://animethemes.moe/video/UrasekaiPicnic-ed1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Machi wo Nukete",
-              "video": "https://animethemes.moe/video/UrasekaiPicnic-ed2.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "You & Me",
+        "video": "https://animethemes.moe/video/UrasekaiPicnic-ED1-NCBD1080.webm"
+      },
+      "ed2": {
+        "name": "Machi wo Nukete",
+        "video": "https://animethemes.moe/video/UrasekaiPicnic-ED2.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Sorawo Kamikoshi"
@@ -17747,10 +17350,16 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129872-SsVjFgTQu2aA.png"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
       "edges": []
@@ -17770,37 +17379,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx110200-QB9smw3HWyQC.jpg"
     },
     "opening": {
-      "edges": [{
-          "node": {
-            "op": {
-              "name": "Where you are",
-              "video": "https://animethemes.moe/video/VladLove-op1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "op": {
-              "name": "Winds Of Transylvania",
-              "video": "https://animethemes.moe/video/VladLove-op2.webm"
-            }
-          }
-        }
-      ]
+      "op1": {
+        "name": "Where you are",
+        "video": "https://animethemes.moe/video/VladLove-OP1.webm"
+      },
+      "op2": {
+        "name": "Winds Of Transylvania",
+        "video": "https://animethemes.moe/video/VladLove-OP2.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Akai Ame",
-            "video": "https://animethemes.moe/video/VladLove-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Akai Ame",
+        "video": "https://animethemes.moe/video/VladLove-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Mitsugu  Bamba"
@@ -17962,7 +17558,7 @@
     "averageScore": 56,
     "title": {
       "romaji": "WAVE!! Surfing Yappe!! (TV)",
-      "english": "WAVE!! -Let's go surfing!!- (TV)"
+      "english": "WAVE!! -Lets go surfing!!- (TV)"
     },
     "seasonYear": 2021,
     "season": "WINTER",
@@ -17971,37 +17567,24 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx130402-rx1MDFeAyILr.png"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Shigeki Surfer Boy!",
-            "video": "https://animethemes.moe/video/WaveSurfingYappe-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Shigeki Surfer Boy!",
+        "video": "https://animethemes.moe/video/WaveSurfingYappe-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "BFF ~Best Friends Forever~",
-              "video": "https://animethemes.moe/video/WaveSurfingYappe-ed1.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "video": "https://animethemes.moe/video/WaveSurfingYappe-ed2.webm",
-              "name": "One more chance, One Ocean"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "BFF ~Best Friends Forever~",
+        "video": "https://animethemes.moe/video/WaveSurfingYappe-ED1.webm"
+      },
+      "ed2": {
+        "video": "https://animethemes.moe/video/WaveSurfingYappe-ED2.webm",
+        "name": "One more chance, One Ocean"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Shou Akitsuki"
@@ -18117,73 +17700,40 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx116944-EGENE9WPd4OH.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "video": "https://animethemes.moe/video/WIXOSSDivaALive-op1-NCBD1080.webm",
-            "name": "D-(A)LIVE!!"
-          }
-        }
-      }]
+      "op1": {
+        "video": "https://animethemes.moe/video/WIXOSSDivaALive-OP1-NCBD1080.webm",
+        "name": "D-(A)LIVE!!"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Hanpanai★Destruction",
-              "video": "https://animethemes.moe/video/WIXOSSDivaALive-ed1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "ENDLESS-PUNCHLINE",
-              "video": "https://animethemes.moe/video/WIXOSSDivaALive-ed2-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "salvage the future",
-              "video": "https://animethemes.moe/video/WIXOSSDivaALive-ed3-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Glory Grow",
-              "video": "https://animethemes.moe/video/WIXOSSDivaALive-ed4-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "TRIGGER OF VICTORY",
-              "video": "https://animethemes.moe/video/WIXOSSDivaALive-ed5-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "D-(A)LIVE!!",
-              "video": "https://animethemes.moe/video/WIXOSSDivaALive-ed6-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Hanpanai★Destruction",
+        "video": "https://animethemes.moe/video/WIXOSSDivaALive-ED1-NCBD1080.webm"
+      },
+      "ed2": {
+        "name": "ENDLESS-PUNCHLINE",
+        "video": "https://animethemes.moe/video/WIXOSSDivaALive-ED2-NCBD1080.webm"
+      },
+      "ed3": {
+        "name": "salvage the future",
+        "video": "https://animethemes.moe/video/WIXOSSDivaALive-ED3-NCBD1080.webm"
+      },
+      "ed4": {
+        "name": "Glory Grow",
+        "video": "https://animethemes.moe/video/WIXOSSDivaALive-ED4-NCBD1080.webm"
+      },
+      "ed5": {
+        "name": "TRIGGER OF VICTORY",
+        "video": "https://animethemes.moe/video/WIXOSSDivaALive-ED5-NCBD1080.webm"
+      },
+      "ed6": {
+        "name": "D-(A)LIVE!!",
+        "video": "https://animethemes.moe/video/WIXOSSDivaALive-ED6-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Rei Sakigake"
@@ -18266,7 +17816,7 @@
               "full": "Nana Nekozawa"
             },
             "image": {
-              "large": "https://s4.anilist.co/file/anilistcdn/character/large/b189818-DedzXw6R8o2.jpg"
+              "large": "https://s4.anilist.co/file/anilistcdn/character/large/b189818-DEd6zXw6R8o2.jpg"
             },
             "gender": ""
           }
@@ -18387,27 +17937,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124845-sD8ZA0RGLRWT.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Sudachi no Uta",
-            "video": "https://animethemes.moe/video/WonderEggPriority-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Sudachi no Uta",
+        "video": "https://animethemes.moe/video/WonderEggPriority-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Life is Cider",
-            "video": "https://animethemes.moe/video/WonderEggPriority-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Life is Cider",
+        "video": "https://animethemes.moe/video/WonderEggPriority-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Rika Kawai"
@@ -18699,27 +18242,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx114087-5sSD98EFqQZ5.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Force",
-            "video": "https://animethemes.moe/video/WorldTriggerS2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Force",
+        "video": "https://animethemes.moe/video/WorldTriggerS2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Mirai Eigou",
-            "video": "https://animethemes.moe/video/WorldTriggerS2-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Mirai Eigou",
+        "video": "https://animethemes.moe/video/WorldTriggerS2-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Osamu Mikumo"
@@ -19011,127 +18547,64 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx121681-yQBcravTSQhy.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Wanna Fly?",
-            "video": "https://animethemes.moe/video/WorldWitches-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Wanna Fly?",
+        "video": "https://animethemes.moe/video/WorldWitches-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-          "node": {
-            "ed": {
-              "name": "Colorful Everyday\" by Yoshika Miyafuji, Lynette Bishop & Perrine H. Closterman",
-              "video": "https://animethemes.moe/video/WorldWitches-ed1-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "video": "https://animethemes.moe/video/WorldWitches-ed2-NCBD1080.webm",
-              "name": "Awesome days!\" by Hikari Karibuchi & Takami Karibuch"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Colorful Everyday\" by Erica Hartmann & Gertrud Barkhor",
-              "video": "https://animethemes.moe/video/WorldWitches-ed3-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Awesome days!\" by Naoe Kanno & Nikka Edvardine Katajaine",
-              "video": "https://animethemes.moe/video/WorldWitches-ed4-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "video": "https://animethemes.moe/video/WorldWitches-ed5-NCBD1080.webm",
-              "name": "Colorful Everyday\" by Francesca Lucchini & Charlotte E. Yeage"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Awesome days!\" by Waltrud Krupinski & Edytha Rossman",
-              "video": "https://animethemes.moe/video/WorldWitches-ed6-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "video": "https://animethemes.moe/video/WorldWitches-ed7-NCBD1080.webm",
-              "name": "Colorful Everyday\" by Mio Sakamoto & Minna-Dietlinde Wilck"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Awesome days!\" by Aleksandra I Pokryshkin & Gundula Ral",
-              "video": "https://animethemes.moe/video/WorldWitches-ed8-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Colorful Everyday\" by Eila Ilmatar Juutilainen & Sanya V. Litvya",
-              "video": "https://animethemes.moe/video/WorldWitches-ed9-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed0": {
-              "name": "Awesome days!\" by Georgette Lemare & Sadako Shimohar",
-              "video": "https://animethemes.moe/video/WorldWitches-ed10-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed1": {
-              "name": "Colorful Everyday\" by Dai 501 Sougou Sentou Kuukouda",
-              "video": "https://animethemes.moe/video/WorldWitches-ed11-NCBD1080.webm"
-            }
-          }
-        },
-        {
-          "node": {
-
-            "ed": {
-              "name": "Awesome Days!\" by 502nd Joint Fighter Win",
-              "video": "https://animethemes.moe/video/WorldWitches-ed12-NCBD1080.webm"
-            }
-          }
-        }
-      ]
+      "ed1": {
+        "name": "Colorful Everyday\" by Yoshika Miyafuji, Lynette Bishop & Perrine H. Closterman",
+        "video": "https://animethemes.moe/video/WorldWitches-ED1-NCBD1080.webm"
+      },
+      "ed2": {
+        "video": "https://animethemes.moe/video/WorldWitches-ED2-NCBD1080.webm",
+        "name": "Awesome days!\" by Hikari Karibuchi & Takami Karibuch"
+      },
+      "ed3": {
+        "name": "Colorful Everyday\" by Erica Hartmann & Gertrud Barkhor",
+        "video": "https://animethemes.moe/video/WorldWitches-ED3-NCBD1080.webm"
+      },
+      "ed4": {
+        "name": "Awesome days!\" by Naoe Kanno & Nikka Edvardine Katajaine",
+        "video": "https://animethemes.moe/video/WorldWitches-ED4-NCBD1080.webm"
+      },
+      "ed5": {
+        "video": "https://animethemes.moe/video/WorldWitches-ED5-NCBD1080.webm",
+        "name": "Colorful Everyday\" by Francesca Lucchini & Charlotte E. Yeage"
+      },
+      "ed6": {
+        "name": "Awesome days!\" by Waltrud Krupinski & Edytha Rossman",
+        "video": "https://animethemes.moe/video/WorldWitches-ED6-NCBD1080.webm"
+      },
+      "ed7": {
+        "video": "https://animethemes.moe/video/WorldWitches-ED7-NCBD1080.webm",
+        "name": "Colorful Everyday\" by Mio Sakamoto & Minna-Dietlinde Wilck"
+      },
+      "ed8": {
+        "name": "Awesome days!\" by Aleksandra I Pokryshkin & Gundula Ral",
+        "video": "https://animethemes.moe/video/WorldWitches-ED8-NCBD1080.webm"
+      },
+      "ed9": {
+        "name": "Colorful Everyday\" by Eila Ilmatar Juutilainen & Sanya V. Litvya",
+        "video": "https://animethemes.moe/video/WorldWitches-ED9-NCBD1080.webm"
+      },
+      "ed10": {
+        "name": "Awesome days!\" by Georgette Lemare & Sadako Shimohar",
+        "video": "https://animethemes.moe/video/WorldWitches-ED10-NCBD1080.webm"
+      },
+      "ed11": {
+        "name": "Colorful Everyday\" by Dai 501 Sougou Sentou Kuukouda",
+        "video": "https://animethemes.moe/video/WorldWitches-ED11-NCBD1080.webm"
+      },
+      "ed12": {
+        "name": "Awesome Days!\" by 502nd Joint Fighter Win",
+        "video": "https://animethemes.moe/video/WorldWitches-ED12-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Mio Sakamoto"
@@ -19379,27 +18852,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108725-KM8SqUyaUd1o.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Identity",
-            "video": "https://animethemes.moe/video/YakusokuNoNeverlandS2-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Identity",
+        "video": "https://animethemes.moe/video/YakusokuNoNeverlandS2-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Mahou",
-            "video": "https://animethemes.moe/video/YakusokuNoNeverlandS2-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Mahou",
+        "video": "https://animethemes.moe/video/YakusokuNoNeverlandS2-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Emma"
@@ -19691,30 +19157,31 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126678-7cBM4FmJ5D2L.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Twilight",
-            "video": "https://animethemes.moe/video/YamiShibai8-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Twilight",
+        "video": "https://animethemes.moe/video/YamiShibai8-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
-        "node": {
-          "name": {
-            "full": "Kamishibaiya"
-          },
-          "image": {
-            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b139456-BAznrkqsl3pC.jpg"
-          },
-          "gender": ""
+      "edges": [
+        {
+          "node": {
+            "name": {
+              "full": "Kamishibaiya"
+            },
+            "image": {
+              "large": "https://s4.anilist.co/file/anilistcdn/character/large/b139456-BAznrkqsl3pC.jpg"
+            },
+            "gender": ""
+          }
         }
-      }]
+      ]
     }
   },
   {
@@ -19731,20 +19198,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124394-MDapMYhSwngJ.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Zassou Tamashii na Men na yo!",
-            "video": "https://animethemes.moe/video/YatogameChanKansatsuNikkiS3-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Zassou Tamashii na Men na yo!",
+        "video": "https://animethemes.moe/video/YatogameChanKansatsuNikkiS3-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Kaito Jin"
@@ -19959,27 +19426,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127536-349uMg2aOwOL.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Susume! Mujina Company",
-            "video": "https://animethemes.moe/video/YoujoShachou-op1.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Susume! Mujina Company",
+        "video": "https://animethemes.moe/video/YoujoShachou-OP1.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Kaisha ni Kaerou!",
-            "video": "https://animethemes.moe/video/YoujoShachou-ed1.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Kaisha ni Kaerou!",
+        "video": "https://animethemes.moe/video/YoujoShachou-ED1.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Dekasegi Garcia"
@@ -20150,27 +19610,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx104459-pywEKGQON613.jpg"
     },
     "opening": {
-      "edges": [{
-        "node": {
-          "op": {
-            "name": "Seize The Day",
-            "video": "https://animethemes.moe/video/YuruCampS2-op1-NCBD1080.webm"
-          }
-        }
-      }]
+      "op1": {
+        "name": "Seize The Day",
+        "video": "https://animethemes.moe/video/YuruCampS2-OP1-NCBD1080.webm"
+      }
     },
     "ending": {
-      "edges": [{
-        "node": {
-          "ed": {
-            "name": "Haru no Tonari",
-            "video": "https://animethemes.moe/video/YuruCampS2-ed1-NCBD1080.webm"
-          }
-        }
-      }]
+      "ed1": {
+        "name": "Haru no Tonari",
+        "video": "https://animethemes.moe/video/YuruCampS2-ED1-NCBD1080.webm"
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Rin Shima"
@@ -20418,13 +19871,20 @@
       "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128563-5KhOY54B1Mpy.jpg"
     },
     "opening": {
-      "edges": []
+      "op1": {
+        "name": "",
+        "video": ""
+      }
     },
     "ending": {
-      "edges": []
+      "ed1": {
+        "name": "",
+        "video": ""
+      }
     },
     "characters": {
-      "edges": [{
+      "edges": [
+        {
           "node": {
             "name": {
               "full": "Rinku Aimoto"

@@ -151,7 +151,7 @@ function busca1()
             // console.log(data[8].opening.edges[0].node.op.name);
             data.forEach(elemento => 
             {
-                // console.log(elemento.title.romaji);
+                // console.log(elemento.opening);
                 // console.log(elemento.opening.edges.length);
                 // console.log(elemento.ending.edges.length);
 
@@ -163,14 +163,12 @@ function busca1()
                 {
                     // tem op e ed
                     case (temOp > 0 && temEd > 0):
-                        // console.log("    tem op e ed");
                         tabela.appendChild(criaCardAnime(elemento.id, elemento.coverImage.large, elemento.coverImage.medium, elemento.season,
                             elemento.SeasonYear, elemento.title.english, elemento.title.romaji, temOp, temEd));
                         break;
 
                     // só tem op
                     case (temOp > 0 && temEd == 0):
-                        // console.log("    só tem op");
                         tabela.appendChild(criaCardAnime(elemento.id, elemento.coverImage.large, elemento.coverImage.medium, elemento.season,
                             elemento.SeasonYear, elemento.title.english, elemento.title.romaji, temOp, ""));
                         break;
@@ -184,7 +182,6 @@ function busca1()
 
                     // não tem op nem ed
                     default:
-                        // console.log("    Não tem op nem ed");
                         tabela.appendChild(criaCardAnime(elemento.id, elemento.coverImage.large, elemento.coverImage.medium, elemento.season,
                             elemento.SeasonYear, elemento.title.english, elemento.title.romaji, "", ""));
                         break;

@@ -3,11 +3,7 @@ var dados;
 var nome = localStorage.getItem("usuario");
 
 const elements = document.querySelectorAll('[data-identificacao]');
-
-function testar(){
-  console.log(localStorage.getItem("teste"));
-}
-
+        
 
 elements.forEach(function (element)
 {
@@ -27,20 +23,18 @@ elements.forEach(function (element)
         var partes = categoria.split("Img");
         var tipo = partes[0];
         var posicao = partes[1];
-        
         if (tipo == "abertura" || tipo == "encerramento" || tipo == "feminino" || tipo == "masculino" || tipo == "antagonista" || tipo == "par1" ||
           tipo == "doente") 
         {
           if (extraVoto != "sem") 
           {
             var imagemVoto2 = mutation.target.getAttribute('data-imagem2');
-            votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto, imagemVoto2);
+            salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto, imagemVoto2);
           }
         } else
         {
-          localStorage.setItem('teste', "usuario");
-          console.log(localStorage.getItem("teste"));
-          votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
+          salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
+          teste;
         }
       }
     });
@@ -49,7 +43,7 @@ elements.forEach(function (element)
   observer.observe(element, { attributes: true });
 });
 
-function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto, imagemVoto2)
+function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto, imagemVoto2)
 {
   var idCat;
   var ordinal;
@@ -58,54 +52,52 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
   switch (tipo) 
   {
     case "abertura":
-      idCat = "01";
+      idCat = "0";
       break;
     case "encerramento":
-      idCat = "02";
+      idCat = "1";
       break;
     case "feminino":
-      idCat = "03";
+      idCat = "2";
       break;
     case "masculino":
-      idCat = "04";
+      idCat = "3";
       break;
     case "surpresa":
-      idCat = "05";
+      idCat = "4";
       break;
     case "decepcao":
-      idCat = "06";
+      idCat = "5";
       break;
     case "animacao":
-      idCat = "07";
+      idCat = "6";
       break;
     case "antagonista":
-      idCat = "08";
+      idCat = "7";
       break;
     case "par1":
-      idCat = "09";
-      console.log(idCat);
+      idCat = "8";
       break;
     case "doente":
-      idCat = "10";
+      idCat = "9";
       break;
     case "emocao":
-      idCat = "11";
+      idCat = "10";
       break;
     case "anime":
-      idCat = "12";
+      idCat = "11";
       break;
     default:
       console.log("deu ruim");
-      idCat = "09";
+      // idCat = "09";
       break
   }
-
   fetch(`http://localhost:3000/votos${ano}${temporada}/${idCat}`)
-  // fetch(`http://127.0.0.1:5500/votos${ano}${estacao}Teste.json`)
+  // fetch(`http://127.0.0.1:5500/votos${temporada}.json`)
     .then(response => response.json())
     .then(data =>
     {
-      dados = data;
+      dados = data.votos[idCat];
 
       switch (posicao) 
       {
@@ -122,7 +114,6 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
           pontuacao = "1";
           break;
       }
-
       if (idCat == "09") 
       {
         console.log(dados.par[nome][ordinal]);
@@ -148,8 +139,7 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
             ponto: pontuacao
           });
       }
-
-      fetch(`http://localhost:3000/votos${ano}${estacao}Teste/${idCat}`,
+      fetch(`http://localhost:3000/votos${temporada}/${idCat}`,
         {
           method: 'PUT',
           body: JSON.stringify(dados),

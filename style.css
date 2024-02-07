@@ -148,13 +148,71 @@ background-color: #97784d;
     /* text-indent: 1px; */
     text-overflow: '';
   }
-
-
-
-
-  
-
-
   .esconder{
     display: none;
 }
+
+/* =====================visualizador json========================= */
+
+
+        /* Adiciona um pouco de espaço entre a imagem e a div de informações */
+        img {
+            float: left;
+            margin-right: 20px; /* Ajuste o valor conforme necessário */
+        }
+
+        #info {
+            /* Centraliza a div de informações */
+            margin: auto;
+            width: 50%; /* Ajuste o valor conforme necessário */
+        }
+
+        .container__op_ed {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .container__op_ed label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .container__op_ed input {
+            margin-bottom: 10px;
+            width: 200px; /* Define a largura para caber aproximadamente 100 caracteres */
+        }
+
+        .op_ed {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column; /* Altera a direção para coluna */
+            align-items: left; /* Centraliza os itens na coluna */
+            width: 630px; /* Largura ajustada para ficar próxima dos inputs */
+        }
+
+        .op_ed label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .op_ed input {
+            margin-bottom: 10px;
+            width: 600px; /* Define a largura para caber aproximadamente 100 caracteres */
+        }
+
+        .round-button {
+            height: 30px; /* Ajuste a altura conforme necessário */
+            align-self: flex-end;
+            margin-top: 10px;
+        }
+
+        #escolha {
+            clear: both;
+        }
+
+        #escolha button {
+            width: 230px; /* Largura ajustada para 230px */
+        }

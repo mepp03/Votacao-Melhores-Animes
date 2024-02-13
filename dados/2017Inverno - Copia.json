@@ -1,0 +1,263 @@
+[
+    {
+        "id": 110291,
+        "averageScore": 57,
+        "title": {
+            "romaji": "A New Journey",
+            "english": "A New Journey"
+        },
+        "seasonYear": 2019,
+        "season": "WINTER",
+        "coverImage": {
+            "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/b110291-Wp1Hj7f43LCV.jpg",
+            "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/b110291-Wp1Hj7f43LCV.jpg"
+        },
+        "characters": {
+            "edges": [
+                {
+                    "node": {
+                        "name": {
+                            "full": "Yasuo"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200017-cm5iSZwXb9ji.png"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Ornn"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200018-hFyO2Suiie7l.jpg"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Zed"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200019-u576isvOayKD.png"
+                        },
+                        "gender": "Male"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Riven"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200020-dDHVXQbCJumJ.jpg"
+                        },
+                        "gender": "Female"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Ahri"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200021-z9ZtcHtm3SkD.png"
+                        },
+                        "gender": "Female"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Caitlyn"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200022-2Lgmk16AEFo2.jpg"
+                        },
+                        "gender": "Female"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Zoe"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200023-Yh6cmplLJUy1.png"
+                        },
+                        "gender": "Female"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Blitzcrank"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200024-HrwcEmlfoz2O.png"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Ekko"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200025-TAIjDYdwpRcH.jpg"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Braum"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b200026-DqpVHVKqMhre.png"
+                        },
+                        "gender": "Male"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Teemo"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207364-OklGByC84Asv.png"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Warwick"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207365-LU6Dg5UqFO7c.png"
+                        },
+                        "gender": "Male"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Ashe"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207366-Ry9vqd414lxm.jpg"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Miss Fortune"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207367-b1oqE9f4ROB2.jpg"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Morgana"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207368-lijXEYW6vWs5.png"
+                        },
+                        "gender": "Female"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Lee Sin"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207369-AAtT7S6UiW4T.png"
+                        },
+                        "gender": "Male"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Neeko"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207370-GB0TeklImaeU.png"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Veigar"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b212969-2GN4JJXzIbZy.png"
+                        },
+                        "gender": ""
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Fiddlesticks"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b212970-9kH076fFQ67H.png"
+                        },
+                        "gender": "Male"
+                    }
+                },
+                {
+                    "node": {
+                        "name": {
+                            "full": "Kindred"
+                        },
+                        "image": {
+                            "large": "https://s4.anilist.co/file/anilistcdn/character/large/b212971-2Q1sjty1WsRC.png"
+                        },
+                        "gender": ""
+                    }
+                }
+            ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "op1",
+                            "video": "vop1"
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "ed1",
+                            "video": "ved1"
+                        }
+                    }
+                }
+            ]
+        }
+    }]

@@ -140,7 +140,8 @@ function busca1()
 {
     var temporada = localStorage.getItem('temporada');
 
-    fetch(`http://127.0.0.1:5500/dados/${temporada}.json`)
+    // fetch(`http://127.0.0.1:5500/dados/${temporada}.json`)
+    fetch(`http://127.0.0.1:5500/dados/2023Verao_atualizado.json`)
         .then(function (response)
         {
             return response.json();

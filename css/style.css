@@ -291,3 +291,7 @@ img {
     margin-bottom: 20px;
     /* Adiciona uma margem inferior para separar as caixas */
 }
+
+.inputAnime {
+    width: 1000px;
+}

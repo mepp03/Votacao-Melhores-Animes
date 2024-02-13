@@ -1,4 +1,5 @@
-[{
+[
+    {
         "id": 126393,
         "averageScore": 52,
         "title": {
@@ -12,7 +13,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126393-PZNOgphwHn4J.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Reika Minamiya"
@@ -156,6 +158,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -172,7 +198,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135864-pdE2Ur3cb6gn.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Laura Apollodoros Hyginus La Mer"
@@ -448,6 +475,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -464,7 +515,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131019-xaTtBN2G6BrO.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Roza Plevitskaya"
@@ -740,6 +792,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -756,7 +832,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112019-oL6Tk6iPoWVf.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Susumu Kodai"
@@ -911,6 +988,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -927,7 +1028,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx154386-BF5pWxi2pWqL.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Special Week"
@@ -1203,6 +1305,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -1219,7 +1345,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131584-NTqZKbKvGEsK.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Ange Yuki"
@@ -1341,6 +1468,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -1357,7 +1508,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx136119-vuJsJpnJeyL7.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Myamu"
@@ -1633,6 +1785,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -1649,7 +1825,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127400-m2xz2qDVqQwL.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Yuuma Kuga"
@@ -1925,6 +2102,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -1941,7 +2142,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135939-ghkWy9Q0MqTe.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Himeno Toyokawa"
@@ -2118,6 +2320,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -2134,7 +2360,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx122292-8oLPI6hdBC0E.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Yuuna Yuuki"
@@ -2344,8 +2571,33 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
-    }, {
+    },
+    {
         "id": 118390,
         "averageScore": 61,
         "title": {
@@ -2359,7 +2611,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx118390-PEZaKViELb9y.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Kanna"
@@ -2437,6 +2690,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -2453,7 +2730,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129874-g6ZKXB94Hui1.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Nezuko Kamado"
@@ -2729,6 +3007,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -2745,7 +3047,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx133965-9TZBS4m4yvED.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Shouko Komi"
@@ -3021,6 +3324,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -3037,7 +3364,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx138899-mtjPqyGw7Yxf.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Motoko Kusanagi"
@@ -3192,6 +3520,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -3208,7 +3560,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131005-khLbX1nMCBxB.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Nayuta"
@@ -3396,6 +3749,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -3412,7 +3789,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx118103-pue9xw0RB1mc.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Draluc"
@@ -3688,6 +4066,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -3704,7 +4106,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx136344-XwEsuW9mmTZB.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Waver Velvet"
@@ -3980,6 +4383,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -3996,7 +4423,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx134623-ceZeGn3HeUAS.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Arsène Lupin III"
@@ -4140,6 +4568,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -4156,7 +4608,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129549-Prl1evRaGCvK.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Ranka Lee"
@@ -4256,6 +4709,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -4272,7 +4749,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx118126-kcHtcMuSH3P6.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Hayate Immelmann"
@@ -4526,6 +5004,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -4542,7 +5044,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx142052-whTWGQAHjETz.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Nazuna"
@@ -4565,6 +5068,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -4581,7 +5108,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx87502-IukO9bOX8G7V.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Margaret Brecknen"
@@ -4813,6 +5341,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -4829,7 +5381,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131083-fMWFyOFgp6vb.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Miko Yotsuya"
@@ -5105,6 +5658,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -5121,7 +5698,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127720-ADJgIrUVMdU9.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Sylphiette"
@@ -5397,6 +5975,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -5413,7 +6015,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx109745-W4NnQxYpGJJO.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Ceo"
@@ -5601,6 +6204,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -5617,7 +6244,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx112716-4mMkZtsR3MIn.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Meiya Mitsurugi"
@@ -5893,6 +6521,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -5909,7 +6561,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx136829-cIkwAv3WQKAT.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Gerald Stuart"
@@ -5987,6 +6640,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -6003,7 +6680,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx113717-fkqTxEqqga61.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Kage"
@@ -6279,6 +6957,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -6295,7 +6997,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127401-fVKVbuIE5W5Q.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Saki Hanakago"
@@ -6571,6 +7274,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -6587,7 +7314,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx138699-V0PBmiG6hnuf.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Fleur-de-lis"
@@ -6863,6 +7591,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -6879,7 +7631,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129759-4ZQ5MPyE52Py.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Beatrice"
@@ -7034,6 +7787,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -7050,7 +7827,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126793-L29Tdzt6NDeQ.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Manaka Mizusawa"
@@ -7326,6 +8104,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -7342,7 +8144,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132473-L64hP24nJyEV.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "William G. Maryblood "
@@ -7541,6 +8344,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -7557,7 +8384,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx108987-rdPglVthrZP2.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Memenpuu"
@@ -7734,6 +8562,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -7750,7 +8602,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126897-at1dtnI047XP.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Kousuke Mikado"
@@ -7817,6 +8670,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -7833,7 +8710,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129898-FRUzDtPhRigt.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Dia"
@@ -8032,6 +8910,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -8048,7 +8950,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126790-n7ko65bBCMVI.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Sumipanda"
@@ -8291,6 +9194,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -8307,7 +9234,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx120646-3GUSMpqx0mVw.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Harumi Takeda"
@@ -8429,6 +9357,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -8446,6 +9398,30 @@
         },
         "characters": {
             "edges": []
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -8462,7 +9438,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx105119-DIxyYkAcvjN6.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Kakeru Miwa"
@@ -8639,6 +9616,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -8655,7 +9656,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx126213-cXF3hsCcOipI.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Rit"
@@ -8909,6 +9911,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -8925,7 +9951,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx129068-HlY1UqLyrbmB.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Saria"
@@ -9113,6 +10140,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -9129,7 +10180,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx140700-yTqSEkdWiLny.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Minami"
@@ -9163,6 +10215,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -9179,7 +10255,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx138060-8G02wer2Lsxo.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Ronin"
@@ -9455,6 +10532,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -9471,7 +10572,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx130050-7tcgvLV2w3xH.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Tomoya Sugisaki"
@@ -9516,6 +10618,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -9532,7 +10658,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx109946-S05QNnNplFV2.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Johnny Bolt"
@@ -9808,6 +10935,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -9824,7 +10975,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124140-HNL0CpH6ig6y.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Kazuto Kirigaya"
@@ -9968,6 +11120,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -9984,7 +11160,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127412-dpHXV2X9tskV.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Yuzuki Tachibana"
@@ -10117,6 +11294,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -10133,7 +11334,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131565-3W2YEX6V3K3i.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Unmei"
@@ -10409,6 +11611,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -10425,7 +11651,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132071-Cza8y6VQO75M.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Botan Negoro"
@@ -10613,8 +11840,33 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
-    }, {
+    },
+    {
         "id": 133411,
         "averageScore": 50,
         "title": {
@@ -10628,7 +11880,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx133411-Zuce147d396V.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Akari Sawake"
@@ -10706,6 +11959,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -10722,7 +11999,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131586-k0X2kVpUOkqX.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Shinei Nouzen"
@@ -10998,6 +12276,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -11014,7 +12316,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx127619-gvdpofWB9BR2.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Retsuko"
@@ -11235,6 +12538,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -11251,7 +12578,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx123899-AimlRWzAqpHC.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Shion Ashimori"
@@ -11351,6 +12679,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -11367,7 +12719,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx130558-8M8TeqrmQAbq.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Aika Granzchesta"
@@ -11610,6 +12963,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -11626,7 +13003,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx145709-HMWsEbk9I8ar.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Haruka"
@@ -11693,6 +13071,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -11709,7 +13111,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135171-prqopjfpm21S.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Kasumi Toyama"
@@ -11985,6 +13388,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -12001,7 +13428,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx105931-YU9G5cdAYBFb.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Niander Wallace Jr."
@@ -12145,6 +13573,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -12161,7 +13613,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128705-2PzZbN52XCGI.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Yatora Yaguchi"
@@ -12415,6 +13868,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -12431,7 +13908,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135432-FLlZHUlLFQrQ.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Izou"
@@ -12542,6 +14020,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -12558,7 +14060,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132525-cilowwejol66.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Teruto Kurabe"
@@ -12658,6 +14161,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -12674,7 +14201,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx128827-bUkrxvxollxg.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Yuuyu Kondou"
@@ -12884,6 +14412,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -12900,7 +14452,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132545-nENYhlJhAohn.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Junta Azumaya"
@@ -12967,6 +14520,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -12983,7 +14560,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx136947-ZtUWswedpbR6.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Shigure Daniel Kai"
@@ -13105,6 +14683,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -13121,7 +14723,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx137227-9yb8GJXK964L.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Maise Higa"
@@ -13166,6 +14769,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -13182,7 +14809,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx137309-1TTkC932WbYn.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Hiro Amanokawa"
@@ -13458,6 +15086,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -13474,7 +15126,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx141528-hf2mMG7pApkJ.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Maru Nanamona"
@@ -13541,6 +15194,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -13557,7 +15234,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx98471-i813DFIJJHTR.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Anemone"
@@ -13756,6 +15434,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -13772,7 +15474,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx137877-PVj0LtolbDMX.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Senpai-san"
@@ -13817,6 +15520,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -13834,6 +15561,30 @@
         },
         "characters": {
             "edges": []
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -13850,7 +15601,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx139449-slF3Yu9q7238.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Ai-chan"
@@ -13983,6 +15735,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -13999,7 +15775,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx139466-XprNdpr4efhZ.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Ai-chan"
@@ -14110,6 +15887,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -14126,7 +15927,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx144803-gn4hfv5Mhbtm.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Jane"
@@ -14204,6 +16006,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -14220,7 +16046,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx134710-m3VYouLXKIYv.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Mafuyu Satou"
@@ -14265,6 +16092,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -14281,7 +16132,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132193-sooBNRHdfLZu.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Tatsu"
@@ -14469,6 +16321,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -14485,7 +16361,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx135645-rwUKbXACM0UV.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Misa Satsukino"
@@ -14651,6 +16528,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -14667,7 +16568,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131878-rTmwgnanBPG4.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Misa Kuroki"
@@ -14844,6 +16746,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -14860,7 +16786,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx139386-B4hpiRGaIJLo.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Toshizou Hijikata"
@@ -14949,6 +16876,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -14965,7 +16916,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx124195-5Z1JSrRlbMRe.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Baki Hanma"
@@ -15186,6 +17138,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -15202,7 +17178,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131264-rN2hTY0vEGOa.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Towa Higurashi"
@@ -15478,6 +17455,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -15494,7 +17495,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx138714-dLyXT5qyTYbr.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Taira no Kiyomori"
@@ -15770,6 +17772,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -15786,7 +17812,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx125841-UODyqabwgKEb.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Hiwa Natsunagi"
@@ -15864,6 +17891,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -15880,7 +17931,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132679-aiCdcg3Kl43p.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Laala Manaka"
@@ -16156,6 +18208,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -16173,6 +18249,30 @@
         },
         "characters": {
             "edges": []
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -16189,7 +18289,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132806-fuOSzS2YOpIt.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Tenshu"
@@ -16465,6 +18566,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -16481,7 +18606,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131942-jFwJ6ULfNb2o.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Jolyne Kuujou"
@@ -16724,6 +18850,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -16740,7 +18890,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx131573-rpl82vDEDRm6.jpg"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Suguru Getou"
@@ -17016,6 +19167,30 @@
                     }
                 }
             ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
         }
     },
     {
@@ -17032,7 +19207,8 @@
             "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx132528-rIUN5MRBPGy9.png"
         },
         "characters": {
-            "edges": [{
+            "edges": [
+                {
                     "node": {
                         "name": {
                             "full": "Rin Natsume"
@@ -17305,6 +19481,30 @@
                             "large": "https://s4.anilist.co/file/anilistcdn/character/large/4608.jpg"
                         },
                         "gender": "Female"
+                    }
+                }
+            ]
+        },
+        "opening": {
+            "edges": [
+                {
+                    "node": {
+                        "op": {
+                            "name": "",
+                            "video": ""
+                        }
+                    }
+                }
+            ]
+        },
+        "ending": {
+            "edges": [
+                {
+                    "node": {
+                        "ed": {
+                            "name": "",
+                            "video": ""
+                        }
                     }
                 }
             ]

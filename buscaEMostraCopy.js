@@ -409,51 +409,6 @@ function mostrarVotos()
 
         });
 }
-
-// function mostrarVotos()
-// {
-//     var nome = "leandro"
-//     fetch("http://127.0.0.1:5500/votos2021Winter.json")
-//     .then(function (response)
-//     {
-//         return response.json();
-//     })
-//     .then(function (data)
-//     {
-//         data = data.votos2021Winter;
-
-
-//             document.getElementById("aberturaImg1").src = data[0].abertura[nome].primeiro.imagem;
-//             document.getElementById("aberturaNomeJapones1").innerHTML = data[0].abertura[nome].primeiro.nomeJ;
-//             document.getElementById("aberturaNomeIngles1").innerHTML = data[0].abertura[nome].primeiro.nomeE;
-//             document.getElementById("aberturaNomeMusica1").innerHTML = data[0].abertura[nome].primeiro.extra;
-
-//             document.getElementById("aberturaImg2").src = data[0].abertura[nome].segundo.imagem;
-//             document.getElementById("aberturaNomeJapones2").innerHTML = data[0].abertura[nome].segundo.nomeJ;
-//             document.getElementById("aberturaNomeIngles2").innerHTML = data[0].abertura[nome].segundo.nomeE;
-//             document.getElementById("aberturaNomeMusica2").innerHTML = data[0].abertura[nome].segundo.extra;
-
-//             document.getElementById("aberturaImg3").src = data[0].abertura[nome].terceiro.imagem;
-//             document.getElementById("aberturaNomeJapones3").innerHTML = data[0].abertura[nome].terceiro.nomeJ;
-//             document.getElementById("aberturaNomeIngles3").innerHTML = data[0].abertura[nome].terceiro.nomeE;
-//             document.getElementById("aberturaNomeMusica3").innerHTML = data[0].abertura[nome].terceiro.extra;
-
-//             document.getElementById("encerramentoImg1").src = data[1].encerramento[nome].primeiro.imagem;
-//             document.getElementById("encerramentoNomeJapones1").innerHTML = data[1].encerramento[nome].primeiro.nomeJ;
-//             document.getElementById("encerramentoNomeIngles1").innerHTML = data[1].encerramento[nome].primeiro.nomeE;
-//             document.getElementById("encerramentoNomeMusica1").innerHTML = data[1].encerramento[nome].primeiro.extra;
-
-//             document.getElementById("encerramentoImg2").src = data[1].encerramento[nome].segundo.imagem;
-//             document.getElementById("encerramentoNomeJapones2").innerHTML = data[1].encerramento[nome].segundo.nomeJ;
-//             document.getElementById("encerramentoNomeIngles2").innerHTML = data[1].encerramento[nome].segundo.nomeE;
-//             document.getElementById("encerramentoNomeMusica2").innerHTML = data[1].encerramento[nome].segundo.extra;
-
-//             document.getElementById("encerramentoImg3").src = data[1].encerramento[nome].terceiro.imagem;
-//             document.getElementById("encerramentoNomeJapones3").innerHTML = data[1].encerramento[nome].terceiro.nomeJ;
-//             document.getElementById("encerramentoNomeIngles3").innerHTML = data[1].encerramento[nome].terceiro.nomeE;
-//             document.getElementById("encerramentoNomeMusica3").innerHTML = data[1].encerramento[nome].terceiro.extra;
-//     });
-// }
 // =======================================escolherVoto.js=================================================
 
 var imagemVoto;

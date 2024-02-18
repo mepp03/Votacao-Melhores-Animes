@@ -88,7 +88,7 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
       break;
   }
 
-  fetch(`http://localhost:3000/votos2021WinterCopy/${idCat}`)
+  fetch(`http://localhost:3000/votos2021Inverno/${idCat}`)
     .then(response => response.json())
     .then(data =>
     {
@@ -120,7 +120,7 @@ function votar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVot
           ponto: pontuacao
         });
 
-      fetch(`http://localhost:3000/votos2021WinterCopy/${idCat}`,
+      fetch(`http://localhost:3000/votos2021Inverno/${idCat}`,
         {
           method: 'PUT',
           body: JSON.stringify(dados),

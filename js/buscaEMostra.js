@@ -102,7 +102,7 @@ const criaCardExtra = (id, romaji, english, gender, full, large) =>
 
 function busca1()
 {
-    fetch("http://127.0.0.1:5500/winter2021Copy.json")
+    fetch("http://127.0.0.1:5500/dados/2019Inverno.json")
         .then(function (response)
         {
             return response.json();

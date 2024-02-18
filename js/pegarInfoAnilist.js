@@ -54,13 +54,16 @@ var query =
     }}
 `;
 
-async function pegarInfo() {
+async function pegarInfo()
+{
     animes = [];
     ano = document.getElementById("ano").value;
     estacao = document.getElementById("temporada").value;
 
-    try {
-        for (let index = 1; index <= 3; index++) {
+    try
+    {
+        for (let index = 1; index <= 3; index++)
+        {
             var variables = {
                 busca: "",
                 ano: ano,
@@ -85,26 +88,36 @@ async function pegarInfo() {
             const response = await fetch(url, options);
             const data = await response.json();
             const filtrado = data.data.Page.media.filter(item => item.averageScore != null);
-            filtrado.forEach(anime => {
+            // filtrado.forEach(anime =>
+            // {
+            //     anime.opening = {
+            //         edges: [{
+            //             node: {
+            //                 op: {
+            //                     name: '',
+            //                     video: ''
+            //                 }
+            //             }
+            //         }]
+            //     };
+            //     anime.ending = {
+            //         edges: [{
+            //             node: {
+            //                 ed: {
+            //                     name: '',
+            //                     video: ''
+            //                 }
+            //             }
+            //         }]
+            //     };
+            // });
+            filtrado.forEach(anime =>
+            {
                 anime.opening = {
-                    edges: [{
-                        node: {
-                            op: {
-                                name: '',
-                                video: ''
-                            }
-                        }
-                    }]
+                    edges: []
                 };
                 anime.ending = {
-                    edges: [{
-                        node: {
-                            ed: {
-                                name: '',
-                                video: ''
-                            }
-                        }
-                    }]
+                    edges: []
                 };
             });
             animes.push(...filtrado);
@@ -112,13 +125,16 @@ async function pegarInfo() {
 
         console.log(animes);
         salvarArquivoJSON(ano, estacao);
-    } catch (error) {
+    } catch (error)
+    {
         console.error(error);
     }
 }
 
-async function salvarArquivoJSON(ano, estacao) {
-    try {
+async function salvarArquivoJSON(ano, estacao)
+{
+    try
+    {
         const estacaoTraduzida = {
             'winter': 'Inverno',
             'spring': 'Primavera',
@@ -126,7 +142,8 @@ async function salvarArquivoJSON(ano, estacao) {
             'fall': 'Outono'
         }[estacao.toLowerCase()];
 
-        if (!estacaoTraduzida) {
+        if (!estacaoTraduzida)
+        {
             console.error('Estação inválida:', estacao);
             return;
         }
@@ -138,7 +155,7 @@ async function salvarArquivoJSON(ano, estacao) {
         jsonString = jsonString.replace(/: null/g, ': ""');
 
         const nomeArquivo = `${ano}${estacaoTraduzida}.json`;
-        
+
         // Cria um objeto Blob com a string JSON modificada
         const blob = new Blob([jsonString], { type: 'application/json' });
 
@@ -155,7 +172,8 @@ async function salvarArquivoJSON(ano, estacao) {
         document.body.removeChild(link);
 
         console.log(`Arquivo ${nomeArquivo} salvo com sucesso!`);
-    } catch (error) {
+    } catch (error)
+    {
         console.error('Erro ao salvar o arquivo:', error);
     }
 }

@@ -1,7 +1,7 @@
 var nome = localStorage.getItem("usuario");
 const pegarDados = document.querySelector('#cabecalho__temporadas');
 
-pegarDados.addEventListener('click', function ()
+pegarDados.addEventListener('change', function ()
 {
         mostrarVotos();
 });
@@ -15,10 +15,9 @@ function mostrarVotos()
         window.location.href = "index.html";
     }
 
-
     var temporada = localStorage.getItem('temporada');
 
-    fetch(`http://127.0.0.1:5500/votos${temporada}.json`)
+    fetch(`http://127.0.0.1:5500/dados/votos/votos${temporada}.json`)
         .then(function (response)
         {
             return response.json();

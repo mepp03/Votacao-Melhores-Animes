@@ -1,12 +1,11 @@
-// var anoBusca = "2021";
-// var temporada = "winter";
 const tabela = document.getElementById("lista");
 const tabelaExtra = document.getElementById("extra");
 var animes;
 var nome = localStorage.getItem("usuario");
 
 
-busca1();
+buscar();
+
 // Cria os cards dos animes
 const criaCardAnime = (id, large, medium, season, SeasonYear, english, romaji, op, ed) =>
 {
@@ -122,13 +121,13 @@ const criaCardPar = (id, romaji, english, gender, full, large) =>
     novoCardExtra.classList.add('lista__item');
     const conteudo =
         `<img src="${large}" class="lista__item--img">        
-        <h3 class="lista__item--nome" id="nomeFull">${full}</h3>
-        <h3 class="lista__item--nome" id="genero">${genero}</h3>
-        <label>
-        <input type="checkbox" name="par" value="${large}" data-nome="${full}" data-nomeE="${english}" data-nomeJ="${romaji}" onclick="selecionarPares()">
-            Selecione o par
-        </label>
-        `
+    <h3 class="lista__item--nome" id="nomeFull">${full}</h3>
+    <h3 class="lista__item--nome" id="genero">${genero}</h3>
+    <label>
+    <input type="checkbox" name="par" value="${large}" data-nome="${full}" data-nomeE="${english}" data-nomeJ="${romaji}" onclick="selecionarPares()">
+        Selecione o par
+    </label>
+    `
 
     novoCardExtra.innerHTML = conteudo;
     novoCardExtra.dataset.id = id;
@@ -136,12 +135,13 @@ const criaCardPar = (id, romaji, english, gender, full, large) =>
     return novoCardExtra;
 }
 
-function busca1()
+function buscar()
 {
     var temporada = localStorage.getItem('temporada');
+    
+    tabela.innerHTML = '';
 
-    // fetch(`http://127.0.0.1:5500/dados/${temporada}.json`)
-    fetch(`http://127.0.0.1:5500/dados/2023Verao_atualizado.json`)
+    fetch(`http://127.0.0.1:5500/dados/${temporada}.json`)
         .then(function (response)
         {
             return response.json();
@@ -149,14 +149,8 @@ function busca1()
         .then(function (data)
         {
             animes = data;
-            // console.log(data[8].opening.edges[0].node.op.name);
             data.forEach(elemento => 
             {
-                // console.log(elemento.opening);
-                // console.log(elemento.opening.edges.length);
-                // console.log(elemento.ending.edges.length);
-
-                // console.log(quantidade);
                 var temOp = elemento.opening.edges.length;
                 var temEd = elemento.ending.edges.length;
 
@@ -187,15 +181,6 @@ function busca1()
                             elemento.SeasonYear, elemento.title.english, elemento.title.romaji, "", ""));
                         break;
                 }
-                // console.log(elemento.opening.edges[0].node);
-                // tabela.appendChild(criaCardAnime(elemento.id, elemento.coverImage.large, elemento.coverImage.medium, elemento.season,
-                //     elemento.SeasonYear, elemento.title.english, elemento.title.romaji, 
-                //     elemento.opening.edges.node.op.name, elemento.opening.edges.node.op.video));
-
-                // tabela.appendChild(criaCardAnime(elemento.id, elemento.coverImage.large, elemento.coverImage.medium, elemento.season,
-                //     elemento.SeasonYear, elemento.title.english, elemento.title.romaji));
-
-
             });
         })
 }
@@ -231,7 +216,6 @@ function resetarLista()
         videos[i].parentElement.classList.remove("esconder");
     }
 }
-
 
 
 // =======================================escolherVoto.js=================================================

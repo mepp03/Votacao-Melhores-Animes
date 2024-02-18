@@ -1,6 +1,6 @@
 const pegarDados = document.querySelector('#cabecalho__temporadas');
 
-pegarDados.addEventListener('click', function ()
+pegarDados.addEventListener('change', function ()
 {
     mostrarVencedores();
 });
@@ -10,7 +10,7 @@ function mostrarVencedores()
 {
     var temporada = localStorage.getItem('temporada');
 
-    fetch(`http://127.0.0.1:5500/votos${temporada}.json`)
+    fetch(`http://127.0.0.1:5500/dados/votos/votos${temporada}.json`)
         .then(function (response)
         {
             return response.json();
@@ -21,12 +21,12 @@ function mostrarVencedores()
 
             //abertura
             {
-                // console.log(data);
                 const leandroAbertura = Object.values(data[0].abertura.leandro);
                 const lucasAbertura = Object.values(data[0].abertura.lucas);
                 const thiagoAbertura = Object.values(data[0].abertura.thiago);
                 const nilAbertura = Object.values(data[0].abertura.nil);
                 const vencedorAbertura = Object.values(data[0].abertura.vencedor);
+                console.log(vencedorAbertura);
 
                 imgOpLeandro1.src = leandroAbertura[0].imagem;
                 imgOpLucas1.src = lucasAbertura[0].imagem;
@@ -947,4 +947,4 @@ function mostrarVencedores()
 }
 
 //mostrando os vencedores na inicialização
-mostrarVencedores();
+// mostrarVencedores();

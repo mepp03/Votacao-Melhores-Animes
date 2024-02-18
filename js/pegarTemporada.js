@@ -3,29 +3,31 @@ var estacao = document.querySelector('input[name="estacoes"]:checked').value;
 var ano = document.getElementById("ano").value;
 
 //mudando o titulo na inicializaçao
-estacao = estacao.charAt(0).toUpperCase() + estacao.slice(1);
-temporada.innerHTML = estacao + " " + ano
+function iniciar()
+{
+    localStorage.setItem('temporada', ano + estacao);
+    estacao = estacao.charAt(0).toUpperCase() + estacao.slice(1);
+    temporada.innerHTML = estacao + " " + ano
+    console.log(localStorage.getItem('temporada'));
+}
 
 
 
 // mudando o titulo quando a data é mudada
-cabecalhoTemporadas.addEventListener('click', function ()
+cabecalhoTemporadas.addEventListener('change', function ()
 {
     var estacao1 = document.querySelector('input[name="estacoes"]:checked').value;
     var ano = document.getElementById("ano").value;
     estacao1 = estacao1.charAt(0).toUpperCase() + estacao1.slice(1);
     document.getElementById("temporada").innerHTML = estacao1 + " " + ano;
-    // mostrarVencedores();
-    localStorage.setItem('temporada', ano+estacao1);
-    // console.log(estacao1 + " " + ano);
-    // document.getElementById("temporada").innerHTML = localStorage.getItem('temporada')
-    teste();
+    localStorage.setItem('temporada', ano + estacao1);
+    console.log(localStorage.getItem('temporada'));
+    // mostrarVotos();
+    buscar();
 });
 
 
-function teste(){
-
+function teste()
+{
+    console.log(localStorage.getItem('temporada'));
 }
-
-
-

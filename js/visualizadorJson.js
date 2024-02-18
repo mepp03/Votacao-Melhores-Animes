@@ -89,6 +89,56 @@ document.addEventListener('click', function (event) {
   }
 });
 
+// Função auxiliar para criar um novo op_ed
+function criarInput(tipo) {
+  const container = document.querySelector('.anime-box');
+  if (container) {
+    // Cria o novo op_ed
+    const novoOpEd = document.createElement("div");
+    novoOpEd.className = "op_ed " + tipo;
+
+    const labelNome = document.createElement("label");
+    labelNome.textContent = tipo === 'abertura' ? 'Nome da Abertura: ' : 'Nome do Encerramento: ';
+
+    const inputNome = document.createElement("input");
+    inputNome.type = "text";
+    inputNome.id = tipo === 'abertura' ? 'nomeOp' : 'nomeEd'; // Define o ID com base no tipo
+
+    const labelVideo = document.createElement("label");
+    labelVideo.textContent = tipo === 'abertura' ? 'Vídeo da Abertura: ' : 'Vídeo do Encerramento: ';
+
+    const inputVideo = document.createElement("input");
+    inputVideo.type = "text";
+    inputVideo.id = tipo === 'abertura' ? 'videoOp' : 'videoEd'; // Define o ID com base no tipo
+
+    const botaoRemover = document.createElement("button");
+    botaoRemover.textContent = "x";
+    botaoRemover.onclick = function () {
+      novoOpEd.parentNode.removeChild(novoOpEd);
+    };
+
+    novoOpEd.appendChild(labelNome);
+    novoOpEd.appendChild(inputNome);
+    novoOpEd.appendChild(labelVideo);
+    novoOpEd.appendChild(inputVideo);
+    novoOpEd.appendChild(botaoRemover);
+
+    // Adiciona o novo op_ed ao contêiner apropriado
+    if (tipo === 'abertura') {
+      const containerOp = document.querySelector('.container__op');
+      if (containerOp) {
+        containerOp.appendChild(novoOpEd);
+      }
+    } else if (tipo === 'encerramento') {
+      const containerEd = document.querySelector('.container__ed');
+      if (containerEd) {
+        containerEd.appendChild(novoOpEd);
+      }
+    }
+  }
+}
+
+
 // Adicione uma função para atualizar os valores na página com base no primeiro item do objeto
 function atualizarValores() {
   obj.forEach((item, index) => {
@@ -100,10 +150,10 @@ function atualizarValores() {
     image.src = item.coverImage.large;
     animeDiv.appendChild(image);
 
-      // Adiciona o elemento de texto para mostrar a quantidade de episódios
-      const episodesText = document.createElement('p');
-      episodesText.textContent = `Episódios: ${item.episodes}`;
-      animeDiv.appendChild(episodesText);
+    // Adiciona o elemento de texto para mostrar a quantidade de episódios
+    const episodesText = document.createElement('p');
+    episodesText.textContent = `Episódios: ${item.episodes}`;
+    animeDiv.appendChild(episodesText);
 
     const infoDiv = document.createElement('div');
     infoDiv.id = "info";
@@ -133,74 +183,40 @@ function atualizarValores() {
     openingLabel.textContent = 'Abertura:';
     openingContainer.appendChild(openingLabel);
 
-    const openingOpEd = document.createElement('div');
-    openingOpEd.classList.add('op_ed', 'abertura');
-    const openingNameLabel = document.createElement('label');
-    openingNameLabel.textContent = 'Nome:';
-    openingOpEd.appendChild(openingNameLabel);
-    const openingNameInput = document.createElement('input');
-    openingNameInput.id = "nomeOp"
-    openingNameInput.type = 'text';
-
-    if (item.opening.edges[0]) {
-      openingNameInput.value = item.opening.edges[0].node.op.name;
+    // Verifica se há dados nas aberturas antes de criar os campos
+    if (item.opening.edges.length > 0) {
+      item.opening.edges.forEach((edge) => {
+        const openingOpEd = criarNovoOpEd('abertura', edge.node.op.name, edge.node.op.video);
+        openingContainer.appendChild(openingOpEd);
+      });
     }
-    openingOpEd.appendChild(openingNameInput);
-    const openingVideoLabel = document.createElement('label');
-    openingVideoLabel.textContent = 'Vídeo:';
-    openingOpEd.appendChild(openingVideoLabel);
-    const openingVideoInput = document.createElement('input');
-    openingVideoInput.id = "videoOp"
-    openingVideoInput.type = 'text';
-    if (item.opening.edges[0]) {
-      openingVideoInput.value = item.opening.edges[0].node.op.video;
-    }
-    openingOpEd.appendChild(openingVideoInput);
 
     const addOpeningButton = document.createElement('button');
-    addOpeningButton.textContent = '+';
+    addOpeningButton.textContent = '+ Adicionar Abertura';
     addOpeningButton.classList.add('round-button', 'add-abertura');
     openingContainer.appendChild(addOpeningButton);
 
-    openingContainer.appendChild(openingOpEd);
     infoDiv.appendChild(openingContainer);
 
     const endingContainer = document.createElement('div');
-
     endingContainer.classList.add('container__ed');
     const endingLabel = document.createElement('label');
     endingLabel.textContent = 'Encerramento:';
     endingContainer.appendChild(endingLabel);
 
-    const endingOpEd = document.createElement('div');
-    endingOpEd.classList.add('op_ed', 'encerramento');
-    const endingNameLabel = document.createElement('label');
-    endingNameLabel.textContent = 'Nome:';
-    endingOpEd.appendChild(endingNameLabel);
-    const endingNameInput = document.createElement('input');
-    endingNameInput.id = "nomeEd"
-    endingNameInput.type = 'text';
-    if (item.ending.edges[0]) {
-      endingNameInput.value = item.ending.edges[0].node.ed.name;
+    // Verifica se há dados nos encerramentos antes de criar os campos
+    if (item.ending.edges.length > 0) {
+      item.ending.edges.forEach((edge) => {
+        const endingOpEd = criarNovoOpEd('encerramento', edge.node.ed.name, edge.node.ed.video);
+        endingContainer.appendChild(endingOpEd);
+      });
     }
-    endingOpEd.appendChild(endingNameInput);
-    const endingVideoLabel = document.createElement('label');
-    endingVideoLabel.textContent = 'Vídeo:';
-    endingOpEd.appendChild(endingVideoLabel);
-    const endingVideoInput = document.createElement('input');
-    endingVideoInput.id = "videoEd"
-    endingVideoInput.type = 'text';
-    if (item.ending.edges[0]) {
-      endingVideoInput.value = item.ending.edges[0].node.ed.video;
-    }
-    endingOpEd.appendChild(endingVideoInput);
 
     const addEndingButton = document.createElement('button');
-    addEndingButton.textContent = '+';
+    addEndingButton.textContent = '+ Adicionar Encerramento';
     addEndingButton.classList.add('round-button', 'add-encerramento');
     endingContainer.appendChild(addEndingButton);
 
-    endingContainer.appendChild(endingOpEd);
     infoDiv.appendChild(endingContainer);
 
     animeDiv.appendChild(infoDiv);
@@ -221,24 +237,9 @@ function atualizarValores() {
     animeDiv.appendChild(escolhaDiv);
 
     document.getElementById('lista').appendChild(animeDiv);
-
-    // Verificar se existem múltiplas aberturas
-    if (item.opening.edges.length > 1) {
-      for (let i = 1; i < item.opening.edges.length; i++) {
-        const openingOpEd = criarNovoOpEd('abertura', item.opening.edges[i].node.op.name, item.opening.edges[i].node.op.video);
-        openingContainer.appendChild(openingOpEd);
-      }
-    }
-
-    // Verificar se existem múltiplos encerramentos
-    if (item.ending.edges.length > 1) {
-      for (let i = 1; i < item.ending.edges.length; i++) {
-        const endingOpEd = criarNovoOpEd('encerramento', item.ending.edges[i].node.ed.name, item.ending.edges[i].node.ed.video);
-        endingContainer.appendChild(endingOpEd);
-      }
-    }
   });
 }
+
 
 // Função auxiliar para criar um novo op_ed
 function criarNovoOpEd(tipo, nome, video) {

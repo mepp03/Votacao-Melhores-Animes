@@ -8,7 +8,7 @@ function iniciar()
     localStorage.setItem('temporada', ano + estacao);
     estacao = estacao.charAt(0).toUpperCase() + estacao.slice(1);
     temporada.innerHTML = estacao + " " + ano
-    console.log(localStorage.getItem('temporada'));
+    // console.log(localStorage.getItem('temporada'));
 }
 
 
@@ -21,9 +21,6 @@ cabecalhoTemporadas.addEventListener('change', function ()
     estacao1 = estacao1.charAt(0).toUpperCase() + estacao1.slice(1);
     document.getElementById("temporada").innerHTML = estacao1 + " " + ano;
     localStorage.setItem('temporada', ano + estacao1);
-    console.log(localStorage.getItem('temporada'));
-    // mostrarVotos();
-    buscar();
 });
 
 

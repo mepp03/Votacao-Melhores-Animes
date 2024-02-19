@@ -25,7 +25,7 @@ function logar()
 {    
     var usuario = document.getElementById("usuario").value;
     var senha = document.getElementById("senha").value;
-    var usuarios = [{nome: 'leandro', senha: 'leandro'}, {nome: 'thiago', senha: 'thiago'}, {nome: 'nil', senha: 'nil'}];
+    var usuarios = [{nome: 'leandro', senha: 'leandro'}, {nome: 'lucas', senha: 'lucas'}, {nome: 'thiago', senha: 'thiago'}, {nome: 'nil', senha: 'nil'}];
 
     for (var i = 0; i < usuarios.length; i++) {
         if (usuario == usuarios[i].nome && senha == usuarios[i].senha) {

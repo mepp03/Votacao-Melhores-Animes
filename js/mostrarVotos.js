@@ -1,9 +1,12 @@
 var nome = localStorage.getItem("usuario");
-const pegarDados = document.querySelector('#cabecalho__temporadas');
 
-pegarDados.addEventListener('change', function ()
-{
+// Adicione um ouvinte de evento ao cabeçalho assim que o script for carregado
+document.addEventListener("DOMContentLoaded", function() {
+    const pegarDados = document.querySelector('#cabecalho__temporadas');
+    pegarDados.addEventListener('change', function() {
         mostrarVotos();
+        buscar(); //chama a funcão no buscaEMostraCopy.js
+    });
 });
 
 

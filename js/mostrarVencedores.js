@@ -1,8 +1,11 @@
 const pegarDados = document.querySelector('#cabecalho__temporadas');
 
-pegarDados.addEventListener('change', function ()
-{
-    mostrarVencedores();
+// Adicione um ouvinte de evento ao cabeçalho assim que o script for carregado
+document.addEventListener("DOMContentLoaded", function() {
+    const pegarDados = document.querySelector('#cabecalho__temporadas');
+    pegarDados.addEventListener('change', function() {
+        mostrarVencedores();
+    });
 });
 
 //carregar e mostrar os votos dos vencedores
@@ -26,7 +29,6 @@ function mostrarVencedores()
                 const thiagoAbertura = Object.values(data[0].abertura.thiago);
                 const nilAbertura = Object.values(data[0].abertura.nil);
                 const vencedorAbertura = Object.values(data[0].abertura.vencedor);
-                console.log(vencedorAbertura);
 
                 imgOpLeandro1.src = leandroAbertura[0].imagem;
                 imgOpLucas1.src = lucasAbertura[0].imagem;

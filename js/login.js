@@ -1,18 +1,12 @@
 function checarUsuario()
 {
-    // localStorage.setItem("usuario", "leandro");
-    // localStorage.setItem("senha", "leandro");
     var usuario = localStorage.getItem("usuario");
-    
+
     if (usuario != "null")
     {
         document.getElementById("botaoSair").classList.remove("esconder");
         document.getElementById("botaoVotar").classList.remove("esconder");
         document.getElementById("botaoEntrar").classList.add("esconder");
-    } 
-    else
-    {
-        document.getElementById("cabecalho__temporadas").classList.add("desabilitar");
     }
 }
 
@@ -22,13 +16,15 @@ function abrirLogin()
 }
 
 function logar()
-{    
+{
     var usuario = document.getElementById("usuario").value;
     var senha = document.getElementById("senha").value;
-    var usuarios = [{nome: 'leandro', senha: 'leandro'}, {nome: 'lucas', senha: 'lucas'}, {nome: 'thiago', senha: 'thiago'}, {nome: 'nil', senha: 'nil'}];
+    var usuarios = [{ nome: 'leandro', senha: 'leandro' }, { nome: 'lucas', senha: 'lucas' }, { nome: 'thiago', senha: 'thiago' }, { nome: 'nil', senha: 'nil' }];
 
-    for (var i = 0; i < usuarios.length; i++) {
-        if (usuario == usuarios[i].nome && senha == usuarios[i].senha) {
+    for (var i = 0; i < usuarios.length; i++)
+    {
+        if (usuario == usuarios[i].nome && senha == usuarios[i].senha)
+        {
             localStorage.setItem('usuario', usuario);
             location.reload();
             return;
@@ -44,8 +40,8 @@ function deslogar()
     location.reload();
 }
 
-function votar()
-{    
+function votacao()
+{
     window.location.href = "votacaoCopy.html";
 }
 

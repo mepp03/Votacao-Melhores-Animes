@@ -88,29 +88,6 @@ async function pegarInfo()
             const response = await fetch(url, options);
             const data = await response.json();
             const filtrado = data.data.Page.media.filter(item => item.averageScore != null);
-            // filtrado.forEach(anime =>
-            // {
-            //     anime.opening = {
-            //         edges: [{
-            //             node: {
-            //                 op: {
-            //                     name: '',
-            //                     video: ''
-            //                 }
-            //             }
-            //         }]
-            //     };
-            //     anime.ending = {
-            //         edges: [{
-            //             node: {
-            //                 ed: {
-            //                     name: '',
-            //                     video: ''
-            //                 }
-            //             }
-            //         }]
-            //     };
-            // });
             filtrado.forEach(anime =>
             {
                 anime.opening = {

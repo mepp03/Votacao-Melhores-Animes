@@ -40,8 +40,13 @@ function deslogar()
     location.reload();
 }
 
+function home()
+{
+    window.location.href = "/index.html";
+}
+
 function votacao()
 {
-    window.location.href = "votacaoCopy.html";
+    window.location.href = "tela/votacaoCopy.html";
 }
 

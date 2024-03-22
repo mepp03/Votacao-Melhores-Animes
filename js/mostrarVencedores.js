@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", function() {
 function mostrarVencedores()
 {
     var temporada = localStorage.getItem('temporada');
-
-    fetch(`http://127.0.0.1:5500/dados/votos/votos${temporada}.json`)
-        .then(function (response)
-        {
-            return response.json();
-        })
-        .then(function (data)
-        {
+    
+    fetch(`https://dados-animes.glitch.me/${temporada}`)
+    .then(function (response)
+    {
+        return response.json();
+    })
+    .then(function (data)
+    {
             data = data.votos;
 
             //abertura

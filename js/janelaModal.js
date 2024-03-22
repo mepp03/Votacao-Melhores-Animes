@@ -12,7 +12,11 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function ()
 {
-    modal.style.display = "none";
+    modal.style.display = "none";    
+    
+    // Pausar o vídeo quando o modal é fechado
+    const video = document.getElementById('video');
+    video.pause();
 }
 
 // When the user clicks anywhere outside of the modal, close it

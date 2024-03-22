@@ -1,14 +1,16 @@
-const nome = ["leandro", "lucas", "thiago", "nil", "vencedor"];
 var idCat;
 var catId;
+var dados = [];
 
-function votar() {
+function votar()
+{
     const temporada = localStorage.getItem('temporada');
-    fetch(`http://127.0.0.1:5500/dados/votos/votos${temporada}.json`)
+    fetch(`https://dados-animes.glitch.me/${temporada}`)
         .then(response => response.json())
-        .then(info => {
+        .then(info =>
+        {
             const data = info.votos;
-            console.log(info);
+            dados = info.dados;
 
             const abertura = Object.values(data[0].abertura);
             const encerramento = Object.values(data[1].encerramento);
@@ -23,9 +25,11 @@ function votar() {
             const emocao = Object.values(data[10].emocao);
             const anime = Object.values(data[11].anime);
 
-            function adicionarVotos(categoria, cat) {
+            function adicionarVotos(categoria, cat)
+            {
                 var votos = [];
-                for (let i = 0; i < 4; i++) {
+                for (let i = 0; i < 4; i++)
+                {
                     const { primeiro, segundo, terceiro } = categoria[i];
                     const votosCategoria = [
                         {
@@ -41,34 +45,41 @@ function votar() {
                             imagem2: terceiro.imagem2, nomeE: terceiro.nomeE
                         },
                     ];
-                    votosCategoria.forEach((voto) => {
-                        if (voto.nomeJ !== "") {
+                    votosCategoria.forEach((voto) =>
+                    {
+                        if (voto.nomeJ !== "")
+                        {
                             votos.push(voto);
                         }
                     });
                 }
 
                 // Verifica se há votos para preencher a estrutura do vencedor
-                if (votos.length === 0) {
-                    console.log(`Categoria ${cat} não possui votos.`);
+                if (votos.length === 0)
+                {
                     return Promise.resolve(); // Retorna uma promessa resolvida para pular para a próxima categoria
                 }
 
                 const top3 = calcular(votos);
 
-                function calcular(voto) {
+                function calcular(voto)
+                {
                     const result = {};
-                    for (const { nomeJ, ponto, extra, id, imagem, imagem2, nomeE } of voto) {
-                        if (result[nomeJ]) {
+                    for (const { nomeJ, ponto, extra, id, imagem, imagem2, nomeE } of voto)
+                    {
+                        if (result[nomeJ])
+                        {
                             result[nomeJ].ponto += parseInt(ponto);
-                        } else {
+                        } else
+                        {
                             result[nomeJ] = { nomeJ, ponto: parseInt(ponto), extra, id, imagem, imagem2, nomeE };
                         }
                     }
                     return Object.values(result).sort((a, b) => b.ponto - a.ponto).slice(0, 3);
                 }
 
-                switch (cat) {
+                switch (cat)
+                {
                     case "abertura":
                         idCat = "01";
                         catId = "0";
@@ -130,12 +141,12 @@ function votar() {
                 };
 
                 // Retorna a promessa do fetch
-                return fetch(`http://localhost:3000/votos/${idCat}`, {
+                return fetch(`https://dados-animes.glitch.me/${temporada}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
                     },
-                    body: JSON.stringify(info.votos[catId]),
+                    body: JSON.stringify({ votos: info.votos, dados: dados }),
                 });
             }
 
@@ -154,14 +165,17 @@ function votar() {
                 adicionarVotos(emocao, "emocao"),
                 adicionarVotos(anime, "anime"),
             ])
-            .then(() => {
-                console.log('Todos os dados foram salvos com sucesso.');
-            })
-            .catch(error => {
-                console.error('Erro ao salvar os dados:', error);
-            });
+                .then(() =>
+                {
+                    console.log('Todos os dados foram salvos com sucesso.');
+                })
+                .catch(error =>
+                {
+                    console.error('Erro ao salvar os dados:', error);
+                });
         })
-        .catch(error => {
+        .catch(error =>
+        {
             console.error('Erro ao buscar os dados:', error);
         });
 }

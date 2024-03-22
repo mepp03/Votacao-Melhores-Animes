@@ -70,6 +70,7 @@ const criaCardEncerramento = (id, ed, video) =>
 // Cria os cards dos personagens
 const criaCardExtra = (id, romaji, english, gender, full, large) =>
 {
+  console.log("temporada");
     var genero = "";
     switch (gender)
     {
@@ -138,18 +139,19 @@ const criaCardPar = (id, romaji, english, gender, full, large) =>
 function buscar()
 {
     var temporada = localStorage.getItem('temporada');
-    
+    console.log(temporada);
     tabela.innerHTML = '';
 
-    fetch(`http://127.0.0.1:5500/dados/${temporada}.json`)
+    fetch(`https://dados-animes.glitch.me/${temporada}`)
+
         .then(function (response)
         {
             return response.json();
         })
         .then(function (data)
         {
-            animes = data;
-            data.forEach(elemento => 
+            animes = data.dados;
+            animes.forEach(elemento => 
             {
                 var temOp = elemento.opening.edges.length;
                 var temEd = elemento.ending.edges.length;
@@ -364,16 +366,13 @@ function passarEscolhaExtra(info, imagemPersonagem)
     extraVoto.innerHTML = info;
     imagemVoto.setAttribute("data-identificacao", idAnime);
     imagemVoto.setAttribute("data-extra", info);
-
-    // escolhaExtra = true;
-
-    // console.log(document.getElementById("secaoExtra").classList.value);
+  
     document.getElementById("secaoExtra").classList.add("esconder");
-
-
-    // console.log(document.getElementById("secaoLista").classList.value);
     document.getElementById("secaoLista").classList.remove("esconder");
 
+    const video = document.getElementById('video');
+    video.pause();
+  
     modal.style.display = "none";
 }
 

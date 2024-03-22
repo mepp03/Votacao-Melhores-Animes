@@ -4,11 +4,11 @@ var ano = document.getElementById("ano").value;
 
 //mudando o titulo na inicializaçao
 function iniciar()
-{
-    localStorage.setItem('temporada', ano + estacao);
-    estacao = estacao.charAt(0).toUpperCase() + estacao.slice(1);
-    temporada.innerHTML = estacao + " " + ano
-    // console.log(localStorage.getItem('temporada'));
+{    
+  estacao = estacao.charAt(0).toUpperCase() + estacao.slice(1);
+  localStorage.setItem('temporada', ano + estacao);
+  temporada.innerHTML = estacao + " " + ano
+     
 }
 
 

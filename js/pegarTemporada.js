@@ -7,8 +7,7 @@ function iniciar()
 {    
   estacao = estacao.charAt(0).toUpperCase() + estacao.slice(1);
   localStorage.setItem('temporada', ano + estacao);
-  temporada.innerHTML = estacao + " " + ano
-     
+  temporada.innerHTML = estacao + " " + ano     
 }
 
 

@@ -1,5 +1,6 @@
-var temporada = localStorage.getItem('temporada');
-// var temporada = "2019Inverno"
+// const endereco2 = "http://localhost:3000/";
+const endereco2 = "https://dados-animes.glitch.me/";
+var temporada9 = localStorage.getItem('temporada');
 var dados;
 var nome = localStorage.getItem("usuario");
 var dadosAnimes = [];
@@ -105,7 +106,9 @@ function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVo
       return; // Se o tipo não for reconhecido, saímos da função
   }
 
-  fetch(`https://dados-animes.glitch.me/${temporada}`)
+  // fetch(`https://dados-animes.glitch.me/${temporada}`)
+  temporada9 = localStorage.getItem('temporada');
+  fetch(`${endereco2}${temporada9}`)
     .then(response => response.json())
     .then(data =>
     {
@@ -161,7 +164,9 @@ function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVo
       nomeObjeto[ordinal] = objetoVoto; // Atualize o objeto correspondente
 
       // Agora vamos enviar todas as categorias de volta para o servidor com as atualizações feitas.
-      fetch(`https://dados-animes.glitch.me/${temporada}`, {
+      temporada9 = localStorage.getItem('temporada');
+      // fetch(`https://dados-animes.glitch.me/${temporada}`, {
+      fetch(`${endereco2}${temporada9}`, {
         method: 'PUT',
         body: JSON.stringify({ dados: dadosAnimes, votos: todasAsCategorias  }), // Envie todas as categorias de volta
         headers: {
@@ -171,14 +176,14 @@ function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVo
         .then(response => response.json())
         .then(dados =>
         {
-          console.log('Dados salvos com sucesso:', dados);
-          alert("Dados salvos com sucesso")
+          console.log('Dados salvos com sucesso:', dados.votos[2].feminino.vencedor);
+          // alert("Dados salvos com sucesso")
         })
         .catch(error =>
         {
           console.error('Erro ao salvar dados:', error);
         });
-    })
+    }) 
     .catch(error =>
     {
       console.error('Erro ao obter os dados:', error);

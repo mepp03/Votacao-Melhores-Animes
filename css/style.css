@@ -1,9 +1,7 @@
 /* =====================temporada========================= */
-.tabela__coluna__img img {
-    height: 245px;
-}
 
 .temporada {
+    /*   margin-top: 100px; */
     text-align: center;
 }
 
@@ -15,6 +13,25 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.tabela__coluna__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os itens horizontalmente dentro do contêiner */
+    text-align: center; /* Garante que o texto também esteja centralizado */
+}
+
+
+.tabela__coluna__img img {
+    height: 245px;
+    margin: 0;
+    padding: 0;
+}
+
+.tabela__coluna h4 {
+    text-align: center;
+    white-space: pre-line;
 }
 
 .posicao {
@@ -34,16 +51,21 @@
     background-color: #97784d;
 }
 
-.tabela__coluna h4 {
-    text-align: center;
-}
-
 /* =====================cabeçalho========================= */
 .cabecalho {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 30%;
+    padding-right: 30%;
     display: flex;
     justify-content: space-between;
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  
     align-items: center;
     background-color: rgb(187, 187, 218);
 }
@@ -63,6 +85,9 @@
     text-align: center;
 }
 
+.cabecalho__login {
+    padding-right: 5%;
+}
 /* =====================modal========================= */
 .lista,
 .extra {

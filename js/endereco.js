@@ -1,0 +1,1 @@
+module.exports.endereco = "http://localhost:3000/";

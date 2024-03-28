@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>É hora de votar</title>
-    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body onload="mostrarVotos()">
+<body onload="iniciar(), mostrarVotos()">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__temporadas" id="cabecalho__temporadas">
                 <button onclick="home()">Início</button>
                 <div class="cabecalho__temporadas ano">
                     <select id="ano">
-                        <option value="2019" selected>2019</option>
+                        <option value="2019">2019</option>
                         <option value="2020">2020</option>
                         <option value="2021">2021</option>
                         <option value="2022">2022</option>
@@ -44,6 +44,7 @@
             </div>
 
             <div class="cabecalho__login">
+                <p id="nomeUsuario"></p>
                 <button class="cabecalho__login--botaoLogar botao" id="botaoSair"
                     onclick="deslogar()">Sair</button>
             </div>
@@ -469,15 +470,15 @@
 
 
     </main>
-    <script src="/buscaEMostraCopy.js"></script>
-    <script src="/escolherVoto.js"></script>
-    <script src="/filtro.js"></script>
-    <script src="/mostrarVotos.js"></script>
-    <script src="/pegarTemporada.js"></script>
-    <script src="/janelaModal.js"></script>
-    <script src="/login.js"></script>
-    <script src="/votos.js"></script>
-    <script src="/calculoVotos.js"></script>
+    <script src="../js/buscaEMostraCopy.js"></script>
+    <script src="../js/escolherVoto.js"></script>
+    <script src="../js/filtro.js"></script>
+    <script src="../js/mostrarVotos.js"></script>
+    <script src="../js/pegarTemporada.js"></script>
+    <script src="../js/janelaModal.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/votos.js"></script>
+    <script src="../js/calculoVotos.js"></script>
 </body>
 
 </html>

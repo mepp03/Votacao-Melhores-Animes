@@ -7,6 +7,7 @@ function checarUsuario()
         document.getElementById("botaoSair").classList.remove("esconder");
         document.getElementById("botaoVotar").classList.remove("esconder");
         document.getElementById("botaoEntrar").classList.add("esconder");
+        document.getElementById("nomeUsuario").innerHTML = usuario;
     }
 }
 
@@ -42,11 +43,11 @@ function deslogar()
 
 function home()
 {
-    window.location.href = "/index.html";
+    window.location.href = "/tela/index.html";
 }
 
 function votacao()
 {
-    window.location.href = "tela/votacaoCopy.html";
+    window.location.href = "votacaoCopy.html";
 }
 

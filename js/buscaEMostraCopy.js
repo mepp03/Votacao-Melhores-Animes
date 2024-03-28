@@ -1,3 +1,5 @@
+// const endereco3 = "http://localhost:3000/";
+const endereco3 = "https://dados-animes.glitch.me/";
 const tabela = document.getElementById("lista");
 const tabelaExtra = document.getElementById("extra");
 var animes;
@@ -70,7 +72,6 @@ const criaCardEncerramento = (id, ed, video) =>
 // Cria os cards dos personagens
 const criaCardExtra = (id, romaji, english, gender, full, large) =>
 {
-  console.log("temporada");
     var genero = "";
     switch (gender)
     {
@@ -139,11 +140,10 @@ const criaCardPar = (id, romaji, english, gender, full, large) =>
 function buscar()
 {
     var temporada = localStorage.getItem('temporada');
-    console.log(temporada);
     tabela.innerHTML = '';
 
-    fetch(`https://dados-animes.glitch.me/${temporada}`)
-
+    // fetch(`https://dados-animes.glitch.me/${temporada}`)
+    fetch(`${endereco3}${temporada}`)
         .then(function (response)
         {
             return response.json();
@@ -366,13 +366,16 @@ function passarEscolhaExtra(info, imagemPersonagem)
     extraVoto.innerHTML = info;
     imagemVoto.setAttribute("data-identificacao", idAnime);
     imagemVoto.setAttribute("data-extra", info);
-  
+
     document.getElementById("secaoExtra").classList.add("esconder");
     document.getElementById("secaoLista").classList.remove("esconder");
 
     const video = document.getElementById('video');
-    video.pause();
-  
+    if (video != null)
+    {
+        video.pause();
+    }
+
     modal.style.display = "none";
 }
 
@@ -431,6 +434,10 @@ function filtrarVideo(video)
     {
         function aberturaEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             filtrarVideo("op");
             escolhaExtra = "abertura";
@@ -445,6 +452,8 @@ function filtrarVideo(video)
 
         function aberturaEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             filtrarVideo("op");
             escolhaExtra = "abertura";
@@ -458,6 +467,8 @@ function filtrarVideo(video)
 
         function aberturaEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             filtrarVideo("op");
             escolhaExtra = "abertura";
@@ -473,6 +484,8 @@ function filtrarVideo(video)
     {
         function encerramentoEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             filtrarVideo("ed");
             escolhaExtra = "encerramento";
@@ -486,6 +499,8 @@ function filtrarVideo(video)
 
         function encerramentoEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             filtrarVideo("ed");
             escolhaExtra = "encerramento";
@@ -499,6 +514,8 @@ function filtrarVideo(video)
 
         function encerramentoEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             filtrarVideo("ed");
             escolhaExtra = "encerramento";
@@ -514,6 +531,8 @@ function filtrarVideo(video)
     {
         function femininoEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagemFeminino";
             modal.style.display = "block";
@@ -526,6 +545,8 @@ function filtrarVideo(video)
 
         function femininoEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagemFeminino";
             modal.style.display = "block";
@@ -538,6 +559,8 @@ function filtrarVideo(video)
 
         function femininoEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagemFeminino";
             modal.style.display = "block";
@@ -552,6 +575,8 @@ function filtrarVideo(video)
     {
         function masculinoEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagemMasculino";
             modal.style.display = "block";
@@ -564,6 +589,8 @@ function filtrarVideo(video)
 
         function masculinoEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagemMasculino";
             modal.style.display = "block";
@@ -576,6 +603,8 @@ function filtrarVideo(video)
 
         function masculinoEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagemMasculino";
             modal.style.display = "block";
@@ -590,6 +619,8 @@ function filtrarVideo(video)
     {
         function surpresaEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("surpresaImg1");
@@ -600,6 +631,8 @@ function filtrarVideo(video)
 
         function surpresaEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("surpresaImg2");
@@ -610,6 +643,8 @@ function filtrarVideo(video)
 
         function surpresaEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("surpresaImg3");
@@ -622,6 +657,8 @@ function filtrarVideo(video)
     {
         function decepcaoEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("decepcaoImg1");
@@ -632,6 +669,8 @@ function filtrarVideo(video)
 
         function decepcaoEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("decepcaoImg2");
@@ -642,6 +681,8 @@ function filtrarVideo(video)
 
         function decepcaoEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("decepcaoImg3");
@@ -654,6 +695,8 @@ function filtrarVideo(video)
     {
         function animacaoEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("animacaoImg1");
@@ -664,6 +707,8 @@ function filtrarVideo(video)
 
         function animacaoEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("animacaoImg2");
@@ -674,6 +719,8 @@ function filtrarVideo(video)
 
         function animacaoEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("animacaoImg3");
@@ -686,6 +733,8 @@ function filtrarVideo(video)
     {
         function antagonistaEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagem";
             modal.style.display = "block";
@@ -698,6 +747,8 @@ function filtrarVideo(video)
 
         function antagonistaEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagem";
             modal.style.display = "block";
@@ -710,6 +761,8 @@ function filtrarVideo(video)
 
         function antagonistaEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagem";
             modal.style.display = "block";
@@ -724,6 +777,8 @@ function filtrarVideo(video)
     {
         function parEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "par";
             modal.style.display = "block";
@@ -737,6 +792,8 @@ function filtrarVideo(video)
 
         function parEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "par";
             modal.style.display = "block";
@@ -750,6 +807,8 @@ function filtrarVideo(video)
 
         function parEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "par";
             modal.style.display = "block";
@@ -765,6 +824,8 @@ function filtrarVideo(video)
     {
         function doenteEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagem";
             modal.style.display = "block";
@@ -777,6 +838,8 @@ function filtrarVideo(video)
 
         function doenteEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagem";
             modal.style.display = "block";
@@ -789,6 +852,8 @@ function filtrarVideo(video)
 
         function doenteEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             esconderExtra();
             escolhaExtra = "personagem";
             modal.style.display = "block";
@@ -803,6 +868,8 @@ function filtrarVideo(video)
     {
         function emocaoEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("emocaoImg1");
@@ -813,6 +880,8 @@ function filtrarVideo(video)
 
         function emocaoEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("emocaoImg2");
@@ -823,6 +892,8 @@ function filtrarVideo(video)
 
         function emocaoEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("emocaoImg3");
@@ -835,6 +906,8 @@ function filtrarVideo(video)
     {
         function animeEscolherVoto1()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("animeImg1");
@@ -845,6 +918,8 @@ function filtrarVideo(video)
 
         function animeEscolherVoto2()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("animeImg2");
@@ -855,6 +930,8 @@ function filtrarVideo(video)
 
         function animeEscolherVoto3()
         {
+            document.getElementById('busca').value = "";
+            filtrar();
             escolhaExtra = "false";
             modal.style.display = "block";
             imagemVoto = document.getElementById("animeImg3");

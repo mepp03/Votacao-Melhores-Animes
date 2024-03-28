@@ -1,3 +1,5 @@
+// const endereco4 = "http://localhost:3000/";
+const endereco4 = "https://dados-animes.glitch.me/";
 var idCat;
 var catId;
 var dados = [];
@@ -5,7 +7,8 @@ var dados = [];
 function votar()
 {
     const temporada = localStorage.getItem('temporada');
-    fetch(`https://dados-animes.glitch.me/${temporada}`)
+    // fetch(`https://dados-animes.glitch.me/${temporada}`)
+    fetch(`${endereco4}${temporada}`)
         .then(response => response.json())
         .then(info =>
         {
@@ -62,20 +65,52 @@ function votar()
 
                 const top3 = calcular(votos);
 
-                function calcular(voto)
-                {
-                    const result = {};
-                    for (const { nomeJ, ponto, extra, id, imagem, imagem2, nomeE } of voto)
-                    {
-                        if (result[nomeJ])
-                        {
-                            result[nomeJ].ponto += parseInt(ponto);
-                        } else
-                        {
-                            result[nomeJ] = { nomeJ, ponto: parseInt(ponto), extra, id, imagem, imagem2, nomeE };
+                function calcular(votos) {
+                    let resultados = {};
+                
+                    votos.forEach(voto => {
+                        if (resultados[voto.id]) {
+                            resultados[voto.id].ponto += voto.ponto;
+                            if (!resultados[voto.id].extras.includes(voto.extra)) {
+                                resultados[voto.id].extras.push(voto.extra);
+                            }
+                            resultados[voto.id].imagens.push(voto.imagem);
+                            if (voto.imagem2 && resultados[voto.id].imagem2) {
+                                resultados[voto.id].imagem2.push(voto.imagem2);
+                            }
+                        } else {
+                            resultados[voto.id] = { 
+                                ...voto, 
+                                ponto: voto.ponto, 
+                                imagens: [voto.imagem], 
+                                extras: [voto.extra], // Inicializa extras como array
+                                imagem2: voto.imagem2 ? [voto.imagem2] : [] // Inicializa imagem2 como array vazio se não presente
+                            };
                         }
-                    }
-                    return Object.values(result).sort((a, b) => b.ponto - a.ponto).slice(0, 3);
+                    });
+                
+                    // Conversão e limpeza final
+                    Object.keys(resultados).forEach(id => {
+                        resultados[id].imagem = resultados[id].imagens.join('***');
+                        resultados[id].extra = resultados[id].extras.join('\n');
+                        delete resultados[id].imagens;
+                        delete resultados[id].extras;
+                        if (resultados[id].imagem2 && resultados[id].imagem2.length) {
+                            resultados[id].imagem2 = resultados[id].imagem2.join('***');
+                        } else {
+                            delete resultados[id].imagem2;
+                        }
+                    });
+                
+    // Ordenação e tratamento de empates
+    let ordenadosPorPontos = Object.values(resultados).sort((a, b) => b.ponto - a.ponto);
+
+    let resultadoFinal = [];
+    for (let i = 0; i < Math.min(3, ordenadosPorPontos.length); i++) {
+        resultadoFinal.push(ordenadosPorPontos[i]);
+    }
+
+    return resultadoFinal;
                 }
 
                 switch (cat)
@@ -134,14 +169,15 @@ function votar()
                         break
                 }
 
-                info.votos[catId][cat].vencedor = {
-                    primeiro: top3[0],
-                    segundo: top3[1],
-                    terceiro: top3[2]
-                };
+info.votos[catId][cat].vencedor = {
+    primeiro: top3.length > 0 ? top3[0] : {},
+    segundo: top3.length > 1 ? top3[1] : {},
+    terceiro: top3.length > 2 ? top3[2] : {}
+};
 
                 // Retorna a promessa do fetch
-                return fetch(`https://dados-animes.glitch.me/${temporada}`, {
+                // return fetch(`https://dados-animes.glitch.me/${temporada}`, {
+                    return fetch(`${endereco4}${temporada}`, {
                     method: 'PUT',
                     headers: {
                         'Content-Type': 'application/json',
@@ -167,7 +203,7 @@ function votar()
             ])
                 .then(() =>
                 {
-                    console.log('Todos os dados foram salvos com sucesso.');
+                    console.log('Todos os dados foram salvos com sucesso.', info.votos);
                 })
                 .catch(error =>
                 {

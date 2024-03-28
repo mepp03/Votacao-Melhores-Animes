@@ -1,3 +1,5 @@
+// const endereco = "http://localhost:3000/";
+const endereco = "https://dados-animes.glitch.me/";
 const pegarDados = document.querySelector('#cabecalho__temporadas');
 
 // Adicione um ouvinte de evento ao cabeçalho assim que o script for carregado
@@ -13,7 +15,8 @@ function mostrarVencedores()
 {
     var temporada = localStorage.getItem('temporada');
     
-    fetch(`https://dados-animes.glitch.me/${temporada}`)
+    fetch(`${endereco}${temporada}`)
+    // fetch(`https://dados-animes.glitch.me/${temporada}`)
     .then(function (response)
     {
         return response.json();

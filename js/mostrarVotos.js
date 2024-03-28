@@ -1,4 +1,7 @@
+// const endereco1 = "http://localhost:3000/";
+const endereco1 = "https://dados-animes.glitch.me/";
 var nome = localStorage.getItem("usuario");
+
 
 // Adicione um ouvinte de evento ao cabeçalho assim que o script for carregado
 document.addEventListener("DOMContentLoaded", function() {
@@ -9,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-
 // carregar e mostrar os votos do usuario
 function mostrarVotos()
 {
@@ -18,8 +20,11 @@ function mostrarVotos()
         window.location.href = "index.html";
     }
 
+    document.getElementById("nomeUsuario").innerHTML = nome;
+
     var temporada = localStorage.getItem('temporada');
-    fetch(`https://dados-animes.glitch.me/${temporada}`)
+    // fetch(`https://dados-animes.glitch.me/${temporada}`)
+    fetch(`${endereco1}${temporada}`)
         .then(function (response)
         {
             return response.json();

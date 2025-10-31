@@ -1,42 +1,65 @@
-// const endereco2 = "http://localhost:3000/";
-const endereco2 = "https://dados-animes.glitch.me/";
-var temporada9 = localStorage.getItem('temporada');
+const endereco2 = "http://localhost:3000/";
+var temporada9 = localStorage.getItem("temporada");
 var dados;
 var nome = localStorage.getItem("usuario");
 var dadosAnimes = [];
 
-const elements = document.querySelectorAll('[data-identificacao]');
+const elements = document.querySelectorAll("[data-identificacao]");
 
-elements.forEach(function (element)
-{
-  const observer = new MutationObserver(function (mutations)
-  {
-    mutations.forEach(function (mutation)
-    {
-      if (mutation.attributeName === 'data-identificacao')
-      {
+elements.forEach(function (element) {
+  const observer = new MutationObserver(function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.attributeName === "data-identificacao") {
         var categoria = mutation.target.id;
-        var idVoto = mutation.target.getAttribute('data-identificacao');
+        var idVoto = mutation.target.getAttribute("data-identificacao");
         var imagemVoto = mutation.target.src;
-        var nomeJVoto = mutation.target.getAttribute('data-nomeJ');
-        var nomeEVoto = mutation.target.getAttribute('data-nomeE');
-        var extraVoto = mutation.target.getAttribute('data-extra');
+        var nomeJVoto = mutation.target.getAttribute("data-nomeJ");
+        var nomeEVoto = mutation.target.getAttribute("data-nomeE");
+        var extraVoto = mutation.target.getAttribute("data-extra");
 
         var partes = categoria.split("Img");
         var tipo = partes[0];
         var posicao = partes[1];
-        if (tipo == "abertura" || tipo == "encerramento" || tipo == "feminino" || tipo == "masculino" || tipo == "antagonista" || tipo == "par1" ||
-          tipo == "doente")
-        {
-          if (extraVoto != "sem")
-          {
-            var imagemVoto2 = mutation.target.getAttribute('data-imagem2');
-            salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto, imagemVoto2);
+
+        // CORREÇÃO: Tratar "par1" como "par"
+        if (tipo === "par1") {
+          tipo = "par";
+        }
+
+        if (
+          tipo == "abertura" ||
+          tipo == "encerramento" ||
+          tipo == "feminino" ||
+          tipo == "masculino" ||
+          tipo == "antagonista" ||
+          tipo == "par" || // Alterado de "par1" para "par"
+          tipo == "doente"
+        ) {
+          if (extraVoto != "sem") {
+            var imagemVoto2 = mutation.target.getAttribute("data-imagem2");
+            salvar(
+              categoria,
+              tipo,
+              posicao,
+              idVoto,
+              imagemVoto,
+              nomeJVoto,
+              nomeEVoto,
+              extraVoto,
+              imagemVoto2
+            );
           }
-        } else
-        {
-          salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto);
-          teste;
+        } else {
+          salvar(
+            categoria,
+            tipo,
+            posicao,
+            idVoto,
+            imagemVoto,
+            nomeJVoto,
+            nomeEVoto,
+            extraVoto
+          );
         }
       }
     });
@@ -45,14 +68,41 @@ elements.forEach(function (element)
   observer.observe(element, { attributes: true });
 });
 
-function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVoto, extraVoto, imagemVoto2)
-{
+function salvar(
+  categoria,
+  tipo,
+  posicao,
+  idVoto,
+  imagemVoto,
+  nomeJVoto,
+  nomeEVoto,
+  extraVoto,
+  imagemVoto2
+) {
   var idCat;
   var ordinal;
   var pontuacao;
 
-  switch (tipo)
-  {
+  // CORREÇÃO: Escapar apóstrofos e barras antes de usar os dados
+  function escapeForJSON(text) {
+    if (!text) return text;
+    return text
+      .replace(/\\/g, "\\\\") // Escape backslashes first
+      .replace(/'/g, "\\'") // Escape single quotes
+      .replace(/"/g, '\\"') // Escape double quotes
+      .replace(/\//g, "\\/") // Escape barras - IMPORTANTE para Fate/stay night
+      .replace(/\n/g, "\\n") // Escape newlines
+      .replace(/\r/g, "\\r") // Escape carriage returns
+      .replace(/\t/g, "\\t"); // Escape tabs
+  }
+
+  // Aplicar escape nos campos de texto
+  nomeJVoto = escapeForJSON(nomeJVoto);
+  nomeEVoto = escapeForJSON(nomeEVoto);
+  extraVoto = escapeForJSON(extraVoto);
+
+  // CORREÇÃO: Removida a lógica duplicada de "par1" pois já foi tratada acima
+  switch (tipo) {
     case "abertura":
       idCat = "01";
       catId = "0";
@@ -85,7 +135,7 @@ function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVo
       idCat = "08";
       catId = "7";
       break;
-    case "par":
+    case "par": // Agora só trata "par", não "par1"
       idCat = "09";
       catId = "8";
       break;
@@ -102,28 +152,23 @@ function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVo
       catId = "11";
       break;
     default:
-      console.log("deu ruim");
-      return; // Se o tipo não for reconhecido, saímos da função
+      console.log("deu ruim - tipo não reconhecido:", tipo);
+      return;
   }
 
-  // fetch(`https://dados-animes.glitch.me/${temporada}`)
-  temporada9 = localStorage.getItem('temporada');
-  fetch(`${endereco2}${temporada9}`)
-    .then(response => response.json())
-    .then(data =>
-    {
+  temporada9 = localStorage.getItem("temporada");
+  fetch(`${endereco2}votos${temporada9}`)
+    .then((response) => response.json())
+    .then((data) => {
       dadosAnimes = data.dados;
-      var todasAsCategorias = data.votos; // Obtenha todas as categorias
-      var categoriaAtualizada = todasAsCategorias[catId]; // Obtenha a categoria específica atualizada
+      var todasAsCategorias = data.votos;
+      var categoriaAtualizada = todasAsCategorias[catId];
 
-      var partes = categoria.split("Img");
-      var tipo = partes[0];
-      if (tipo == "par1") { tipo = "par" }
-      var dadosCat = categoriaAtualizada[tipo]; // Obtenha os dados específicos para este tipo
-      var nomeObjeto = dadosCat[nome]; // Obtenha o objeto correspondente ao nome do usuário
+      // CORREÇÃO: Removida a lógica duplicada de "par1" aqui também
+      var dadosCat = categoriaAtualizada[tipo];
+      var nomeObjeto = dadosCat[nome];
 
-      switch (posicao)
-      {
+      switch (posicao) {
         case "1":
           ordinal = "primeiro";
           pontuacao = 3;
@@ -137,8 +182,8 @@ function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVo
           pontuacao = 1;
           break;
         default:
-          console.log("Posição inválida");
-          return; // Se a posição não for válida, saímos da função
+          console.log("Posição inválida:", posicao);
+          return;
       }
 
       var objetoVoto = {
@@ -147,45 +192,39 @@ function salvar(categoria, tipo, posicao, idVoto, imagemVoto, nomeJVoto, nomeEVo
         nomeE: nomeEVoto,
         imagem: imagemVoto,
         extra: extraVoto,
-        ponto: pontuacao
+        ponto: pontuacao,
       };
 
-      if (idCat == "09")
-      {
+      // CORREÇÃO: Agora usa idCat numérico para comparação
+      if (idCat === "09") {
+        // "09" corresponde à categoria "par"
         objetoVoto.imagem2 = imagemVoto2;
       }
 
-      if (!nomeObjeto.hasOwnProperty(ordinal))
-      {
+      if (!nomeObjeto || !nomeObjeto.hasOwnProperty(ordinal)) {
         console.log("Objeto não encontrado para", nome, ordinal);
-        return; // Se o objeto correspondente não for encontrado, saímos da função
+        return;
       }
 
-      nomeObjeto[ordinal] = objetoVoto; // Atualize o objeto correspondente
+      nomeObjeto[ordinal] = objetoVoto;
 
-      // Agora vamos enviar todas as categorias de volta para o servidor com as atualizações feitas.
-      temporada9 = localStorage.getItem('temporada');
-      // fetch(`https://dados-animes.glitch.me/${temporada}`, {
-      fetch(`${endereco2}${temporada9}`, {
-        method: 'PUT',
-        body: JSON.stringify({ dados: dadosAnimes, votos: todasAsCategorias  }), // Envie todas as categorias de volta
+      temporada9 = localStorage.getItem("temporada");
+      fetch(`${endereco2}votos${temporada9}`, {
+        method: "PUT",
+        body: JSON.stringify({ dados: dadosAnimes, votos: todasAsCategorias }),
         headers: {
-          'Content-Type': 'application/json'
-        }
+          "Content-Type": "application/json",
+        },
       })
-        .then(response => response.json())
-        .then(dados =>
-        {
-          console.log('Dados salvos com sucesso:', dados.votos[2].feminino.vencedor);
-          // alert("Dados salvos com sucesso")
+        .then((response) => response.json())
+        .then((dados) => {
+          console.log("Dados salvos com sucesso");
         })
-        .catch(error =>
-        {
-          console.error('Erro ao salvar dados:', error);
+        .catch((error) => {
+          console.error("Erro ao salvar dados:", error);
         });
-    }) 
-    .catch(error =>
-    {
-      console.error('Erro ao obter os dados:', error);
+    })
+    .catch((error) => {
+      console.error("Erro ao obter os dados:", error);
     });
 }

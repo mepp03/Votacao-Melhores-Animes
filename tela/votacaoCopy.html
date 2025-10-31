@@ -2,13 +2,14 @@
 <html lang="pt-br">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>É hora de votar</title>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body onload="iniciar(), mostrarVotos()">
+<body class="votacao" onload="iniciar(), mostrarVotos(), resetarImagens()">
     <header>
         <div class="cabecalho">
             <div class="cabecalho__temporadas" id="cabecalho__temporadas">
@@ -237,7 +238,7 @@
             </table>
 
             <table class="tabela">
-                <h2 class="categoria--h2Nome">Maior Decepcao</h2>
+                <h2 class="categoria--h2Nome">Maior Decepção</h2>
                 <tr class="tabela__linha">
                     <th class="tabela__cabecalho">1º Lugar</th>
                     <th class="tabela__cabecalho">2º Lugar</th>

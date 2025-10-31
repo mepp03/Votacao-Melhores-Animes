@@ -1,322 +1,337 @@
 /* =====================temporada========================= */
 
 .temporada {
-    /*   margin-top: 100px; */
-    text-align: center;
+  text-align: center;
 }
 
 .categoria--h2Nome {
-    text-align: center;
+  text-align: center;
 }
 
+/* ====== TABELA ====== */
 .tabela {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: table;
+  width: 100%;
+  border-spacing: 10px;
+  text-align: center;
+}
+
+.tabela__linha {
+  display: table-row;
+}
+
+.tabela__coluna {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+  padding: 10px;
+  width: 300px; /* garante largura fixa e visual equilibrado */
 }
 
 .tabela__coluna__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centraliza os itens horizontalmente dentro do contêiner */
-    text-align: center; /* Garante que o texto também esteja centralizado */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
+.tabela__coluna__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 250px;
+}
 
 .tabela__coluna__img img {
-    height: 245px;
-    margin: 0;
-    padding: 0;
+  display: block;
+  margin: 0 auto;
+  height: 245px;
+  width: auto;
+  object-fit: contain;
 }
 
-.tabela__coluna h4 {
-    text-align: center;
-    white-space: pre-line;
+.tabela__coluna h4,
+.tabela__coluna p {
+  margin-top: 8px;
+  text-align: center;
+  white-space: pre-line;
 }
 
+/* ====== POSIÇÃO E CORES ====== */
 .posicao {
-    font-size: 128px;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 128px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .primeiro {
-    background-color: #fcb434;
+  background-color: #fcb434;
 }
 
 .segundo {
-    background-color: #c2bdb0;
+  background-color: #c2bdb0;
 }
 
 .terceiro {
-    background-color: #97784d;
+  background-color: #97784d;
 }
 
-/* =====================cabeçalho========================= */
+/* ====== CABEÇALHO ====== */
 .cabecalho {
-    padding-left: 30%;
-    padding-right: 30%;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
+  padding-left: 30%;
+  padding-right: 30%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(187, 187, 218);
   position: fixed;
   top: 0;
   width: 100%;
-  
-    align-items: center;
-    background-color: rgb(187, 187, 218);
+  align-items: center;
 }
 
 .cabecalho__temporadas {
-    margin-left: 35%;
-    width: 70px;
-    display: flex;
-    justify-content: space-between;
+  margin-left: 35%;
+  width: 70px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .inverno,
 .primavera,
 .verao,
 .outono {
-    display: block;
-    text-align: center;
+  display: block;
+  text-align: center;
 }
 
 .cabecalho__login {
-    padding-right: 5%;
+  padding-right: 5%;
 }
-/* =====================modal========================= */
+
+/* ====== MODAL ====== */
 .lista,
 .extra {
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .lista__lista {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 30px;
 }
 
 .lista__busca {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 32px;
-    margin-bottom: 32px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 32px;
+  margin-bottom: 32px;
 }
 
 .lista__item {
-    background-color: rgb(217, 255, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid rgb(241, 239, 239);
-    margin: 18px;
-    padding: 10px;
-    border-radius: 25px;
-    width: 250px;
+  background-color: rgb(217, 255, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(241, 239, 239);
+  margin: 18px;
+  padding: 10px;
+  border-radius: 25px;
+  width: 250px;
 }
 
 .lista__item--img {
-    width: 90%;
+  width: 90%;
 }
 
 .busca {
-    color: #464646;
-    margin-left: 12px;
-    outline: none;
-    border: none;
-    line-height: 2.2em;
-    font-size: 14pt;
-    width: 900px;
+  color: #464646;
+  margin-left: 12px;
+  outline: none;
+  border: none;
+  line-height: 2.2em;
+  font-size: 14pt;
+  width: 900px;
 }
 
 /* The Modal (background) */
 .modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100%;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content/Box */
 .modal__conteudo {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
 
 /* The Close Button */
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 select {
-    /* esconder a seta do select */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    /* text-indent: 1px; */
-    text-overflow: '';
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-overflow: "";
 }
-
-
 
 /* Oculta o botão de rádio padrão */
 input[type="radio"] {
-    /* display: none; */
+  /* display: none; */
 }
 
 /* Cria um botão personalizado */
 .radio-button {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
 }
 
 /* Adiciona um ponto ao botão personalizado quando selecionado */
 .radio-button:checked::after {
-    content: "";
-    display: block;
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-    background-color: #ccc;
-    border-radius: 50%;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #ccc;
+  border-radius: 50%;
 }
 
-
-
 .esconder {
-    display: none;
+  display: none;
 }
 
 .desabilitar {
-    pointer-events: none;
-    opacity: 0.5;
+  pointer-events: none;
+  opacity: 0.5;
 }
 
-
-
 /* =====================visualizador json========================= */
-
-
-/* Adiciona um pouco de espaço entre a imagem e a div de informações */
 img {
-    float: left;
-    margin-right: 20px;
-    /* Ajuste o valor conforme necessário */
+  float: left;
+  margin-right: 20px;
 }
 
 #info {
-    /* Centraliza a div de informações */
-    margin: auto;
-    width: 50%;
-    /* Ajuste o valor conforme necessário */
+  margin: auto;
+  width: 50%;
 }
 
 .container__op_ed {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .container__op_ed label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .container__op_ed input {
-    margin-bottom: 10px;
-    width: 200px;
-    /* Define a largura para caber aproximadamente 100 caracteres */
+  margin-bottom: 10px;
+  width: 200px;
 }
 
 .op_ed {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    /* Altera a direção para coluna */
-    align-items: left;
-    /* Centraliza os itens na coluna */
-    width: 630px;
-    /* Largura ajustada para ficar próxima dos inputs */
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 630px;
 }
 
 .op_ed label {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .op_ed input {
-    margin-bottom: 10px;
-    width: 600px;
-    /* Define a largura para caber aproximadamente 100 caracteres */
+  margin-bottom: 10px;
+  width: 600px;
 }
 
 .round-button {
-    height: 30px;
-    /* Ajuste a altura conforme necessário */
-    align-self: flex-end;
-    margin-top: 10px;
+  height: 30px;
+  align-self: flex-end;
+  margin-top: 10px;
 }
 
 #escolha {
-    clear: both;
+  clear: both;
 }
 
 #escolha button {
-    width: 230px;
-    /* Largura ajustada para 230px */
+  width: 230px;
 }
 
 .anime-box {
-    background-color: #cceeff;
-    /* Cor de fundo azul claro */
-    padding: 20px;
-    /* Adiciona um espaçamento interno */
-    margin-bottom: 20px;
-    /* Adiciona uma margem inferior para separar as caixas */
+  background-color: #cceeff;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .inputAnime {
-    width: 1000px;
+  width: 1000px;
+}
+
+.tabela__linha.pontos {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.tabela__coluna.pontos {
+  text-align: center;
+  font-size: 1.1em;
+  color: #2c3e50;
+}
+
+.imagem-empate {
+  border: 2px solid #e74c3c;
+  border-radius: 5px;
+}
+
+.imagem-voto {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imagem-par {
+  margin-top: 5px;
 }

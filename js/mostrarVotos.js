@@ -1,198 +1,237 @@
-// const endereco1 = "http://localhost:3000/";
-const endereco1 = "https://dados-animes.glitch.me/";
+const endereco1 = "http://localhost:3000/";
 var nome = localStorage.getItem("usuario");
 
-
 // Adicione um ouvinte de evento ao cabeçalho assim que o script for carregado
-document.addEventListener("DOMContentLoaded", function() {
-    const pegarDados = document.querySelector('#cabecalho__temporadas');
-    pegarDados.addEventListener('change', function() {
-        mostrarVotos();
-        buscar(); //chama a funcão no buscaEMostraCopy.js
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const pegarDados = document.querySelector("#cabecalho__temporadas");
+  pegarDados.addEventListener("change", function () {
+    mostrarVotos();
+    buscar(); //chama a funcão no buscaEMostraCopy.js
+  });
 });
 
 // carregar e mostrar os votos do usuario
-function mostrarVotos()
-{
-    if (nome == "null")
-    {
-        window.location.href = "index.html";
-    }
+function mostrarVotos() {
+  if (nome == "null") {
+    window.location.href = "index.html";
+  }
 
-    document.getElementById("nomeUsuario").innerHTML = nome;
+  document.getElementById("nomeUsuario").innerHTML = nome;
 
-    var temporada = localStorage.getItem('temporada');
-    // fetch(`https://dados-animes.glitch.me/${temporada}`)
-    fetch(`${endereco1}${temporada}`)
-        .then(function (response)
-        {
-            return response.json();
-        })
-        .then(function (data)
-        {
-            data = data.votos;
+  var temporada = localStorage.getItem("temporada");
 
-            const abertura = Object.values(data[0].abertura[nome]);
-            const encerramento = Object.values(data[1].encerramento[nome]);
-            const feminino = Object.values(data[2].feminino[nome]);
-            const masculino = Object.values(data[3].masculino[nome]);
-            const surpresa = Object.values(data[4].surpresa[nome]);
-            const decepcao = Object.values(data[5].decepcao[nome]);
-            const animacao = Object.values(data[6].animacao[nome]);
-            const antagonista = Object.values(data[7].antagonista[nome]);
-            const par = Object.values(data[8].par[nome]);
-            const doente = Object.values(data[9].doente[nome]);
-            const emocao = Object.values(data[10].emocao[nome]);
-            const anime = Object.values(data[11].anime[nome]);
+  fetch(`${endereco1}votos${temporada}`)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      data = data.votos;
 
-            abertura.map((item, index) =>
-            {
-                const img = document.querySelector(`#aberturaImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#aberturaNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#aberturaNomeIngles${index + 1}`);
-                const nomeMusica = document.querySelector(`#aberturaNomeMusica${index + 1}`);
+      const abertura = Object.values(data[0].abertura[nome]);
+      const encerramento = Object.values(data[1].encerramento[nome]);
+      const feminino = Object.values(data[2].feminino[nome]);
+      const masculino = Object.values(data[3].masculino[nome]);
+      const surpresa = Object.values(data[4].surpresa[nome]);
+      const decepcao = Object.values(data[5].decepcao[nome]);
+      const animacao = Object.values(data[6].animacao[nome]);
+      const antagonista = Object.values(data[7].antagonista[nome]);
+      const par = Object.values(data[8].par[nome]);
+      const doente = Object.values(data[9].doente[nome]);
+      const emocao = Object.values(data[10].emocao[nome]);
+      const anime = Object.values(data[11].anime[nome]);
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-                nomeMusica.innerHTML = item.extra;
-            });
+      abertura.map((item, index) => {
+        const img = document.querySelector(`#aberturaImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#aberturaNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#aberturaNomeIngles${index + 1}`
+        );
+        const nomeMusica = document.querySelector(
+          `#aberturaNomeMusica${index + 1}`
+        );
 
-            encerramento.map((item, index) =>
-            {
-                const img = document.querySelector(`#encerramentoImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#encerramentoNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#encerramentoNomeIngles${index + 1}`);
-                const nomeMusica = document.querySelector(`#encerramentoNomeMusica${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+        nomeMusica.innerHTML = item.extra;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-                nomeMusica.innerHTML = item.extra;
-            });
+      encerramento.map((item, index) => {
+        const img = document.querySelector(`#encerramentoImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#encerramentoNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#encerramentoNomeIngles${index + 1}`
+        );
+        const nomeMusica = document.querySelector(
+          `#encerramentoNomeMusica${index + 1}`
+        );
 
-            feminino.map((item, index) =>
-            {
-                const img = document.querySelector(`#femininoImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#femininoNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#femininoNomeIngles${index + 1}`);
-                const nomePersonagem = document.querySelector(`#femininoNomePersonagem${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+        nomeMusica.innerHTML = item.extra;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-                nomePersonagem.innerHTML = item.extra;
-            });
+      feminino.map((item, index) => {
+        const img = document.querySelector(`#femininoImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#femininoNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#femininoNomeIngles${index + 1}`
+        );
+        const nomePersonagem = document.querySelector(
+          `#femininoNomePersonagem${index + 1}`
+        );
 
-            masculino.map((item, index) =>
-            {
-                const img = document.querySelector(`#masculinoImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#masculinoNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#masculinoNomeIngles${index + 1}`);
-                const nomePersonagem = document.querySelector(`#masculinoNomePersonagem${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+        nomePersonagem.innerHTML = item.extra;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-                nomePersonagem.innerHTML = item.extra;
-            });
+      masculino.map((item, index) => {
+        const img = document.querySelector(`#masculinoImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#masculinoNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#masculinoNomeIngles${index + 1}`
+        );
+        const nomePersonagem = document.querySelector(
+          `#masculinoNomePersonagem${index + 1}`
+        );
 
-            surpresa.map((item, index) =>
-            {
-                const img = document.querySelector(`#surpresaImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#surpresaNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#surpresaNomeIngles${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+        nomePersonagem.innerHTML = item.extra;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-            });
+      surpresa.map((item, index) => {
+        const img = document.querySelector(`#surpresaImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#surpresaNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#surpresaNomeIngles${index + 1}`
+        );
 
-            decepcao.map((item, index) =>
-            {
-                const img = document.querySelector(`#decepcaoImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#decepcaoNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#decepcaoNomeIngles${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-            });
+      decepcao.map((item, index) => {
+        const img = document.querySelector(`#decepcaoImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#decepcaoNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#decepcaoNomeIngles${index + 1}`
+        );
 
-            animacao.map((item, index) =>
-            {
-                const img = document.querySelector(`#animacaoImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#animacaoNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#animacaoNomeIngles${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-            });
+      animacao.map((item, index) => {
+        const img = document.querySelector(`#animacaoImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#animacaoNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#animacaoNomeIngles${index + 1}`
+        );
 
-            antagonista.map((item, index) =>
-            {
-                const img = document.querySelector(`#antagonistaImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#antagonistaNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#antagonistaNomeIngles${index + 1}`);
-                const nomePersonagem = document.querySelector(`#antagonistaNomePersonagem${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-                nomePersonagem.innerHTML = item.extra;
-            });
+      antagonista.map((item, index) => {
+        const img = document.querySelector(`#antagonistaImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#antagonistaNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#antagonistaNomeIngles${index + 1}`
+        );
+        const nomePersonagem = document.querySelector(
+          `#antagonistaNomePersonagem${index + 1}`
+        );
 
-            par.map((item, index) =>
-            {
-                const img1 = document.querySelector(`#par1Img${index + 1}`);
-                const img2 = document.querySelector(`#par2Img${index + 1}`);
-                const nomeJapones = document.querySelector(`#parNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#parNomeIngles${index + 1}`);
-                const nomePar = document.querySelector(`#parNomePar${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+        nomePersonagem.innerHTML = item.extra;
+      });
 
-                img1.src = item.imagem;
-                img2.src = item.imagem2;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-                nomePar.innerHTML = item.extra;
-            });
+      par.map((item, index) => {
+        const img1 = document.querySelector(`#par1Img${index + 1}`);
+        const img2 = document.querySelector(`#par2Img${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#parNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(`#parNomeIngles${index + 1}`);
+        const nomePar = document.querySelector(`#parNomePar${index + 1}`);
 
-            doente.map((item, index) =>
-            {
-                const img = document.querySelector(`#doenteImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#doenteNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#doenteNomeIngles${index + 1}`);
-                const nomePersonagem = document.querySelector(`#doenteNomePersonagem${index + 1}`);
+        img1.src = item.imagem;
+        img2.src = item.imagem2;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+        nomePar.innerHTML = item.extra;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-                nomePersonagem.innerHTML = item.extra;
-            });
+      doente.map((item, index) => {
+        const img = document.querySelector(`#doenteImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#doenteNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#doenteNomeIngles${index + 1}`
+        );
+        const nomePersonagem = document.querySelector(
+          `#doenteNomePersonagem${index + 1}`
+        );
 
-            emocao.map((item, index) =>
-            {
-                const img = document.querySelector(`#emocaoImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#emocaoNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#emocaoNomeIngles${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+        nomePersonagem.innerHTML = item.extra;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-            });
+      emocao.map((item, index) => {
+        const img = document.querySelector(`#emocaoImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#emocaoNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#emocaoNomeIngles${index + 1}`
+        );
 
-            anime.map((item, index) =>
-            {
-                const img = document.querySelector(`#animeImg${index + 1}`);
-                const nomeJapones = document.querySelector(`#animeNomeJapones${index + 1}`);
-                const nomeIngles = document.querySelector(`#animeNomeIngles${index + 1}`);
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+      });
 
-                img.src = item.imagem;
-                nomeJapones.innerHTML = item.nomeJ;
-                nomeIngles.innerHTML = item.nomeE;
-            });
-        });
+      anime.map((item, index) => {
+        const img = document.querySelector(`#animeImg${index + 1}`);
+        const nomeJapones = document.querySelector(
+          `#animeNomeJapones${index + 1}`
+        );
+        const nomeIngles = document.querySelector(
+          `#animeNomeIngles${index + 1}`
+        );
+
+        img.src = item.imagem;
+        nomeJapones.innerHTML = item.nomeJ;
+        nomeIngles.innerHTML = item.nomeE;
+      });
+    });
 }
-

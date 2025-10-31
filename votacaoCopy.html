@@ -2,41 +2,84 @@
 <html lang="pt-br">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>É hora de votar</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 
-<body onload="mostrarVotos()">
+<body class="votacao" onload="iniciar(), mostrarVotos(), resetarImagens()">
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho__temporadas" id="cabecalho__temporadas">
+                <button onclick="home()">Início</button>
+                <div class="cabecalho__temporadas ano">
+                    <select id="ano">
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </div>
+
+
+                <div class="cabecalho__temporadas inverno">
+                    <input type="radio" id="inverno" name="estacoes" value="inverno" checked>
+                    <label for="inverno">Inverno</label>
+                </div>
+                <div class="cabecalho__temporadas primavera">
+                    <input type="radio" id="primavera" name="estacoes" value="primavera">
+                    <label for="primavera">Primavera</label>
+                </div>
+                <div class="cabecalho__temporadas verao">
+                    <input type="radio" id="verao" name="estacoes" value="verao">
+                    <label for="verao">Verão</label>
+                </div>
+                <div class="cabecalho__temporadas outono">
+                    <input type="radio" id="outono" name="estacoes" value="outono">
+                    <label for="outono">Outono</label>
+                </div>
+            </div>
+
+            <div class="cabecalho__login">
+                <p id="nomeUsuario"></p>
+                <button class="cabecalho__login--botaoLogar botao" id="botaoSair"
+                    onclick="deslogar()">Sair</button>
+            </div>
+        </div>
+
+
+
+    </header>
     <main>
         <!-- Os Modais -->
         <div id="listaModal" class="modal">
-            <!-- Modal content -->
+            <!-- Modal principal -->
             <div class="modal__conteudo">
                 <span class="close"></span>
                 <section class="lista" id="secaoLista">
                     <div class="lista__busca">
-                        <input name="busca" class="busca" id="busca" value="" onkeyup="procurar()"></input>
+                        <input name="busca" class="busca" id="busca" value="" onkeyup="filtrar()"></input>
                     </div>
                     <div class="lista__lista" id="lista"></div>
                 </section>
 
+                <!-- Modal extra -->
                 <section class="extra esconder" id="secaoExtra">
                     <div class="lista__busca">
                         <input name="extra__busca" class="busca" id="extra__busca" value=""
-                            onkeyup="procurar()"></input>
+                            onkeyup="filtrarPersonagem()"></input>
                     </div>
                     <div class="lista__lista" id="extra"></div>
                 </section>
             </div>
         </div>
 
-        </div>
-
-        <section class="categoria op">
-            <h1 class="categoria--h2Nome">Inverno 2021</h1>
+        <h1 class="temporada" id="temporada"></h1>
+        <section class="categoria">
             <table class="tabela">
                 <h2 class="categoria--h2Nome">Melhor Abertura</h2>
                 <tr class="tabela__linha">
@@ -195,7 +238,7 @@
             </table>
 
             <table class="tabela">
-                <h2 class="categoria--h2Nome">Maior Decepcao</h2>
+                <h2 class="categoria--h2Nome">Maior Decepção</h2>
                 <tr class="tabela__linha">
                     <th class="tabela__cabecalho">1º Lugar</th>
                     <th class="tabela__cabecalho">2º Lugar</th>
@@ -293,22 +336,28 @@
                 </tr>
                 <tr class="tabela__linha">
                     <td class="tabela__coluna" id="voto1" onclick="parEscolherVoto1()">
-                        <div class="tabela__coluna__img"><img data-identificacao="" src="../imagem/1333.jpg"
-                                id="parImg1"></div>
+                        <div class="tabela__coluna__img">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par1Img1">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par2Img1">
+                        </div>
                         <h4 id="parNomeJapones1">1º Lugar</h4>
                         <h4 id="parNomeIngles1"></h4>
                         <h4 id="parNomePar1"></h4>
                     </td>
                     <td class="tabela__coluna" id="voto2" onclick="parEscolherVoto2()">
-                        <div class="tabela__coluna__img"><img data-identificacao="" src="../imagem/1333.jpg"
-                                id="parImg2"></div>
+                        <div class="tabela__coluna__img">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par1Img2">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par2Img2">
+                        </div>
                         <h4 id="parNomeJapones2">2º Lugar</h4>
                         <h4 id="parNomeIngles2"></h4>
                         <h4 id="parNomePar2"></h4>
                     </td>
                     <td class="tabela__coluna" id="voto3" onclick="parEscolherVoto3()">
-                        <div class="tabela__coluna__img"><img data-identificacao="" src="../imagem/1333.jpg"
-                                id="parImg3"></div>
+                        <div class="tabela__coluna__img">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par1Img3">
+                            <img data-identificacao="" src="../imagem/1333.jpg" id="par2Img3">
+                        </div>
                         <h4 id="parNomeJapones3">3º Lugar</h4>
                         <h4 id="parNomeIngles3"></h4>
                         <h4 id="parNomePar3"></h4>
@@ -406,11 +455,31 @@
                 </tr>
             </table>
         </section>
+
+
+
+
+
+        <!-- tirar -->
+        <div style="text-align:center;">
+            <button onclick="votar()"> Votar </button>
+        </div>
+        <!-- tirar -->
+
+
+
+
+
     </main>
-    <script src="principalCopy.js"></script>
-    <script src="escolherVoto.js"></script>
-    <script src="buscaEMostraCopy.js"></script> 
-    <script src="votos.js"></script>
+    <script src="../js/buscaEMostraCopy.js"></script>
+    <script src="../js/escolherVoto.js"></script>
+    <script src="../js/filtro.js"></script>
+    <script src="../js/mostrarVotos.js"></script>
+    <script src="../js/pegarTemporada.js"></script>
+    <script src="../js/janelaModal.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/votos.js"></script>
+    <script src="../js/calculoVotos.js"></script>
 </body>
 
 </html>

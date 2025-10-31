@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pagina Inicial</title>
-    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
   </head>
 
   <body
-    onload="checarUsuario(), iniciar(), carregarCategorias(), mostrarVencedores()"
+    onload="checarUsuario(), iniciar(), carregarCategorias(), mostrarVencedores(), resetarImagens()"
   >
     <header>
       <div class="cabecalho">
         <div class="cabecalho__temporadas" id="cabecalho__temporadas">
           <div class="cabecalho__temporadas ano">
             <select id="ano">
-              <option value="2019" selected>2019</option>
+              <option value="2019">2019</option>
               <option value="2020">2020</option>
               <option value="2021">2021</option>
               <option value="2022">2022</option>
               <option value="2023">2023</option>
-              <!-- <option value="2024">2024</option> -->
+              <option value="2024">2024</option>
             </select>
           </div>
 
@@ -54,6 +54,7 @@
         </div>
 
         <div class="cabecalho__login">
+          <p id="nomeUsuario"></p>
           <button
             class="cabecalho__login--botaoLogar botao esconder"
             id="botaoVotar"

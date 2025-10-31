@@ -16,5 +16,8 @@
     "server-2021": "json-server --watch votos2021Inverno.json --port 3000",
     "server-db": "json-server --watch db.json --port 3000",
     "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=14.0.0"
   }
 }

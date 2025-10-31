@@ -1,4 +1,3 @@
-const endereco3 = "http://localhost:3000/";
 const tabela = document.getElementById("lista");
 const tabelaExtra = document.getElementById("extra");
 var animes;
@@ -137,8 +136,7 @@ function buscar() {
   var temporada = localStorage.getItem("temporada");
   tabela.innerHTML = "";
 
-  // fetch(`https://dados-animes.glitch.me/${temporada}`)
-  fetch(`${endereco3}${temporada}`)
+  fetch(`${endereco}${temporada}`)
     .then(function (response) {
       return response.json();
     })

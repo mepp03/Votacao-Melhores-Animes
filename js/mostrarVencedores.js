@@ -1,5 +1,3 @@
-const endereco = "http://localhost:3000/";
-
 // Mapeamento das categorias na ordem correta
 const categoriasMap = [
   { key: "abertura", codigo: "Op" },
@@ -164,38 +162,49 @@ function preencherCelula(categoria, pessoa, posicao, dados) {
   if (imgElement && dados.imagem) {
     // Se tem "***" significa que são múltiplas imagens (empatados)
     if (dados.imagem.includes("***")) {
-      const imagens = dados.imagem.split("***");
-      // Limpar container de imagens primeiro
-      const imgContainer = imgElement.parentElement;
-      imgContainer.innerHTML = "";
-      imgContainer.style.display = "flex";
-      imgContainer.style.justifyContent = "center";
-      imgContainer.style.alignItems = "center";
-      imgContainer.style.gap = "2px";
+      const imagens = dados.imagem
+        .split("***")
+        .filter(
+          (imagemSrc) =>
+            imagemSrc && imagemSrc !== "../imagem/1333.jpg" && imagemSrc !== ""
+        );
 
-      // Adicionar cada imagem lado a lado
-      imagens.forEach((imagemSrc, index) => {
-        if (
-          imagemSrc &&
-          imagemSrc !== "../imagem/1333.jpg" &&
-          imagemSrc !== ""
-        ) {
+      // Se tem imagens válidas para empate
+      if (imagens.length > 0) {
+        // Configura o container
+        const imgContainer = imgElement.parentElement;
+        imgContainer.style.display = "flex";
+        imgContainer.style.justifyContent = "center";
+        imgContainer.style.alignItems = "center";
+        imgContainer.style.gap = "5px";
+        imgContainer.style.flexWrap = "wrap";
+
+        // Remove a imagem original temporariamente
+        imgElement.style.display = "none";
+
+        // Adiciona cada imagem de empate
+        imagens.forEach((imagemSrc, index) => {
           const novaImg = document.createElement("img");
           novaImg.src = imagemSrc;
           novaImg.alt = dados.nomeJ || "";
           novaImg.className = "imagem-voto imagem-empate";
-          novaImg.style.flex = "1";
-          novaImg.style.maxWidth = `${100 / imagens.length}%`;
+          novaImg.style.maxWidth = "45%"; // Controla o tamanho
           novaImg.style.height = "auto";
           novaImg.style.objectFit = "cover";
+          novaImg.style.flex = "1";
+          novaImg.style.minWidth = "40%"; // Evita imagens muito pequenas
           imgContainer.appendChild(novaImg);
-        }
-      });
+        });
+      }
     } else {
       // Imagem única (comportamento normal)
       if (dados.imagem !== "../imagem/1333.jpg" && dados.imagem !== "") {
+        // Garante que a imagem original está visível
+        imgElement.style.display = "block";
         imgElement.src = dados.imagem;
         imgElement.alt = dados.nomeJ || "";
+        imgElement.className = "imagem-voto";
+        imgElement.style.cssText = ""; // Remove estilos anteriores
       }
     }
   }
@@ -263,7 +272,7 @@ function capitalizeFirst(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-// Resetar todas as imagens para o padrão
+// Resetar todas as imagens para o padrão - VERSÃO INTELIGENTE
 function resetarImagens() {
   const pessoas = ["leandro", "lucas", "thiago", "nil", "vencedor"];
 
@@ -272,48 +281,64 @@ function resetarImagens() {
       const pessoaCapitalizada =
         pessoa.charAt(0).toUpperCase() + pessoa.slice(1);
 
-      // Resetar posições 1, 2, 3
       ["1", "2", "3"].forEach((posicao) => {
-        // Resetar imagem principal
-        const imgElement = document.getElementById(
-          `img${categoria.codigo}${pessoaCapitalizada}${posicao}`
-        );
+        // Estratégia SUAVE: Apenas reseta o conteúdo, não destrói a estrutura
+        const imgId = `img${categoria.codigo}${pessoaCapitalizada}${posicao}`;
+        const imgElement = document.getElementById(imgId);
+
         if (imgElement) {
+          // RESETA APENAS a imagem original - mantém estrutura
           imgElement.src = "../imagem/1333.jpg";
           imgElement.alt = "";
-          // Restaurar estrutura original do container
-          const imgContainer = imgElement.parentElement;
-          imgContainer.innerHTML = "";
-          imgContainer.style.display = "block";
-          const originalImg = document.createElement("img");
-          originalImg.src = "../imagem/1333.jpg";
-          originalImg.id = `img${categoria.codigo}${pessoaCapitalizada}${posicao}`;
-          originalImg.className = "imagem-voto";
-          originalImg.alt = "";
-          imgContainer.appendChild(originalImg);
-        }
+          imgElement.className = "imagem-voto";
+          imgElement.style.cssText = ""; // Remove estilos inline
 
-        // Resetar segunda imagem (para categoria Par)
-        if (categoria.codigo === "Par") {
-          const img2Element = document.getElementById(
-            `img${categoria.codigo}2${pessoaCapitalizada}${posicao}`
-          );
-          if (img2Element) {
-            img2Element.src = "../imagem/1333.jpg";
-            // Restaurar estrutura original do container
-            const img2Container = img2Element.parentElement;
-            img2Container.innerHTML = "";
-            img2Container.style.display = "block";
-            const originalImg2 = document.createElement("img");
-            originalImg2.src = "../imagem/1333.jpg";
-            originalImg2.id = `img${categoria.codigo}2${pessoaCapitalizada}${posicao}`;
-            originalImg2.className = "imagem-voto imagem-par";
-            originalImg2.alt = "";
-            img2Container.appendChild(originalImg2);
+          // Remove APENAS imagens extras (empates) mantendo a original
+          const container = imgElement.parentElement;
+          if (container) {
+            const todasImagens = container.querySelectorAll("img");
+            todasImagens.forEach((img, index) => {
+              if (index > 0) {
+                // Mantém a primeira (original), remove as outras
+                img.remove();
+              }
+            });
+
+            // Reseta estilos do container MAS mantém estrutura básica
+            container.style.display = "";
+            container.style.flexDirection = "";
+            container.style.justifyContent = "";
+            container.style.alignItems = "";
+            container.style.gap = "";
+            container.style.flexWrap = "";
           }
         }
 
-        // Resetar pontos APENAS do vencedor
+        // Para categoria Par (segunda imagem)
+        if (categoria.codigo === "Par") {
+          const img2Id = `img${categoria.codigo}2${pessoaCapitalizada}${posicao}`;
+          const img2Element = document.getElementById(img2Id);
+
+          if (img2Element) {
+            img2Element.src = "../imagem/1333.jpg";
+            img2Element.alt = "";
+            img2Element.className = "imagem-voto imagem-par";
+            img2Element.style.cssText = "";
+
+            const container2 = img2Element.parentElement;
+            if (container2) {
+              const todasImagens2 = container2.querySelectorAll("img");
+              todasImagens2.forEach((img, index) => {
+                if (index > 0) {
+                  img.remove();
+                }
+              });
+              container2.style.display = "";
+            }
+          }
+        }
+
+        // Resetar pontos do vencedor
         if (pessoa === "vencedor") {
           const pontosElement = document.getElementById(
             `pontos${categoria.codigo}${pessoaCapitalizada}${posicao}`

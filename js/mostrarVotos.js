@@ -1,4 +1,3 @@
-const endereco1 = "http://localhost:3000/";
 var nome = localStorage.getItem("usuario");
 
 // Adicione um ouvinte de evento ao cabeçalho assim que o script for carregado
@@ -20,7 +19,7 @@ function mostrarVotos() {
 
   var temporada = localStorage.getItem("temporada");
 
-  fetch(`${endereco1}votos${temporada}`)
+  fetch(`${endereco}votos${temporada}`)
     .then(function (response) {
       return response.json();
     })

@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Pegar informações da temporada no Anilist</title>
-	<meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-	<div id="cabecalho">
-		<label for="ano">Ano:</label>
-		<select id="ano" name="ano">
-			<option value="2019">2019</option>
-			<option value="2020">2020</option>
-			<option value="2021">2021</option>
-			<option value="2022">2022</option>
-			<option value="2023">2023</option>
-      <option value="2024">2024</option>
-		</select>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div id="cabecalho">
+      <label for="ano">Ano:</label>
+      <select id="ano" name="ano">
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+        <option value="2024">2024</option>
+        <option value="2024">2025</option>
+      </select>
 
-		<label for="estacao">Temporada:</label>
-		<select id="estacao" name="estacao">
-			<option value="WINTER">Inverno</option>
-			<option value="SPRING">Primavera</option>
-			<option value="SUMMER">Verão</option>
-			<option value="FALL">Outono</option>
-		</select>
-		<button onclick="pegarTemporada()">Pegar do Anilist</button>
-	</div>
-    
-    <input type="text" id="idAnime">
-    <!-- Modificado para chamar a função pegarAnimeId() e passar o valor do campo de texto como argumento -->
-    <button onclick="pegarAnimeId(document.getElementById('idAnime').value)" id="botaoPegarAnime">Pegar Anime</button>
-    <!-- <button onclick="mostrar()">mostrar</button> -->
-
-    <div id="lista">
-
+      <label for="estacao">Temporada:</label>
+      <select id="estacao" name="estacao">
+        <option value="WINTER">Inverno</option>
+        <option value="SPRING">Primavera</option>
+        <option value="SUMMER">Verão</option>
+        <option value="FALL">Outono</option>
+      </select>
+      <button onclick="pegarTemporada()">Pegar do Anilist</button>
     </div>
 
-    <script src="/pegarInfoAnilist.js"></script>
-</body>
+    <input type="text" id="idAnime" />
+    <!-- Modificado para chamar a função pegarAnimeId() e passar o valor do campo de texto como argumento -->
+    <button
+      onclick="pegarAnimeId(document.getElementById('idAnime').value)"
+      id="botaoPegarAnime"
+    >
+      Pegar Anime
+    </button>
+    <!-- <button onclick="mostrar()">mostrar</button> -->
+
+    <div id="lista"></div>
+
+    <script src="../js/endereco.js"></script>
+    <script src="../js/pegarInfoAnilist.js"></script>
+  </body>
 </html>

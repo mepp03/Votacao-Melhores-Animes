@@ -1,1 +1,1 @@
-module.exports.endereco = "http://localhost:3000/";
+var endereco = "https://votacao-melhores-animes.onrender.com/";

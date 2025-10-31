@@ -1,4 +1,3 @@
-const endereco2 = "http://localhost:3000/";
 var temporada9 = localStorage.getItem("temporada");
 var dados;
 var nome = localStorage.getItem("usuario");
@@ -157,7 +156,7 @@ function salvar(
   }
 
   temporada9 = localStorage.getItem("temporada");
-  fetch(`${endereco2}votos${temporada9}`)
+  fetch(`${endereco}votos${temporada9}`)
     .then((response) => response.json())
     .then((data) => {
       dadosAnimes = data.dados;
@@ -209,7 +208,7 @@ function salvar(
       nomeObjeto[ordinal] = objetoVoto;
 
       temporada9 = localStorage.getItem("temporada");
-      fetch(`${endereco2}votos${temporada9}`, {
+      fetch(`${endereco}votos${temporada9}`, {
         method: "PUT",
         body: JSON.stringify({ dados: dadosAnimes, votos: todasAsCategorias }),
         headers: {

@@ -1,4 +1,3 @@
-const endereco4 = "http://localhost:3000/";
 var idCat;
 var catId;
 var dados = [];
@@ -6,7 +5,7 @@ var dados = [];
 function votar() {
   const temporada = localStorage.getItem("temporada");
 
-  fetch(`${endereco4}votos${temporada}`)
+  fetch(`${endereco}votos${temporada}`)
     .then((response) => response.json())
     .then((info) => {
       // 🔧 Faz uma cópia limpa dos dados (evita somar sobre resultados anteriores)
@@ -336,7 +335,7 @@ function votar() {
       Promise.all(promises)
         .then(() => {
           // 🔥 Salva apenas após todos os cálculos terminarem
-          fetch(`${endereco4}votos${temporada}`, {
+          fetch(`${endereco}votos${temporada}`, {
             method: "PUT",
             headers: {
               "Content-Type": "application/json",

@@ -1,5 +1,7 @@
 busca1();
 
+console.log("esse");
+
 const tabela = document.getElementById("lista");
 const tabelaExtra = document.getElementById("extra");
 var animes;

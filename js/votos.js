@@ -82,23 +82,24 @@ function salvar(
   var ordinal;
   var pontuacao;
 
-  // CORREÇÃO: Escapar apóstrofos e barras antes de usar os dados
-  function escapeForJSON(text) {
+  // CORREÇÃO: DESescapar os dados que vieram com escape
+  function desescapeForJSON(text) {
     if (!text) return text;
     return text
-      .replace(/\\/g, "\\\\") // Escape backslashes first
-      .replace(/'/g, "\\'") // Escape single quotes
-      .replace(/"/g, '\\"') // Escape double quotes
-      .replace(/\//g, "\\/") // Escape barras - IMPORTANTE para Fate/stay night
-      .replace(/\n/g, "\\n") // Escape newlines
-      .replace(/\r/g, "\\r") // Escape carriage returns
-      .replace(/\t/g, "\\t"); // Escape tabs
+      .replace(/\\\\/g, "\\")
+      .replace(/\\'/g, "'")
+      .replace(/\\"/g, '"')
+      .replace(/\\`/g, "`")
+      .replace(/\\n/g, "\n")
+      .replace(/\\r/g, "\r")
+      .replace(/\\t/g, "\t")
+      .replace(/\\f/g, "\f");
   }
 
-  // Aplicar escape nos campos de texto
-  nomeJVoto = escapeForJSON(nomeJVoto);
-  nomeEVoto = escapeForJSON(nomeEVoto);
-  extraVoto = escapeForJSON(extraVoto);
+  // Aplicar DESescape nos campos de texto (não escape!)
+  nomeJVoto = desescapeForJSON(nomeJVoto);
+  nomeEVoto = desescapeForJSON(nomeEVoto);
+  extraVoto = desescapeForJSON(extraVoto);
 
   // CORREÇÃO: Removida a lógica duplicada de "par1" pois já foi tratada acima
   switch (tipo) {

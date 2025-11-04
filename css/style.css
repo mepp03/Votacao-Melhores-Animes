@@ -335,3 +335,21 @@ img {
 .imagem-par {
   margin-top: 5px;
 }
+
+.lista__item--video {
+  width: 750px;
+  margin: 18px auto;
+  background-color: rgb(217, 255, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.lista__item--video video {
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+}

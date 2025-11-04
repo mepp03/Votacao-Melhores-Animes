@@ -1,3 +1,5 @@
+console.log("foi");
+
 const tabela = document.getElementById("lista");
 const tabelaExtra = document.getElementById("extra");
 var animes;
@@ -5,16 +7,36 @@ var nome = localStorage.getItem("usuario");
 
 buscar();
 
-// Função para tratar os caracteres especiais
-function tratarCaractere(str) {
-  if (!str) return "";
+// Função para tratar os caracteres especiais (APENAS para atributos HTML)
+function escaparCaractere(str) {
+  if (str === null || str === undefined) return "";
+  if (typeof str !== "string") {
+    str = String(str);
+  }
+
   return str
     .replace(/\\/g, "\\\\")
     .replace(/'/g, "\\'")
     .replace(/"/g, '\\"')
     .replace(/`/g, "\\`")
     .replace(/\n/g, "\\n")
-    .replace(/\r/g, "\\r");
+    .replace(/\r/g, "\\r")
+    .replace(/\t/g, "\\t")
+    .replace(/\f/g, "\\f");
+}
+
+// Função para destratar os caracteres especiais
+function desescaparCaractere(str) {
+  if (!str) return "";
+  return str
+    .replace(/\\\\/g, "\\")
+    .replace(/\\'/g, "'")
+    .replace(/\\"/g, '"')
+    .replace(/\\`/g, "`")
+    .replace(/\\n/g, "\n")
+    .replace(/\\r/g, "\r")
+    .replace(/\\t/g, "\t")
+    .replace(/\\f/g, "\f");
 }
 
 // Cria os cards dos animes
@@ -32,17 +54,17 @@ const criaCardAnime = (
   const novoCardAnime = document.createElement("div");
   novoCardAnime.classList.add("lista__item");
   const conteudo = `
-        <img src="${large}" class="lista__item--img" id="${id}" data-nomeJ="${romaji}" data-nomeE="${english}" 
-            onclick="passarEscolha('${id}', '${tratarCaractere(
+        <img src="${large}" class="lista__item--img" id="${id}" data-nomeJ="${escaparCaractere(
     romaji
-  )}', '${tratarCaractere(english)}', '${large}')">        
+  )}" data-nomeE="${escaparCaractere(english)}" 
+            onclick="passarEscolha('${id}', '${escaparCaractere(
+    romaji
+  )}', '${escaparCaractere(english)}', '${large}')">        
         <h3 class="lista__item--nome" id="nomeJ">${romaji}</h3>
         <h3 class="lista__item--nome" id="nomeE">${english}</h3>
         <a class="esconder" href="#">${op}</a>
-        <p class="esconder">${tratarCaractere(ed)}</p>
+        <p class="esconder">${ed}</p>
         `;
-  // <a href="${video}" class="lista__item--link">${op}</a>
-  //<a class="esconder" href="#" onClick="MyWindow=window.open('${video}','MyWindow','width=960,height=540'); return false;">${op}</a>
 
   novoCardAnime.innerHTML = conteudo;
   novoCardAnime.dataset.id = id;
@@ -53,16 +75,15 @@ const criaCardAnime = (
 // Cria os cards das aberturas
 const criaCardAbertura = (id, op, video) => {
   const novoCardExtra = document.createElement("div");
-  novoCardExtra.classList.add("lista__item");
+  novoCardExtra.classList.add("lista__item--video");
   const conteudo = `<video class="lista__item--video" id="video" width="720" height="480" controls>
             <source src="${video}" type="video/webm">
         </video>
         <h3 class="lista__item--nome" id="nomeOP">${op}</h3>
-        <button class="lista__item--botao" id="${id}" data-nomeOp="${op}" onclick="passarEscolhaExtra('${tratarCaractere(
+        <button class="lista__item--botao" id="${id}" data-nomeOp="${op}" onclick="passarEscolhaExtra('${escaparCaractere(
     op
   )}')">Escolher</button>        
         `;
-  // <a href="${video}" class="lista__item--link">${op}</a>
 
   novoCardExtra.innerHTML = conteudo;
   novoCardExtra.dataset.id = id;
@@ -73,12 +94,12 @@ const criaCardAbertura = (id, op, video) => {
 // Cria os cards dos encerramentos
 const criaCardEncerramento = (id, ed, video) => {
   const novoCardExtra = document.createElement("div");
-  novoCardExtra.classList.add("lista__item");
+  novoCardExtra.classList.add("lista__item--video");
   const conteudo = `<video class="lista__item--video" id="video" width="720" height="480" controls>
             <source src="${video}" type="video/webm">
         </video>
         <h3 class="lista__item--nome" id="nomeED">${ed}</h3>
-        <button class="lista__item--botao" id="${id}" data-nomeEd="${ed}" onclick="passarEscolhaExtra('${tratarCaractere(
+        <button class="lista__item--botao" id="${id}" data-nomeEd="${ed}" onclick="passarEscolhaExtra('${escaparCaractere(
     ed
   )}')">Escolher</button>        
         `;
@@ -106,7 +127,9 @@ const criaCardExtra = (id, romaji, english, gender, full, large) => {
   }
   const novoCardExtra = document.createElement("div");
   novoCardExtra.classList.add("lista__item");
-  const conteudo = `<img src="${large}" class="lista__item--img" onclick="passarEscolhaExtra('${full}', '${large}')">        
+  const conteudo = `<img src="${large}" class="lista__item--img" onclick="passarEscolhaExtra('${escaparCaractere(
+    full
+  )}', '${large}')">        
         <h3 class="lista__item--nome" id="nomeFull">${full}</h3>
         <h3 class="lista__item--nome" id="genero">${genero}</h3>
         `;
@@ -139,7 +162,11 @@ const criaCardPar = (id, romaji, english, gender, full, large) => {
     <h3 class="lista__item--nome" id="nomeFull">${full}</h3>
     <h3 class="lista__item--nome" id="genero">${genero}</h3>
     <label>
-    <input type="checkbox" name="par" value="${large}" data-nome="${full}" data-nomeE="${english}" data-nomeJ="${romaji}" onclick="selecionarPares()">
+    <input type="checkbox" name="par" value="${large}" data-nome="${escaparCaractere(
+    full
+  )}" data-nomeE="${escaparCaractere(english)}" data-nomeJ="${escaparCaractere(
+    romaji
+  )}" onclick="selecionarPares()">
         Selecione o par
     </label>
     `;
@@ -202,7 +229,6 @@ function buscar() {
 
           // so tem ed
           case temOp == 0 && temEd > 0:
-            // console.log("    so tem ed");
             tabela.appendChild(
               criaCardAnime(
                 elemento.id,
@@ -240,16 +266,12 @@ function buscar() {
 }
 
 function mostrarExtra() {
-  // esconde o modal dos animes e mostra o modal extra
   document.getElementById("secaoLista").classList.add("esconder");
   document.getElementById("secaoExtra").classList.remove("esconder");
-
-  // apaga o modal extra
   tabelaExtra.innerHTML = "";
 }
 
 function esconderExtra() {
-  // esconde o modal dos animes e mostra o modal extra
   document.getElementById("secaoExtra").classList.add("esconder");
   document.getElementById("secaoLista").classList.remove("esconder");
 }
@@ -278,14 +300,20 @@ function fechar() {
 }
 
 function passarEscolha(id, nomeJ, nomeE, imagem) {
+  // Desescapar os nomes antes de usar
+  const nomeJDesescapado = desescaparCaractere(nomeJ);
+  const nomeEDesescapado = desescaparCaractere(nomeE);
+
   idAnime = id;
   imagemVoto.src = imagem;
   imagemVoto.setAttribute("data-identificacao", idAnime);
   imagemVoto.setAttribute("data-nomeJ", nomeJ);
   imagemVoto.setAttribute("data-nomeE", nomeE);
   imagemVoto.setAttribute("data-extra", "sem");
-  nomeJVoto.innerHTML = nomeJ;
-  nomeEVoto.innerHTML = nomeE;
+
+  // Exibe os nomes desescapados
+  nomeJVoto.innerHTML = nomeJDesescapado;
+  nomeEVoto.innerHTML = nomeEDesescapado;
 
   switch (escolhaExtra) {
     case "abertura":
@@ -293,13 +321,9 @@ function passarEscolha(id, nomeJ, nomeE, imagem) {
 
       var aberturas = animes.filter((item) => item.id == idAnime);
 
-      // var aberturasFiltradas = aberturas[0].opening;
-      // console.log(aberturasFiltradas);
       aberturas.forEach((elemento) => {
         var quantidade = elemento.opening.edges.length;
-        // console.log(quantidade);
         for (var i = 0; i < quantidade; i++) {
-          // console.log(elemento.opening.edges[i].node.op.name);
           tabelaExtra.appendChild(
             criaCardAbertura(
               elemento.id,
@@ -377,10 +401,7 @@ function passarEscolha(id, nomeJ, nomeE, imagem) {
     case "personagem":
       mostrarExtra();
 
-      // console.log(idAnime);
-      // console.log(animes);
       var personagens = animes.filter((item) => item.id == idAnime);
-      // console.log(personagens);
       var animeNomeE = personagens[0].title.english;
       var animeNomeJ = personagens[0].title.romaji;
 
@@ -402,10 +423,7 @@ function passarEscolha(id, nomeJ, nomeE, imagem) {
     case "par":
       mostrarExtra();
 
-      // console.log(idAnime);
-      // console.log(animes);
       var personagens = animes.filter((item) => item.id == idAnime);
-      // console.log(personagens);
       var animeNomeE = personagens[0].title.english;
       var animeNomeJ = personagens[0].title.romaji;
 
@@ -431,14 +449,16 @@ function passarEscolha(id, nomeJ, nomeE, imagem) {
   resetarLista();
 }
 
-function passarEscolhaExtra(info, imagemPersonagem) {
+function passarEscolhaExtra(infoComEscape, imagemPersonagem) {
   if (imagemPersonagem != null) {
     imagemVoto.src = imagemPersonagem;
   }
 
+  // Desescapar a string antes de exibir
+  const info = desescaparCaractere(infoComEscape);
   extraVoto.innerHTML = info;
   imagemVoto.setAttribute("data-identificacao", idAnime);
-  imagemVoto.setAttribute("data-extra", info);
+  imagemVoto.setAttribute("data-extra", infoComEscape);
 
   document.getElementById("secaoExtra").classList.add("esconder");
   document.getElementById("secaoLista").classList.remove("esconder");

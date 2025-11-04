@@ -15,7 +15,7 @@
         <option value="2022">2022</option>
         <option value="2023">2023</option>
         <option value="2024">2024</option>
-        <option value="2024">2025</option>
+        <option value="2025">2025</option>
       </select>
 
       <label for="estacao">Temporada:</label>
@@ -25,18 +25,22 @@
         <option value="SUMMER">Verão</option>
         <option value="FALL">Outono</option>
       </select>
-      <button onclick="pegarTemporada()">Pegar do Anilist</button>
+      <button onclick="pegarTemporadaAnilist()">Pegar do Anilist</button>
+      <button onclick="pegarTemporadaBD()">Pegar do Banco de Dados</button>
     </div>
 
-    <input type="text" id="idAnime" />
-    <!-- Modificado para chamar a função pegarAnimeId() e passar o valor do campo de texto como argumento -->
-    <button
-      onclick="pegarAnimeId(document.getElementById('idAnime').value)"
-      id="botaoPegarAnime"
-    >
-      Pegar Anime
-    </button>
-    <!-- <button onclick="mostrar()">mostrar</button> -->
+    <div style="margin: 15px 0">
+      <input type="text" id="idAnime" placeholder="Digite o ID do Anime" />
+      <button
+        onclick="pegarAnimeId(document.getElementById('idAnime').value)"
+        id="botaoPegarAnime"
+      >
+        Adicionar Anime
+      </button>
+      <button onclick="salvarNoBD()" id="botaoSalvarBD">
+        Salvar no Banco de Dados
+      </button>
+    </div>
 
     <div id="lista"></div>
 

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teste Salvar BD - Estrutura Votos</title>
+  </head>
+  <body>
+    <h1>Teste Salvar Estrutura Votos</h1>
+    <button onclick="testarSalvarVotos()">
+      Testar Salvar Votos 2024Inverno
+    </button>
+    <button onclick="testarBuscarVotos()">
+      Testar Buscar Votos 2024Inverno
+    </button>
+    <button onclick="testarSalvarAnimes()">
+      Testar Salvar Animes 2024Inverno
+    </button>
+    <div id="resultado"></div>
+
+    <script>
+      var endereco = "http://localhost:3000/";
+
+      // Função para criar a estrutura de votos
+      function criarEstruturaVotos() {
+        const usuarios = ["leandro", "lucas", "thiago", "nil", "vencedor"];
+        const posicoes = ["primeiro", "segundo", "terceiro"];
+        const categorias = [
+          "abertura",
+          "encerramento",
+          "feminino",
+          "masculino",
+          "surpresa",
+          "decepcao",
+          "animacao",
+          "antagonista",
+          "par",
+          "doente",
+          "emocao",
+          "anime",
+        ];
+
+        const estruturaVazia = {
+          id: "",
+          nomeJ: "",
+          nomeE: "",
+          imagem: "../imagem/1333.jpg",
+          ponto: "",
+          extra: "",
+        };
+
+        const votos = [];
+
+        categorias.forEach((categoria, index) => {
+          const categoriaObj = {};
+          usuarios.forEach((usuario) => {
+            categoriaObj[usuario] = {};
+            posicoes.forEach((posicao) => {
+              categoriaObj[usuario][posicao] = { ...estruturaVazia };
+            });
+          });
+
+          votos.push({
+            id: (index + 1).toString().padStart(2, "0"),
+            [categoria]: categoriaObj,
+          });
+        });
+
+        return votos;
+      }
+
+      async function testarSalvarVotos() {
+        const chaveBD = "votos2024Inverno";
+        const dadosVotos = criarEstruturaVotos();
+
+        // Modifica um campo específico para testar
+        dadosVotos[0].abertura.leandro.primeiro.nomeJ =
+          "FOI - TESTE SALVO COM SUCESSO";
+
+        try {
+          console.log("🔍 Tentando POST para votos...");
+          const postResponse = await fetch(`${endereco}${chaveBD}`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dadosVotos),
+          });
+
+          console.log("POST Status:", postResponse.status);
+
+          if (postResponse.ok) {
+            const resultado = await postResponse.json();
+            document.getElementById(
+              "resultado"
+            ).innerHTML = `<p style="color: green;">✅ POST Funcionou! Votos salvos com sucesso!</p>
+                         <p>Status: ${postResponse.status}</p>
+                         <p>Resposta do servidor: ${JSON.stringify(
+                           resultado
+                         )}</p>`;
+
+            // Agora busca para confirmar
+            setTimeout(testarBuscarVotos, 1000);
+          } else {
+            document.getElementById(
+              "resultado"
+            ).innerHTML = `<p style="color: red;">❌ POST falhou: Status ${postResponse.status}</p>`;
+          }
+        } catch (error) {
+          document.getElementById(
+            "resultado"
+          ).innerHTML = `<p style="color: red;">❌ Erro: ${error.message}</p>`;
+        }
+      }
+
+      async function testarSalvarAnimes() {
+        const chaveBD = "2024Inverno";
+        const dadosAnimes = [
+          { id: 1, title: { romaji: "Anime Teste 1" } },
+          { id: 2, title: { romaji: "Anime Teste 2" } },
+          { id: 3, title: { romaji: "Anime Teste 3" } },
+        ];
+
+        try {
+          console.log("🔍 Tentando POST para animes...");
+          const postResponse = await fetch(`${endereco}${chaveBD}`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dadosAnimes),
+          });
+
+          console.log("POST Status:", postResponse.status);
+
+          if (postResponse.ok) {
+            const resultado = await postResponse.json();
+            document.getElementById(
+              "resultado"
+            ).innerHTML = `<p style="color: green;">✅ POST Funcionou! Animes salvos com sucesso!</p>
+                         <p>Status: ${postResponse.status}</p>`;
+          } else {
+            document.getElementById(
+              "resultado"
+            ).innerHTML = `<p style="color: red;">❌ POST falhou: Status ${postResponse.status}</p>`;
+          }
+        } catch (error) {
+          document.getElementById(
+            "resultado"
+          ).innerHTML = `<p style="color: red;">❌ Erro: ${error.message}</p>`;
+        }
+      }
+
+      async function testarBuscarVotos() {
+        const chaveBD = "votos2024Inverno";
+
+        try {
+          console.log("🔍 Buscando votos...");
+          const response = await fetch(`${endereco}${chaveBD}`);
+
+          console.log("GET Status:", response.status);
+
+          if (response.ok) {
+            const dados = await response.json();
+            const temFOI = JSON.stringify(dados).includes(
+              "FOI - TESTE SALVO COM SUCESSO"
+            );
+
+            document.getElementById(
+              "resultado"
+            ).innerHTML += `<p style="color: ${temFOI ? "green" : "red"};">
+                            ${
+                              temFOI
+                                ? '✅ Dados encontrados com "FOI"'
+                                : '❌ Dados não contêm "FOI"'
+                            }
+                        </p>
+                        <pre>${JSON.stringify(dados, null, 2)}</pre>`;
+          } else {
+            document.getElementById(
+              "resultado"
+            ).innerHTML += `<p style="color: red;">❌ Busca falhou: Status ${response.status}</p>`;
+          }
+        } catch (error) {
+          document.getElementById(
+            "resultado"
+          ).innerHTML += `<p style="color: red;">❌ Erro na busca: ${error.message}</p>`;
+        }
+      }
+
+      // Teste automático ao carregar a página
+      window.onload = function () {
+        document.getElementById("resultado").innerHTML =
+          "<p>Página carregada. Clique nos botões para testar.</p>";
+      };
+    </script>
+  </body>
+</html>

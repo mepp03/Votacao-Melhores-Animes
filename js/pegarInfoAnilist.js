@@ -1,19 +1,23 @@
 var animes = [];
 var ano = document.getElementById("ano").value;
-var estacao = (estacao = document.getElementById("estacao").value);
+var estacao = document.getElementById("estacao").value;
 const jsonString = `[]`;
 var obj = JSON.parse(jsonString);
 var anilist;
 var votos = {};
+var modoAdicao = false;
 
-// Adicione um ouvinte de evento ao cabeçalho assim que o script for carregado
+// Adicione um ouvinte de evento ao cabecalho assim que o script for carregado
 document.addEventListener("DOMContentLoaded", function () {
   const pegarDados = document.querySelector("#cabecalho");
   pegarDados.addEventListener("change", function () {
     ano = document.getElementById("ano").value;
     estacao = document.getElementById("estacao").value;
-    atualizarValores(ano, estacao);
   });
+
+  // Inicializar botoes
+  document.getElementById("botaoPegarAnime").disabled = true;
+  document.getElementById("botaoSalvarBD").disabled = true;
 });
 
 //query para buscar os anime por temporada
@@ -102,7 +106,8 @@ const queryId = `
     }
 `;
 
-async function pegarTemporada() {
+// Funcao para pegar temporada do AniList
+async function pegarTemporadaAnilist() {
   animes = [];
   ano = document.getElementById("ano").value;
   estacao = document.getElementById("estacao").value;
@@ -135,30 +140,87 @@ async function pegarTemporada() {
       const filtrado = data.data.Page.media.filter(
         (item) => item.averageScore != null
       );
-      filtrado.forEach((anime) => {
-        anime.opening = {
-          edges: [],
-        };
-        anime.ending = {
-          edges: [],
-        };
-      });
+
+      // Buscar videos para cada anime
+      for (let anime of filtrado) {
+        anime.opening = { edges: [] };
+        anime.ending = { edges: [] };
+        await buscarVideosAnimethemes(anime);
+      }
+
       animes.push(...filtrado);
     }
 
-    // Atualiza a interface do usuário para exibir os novos animes
+    // Atualiza a interface do usuario para exibir os novos animes
     anilist = 1;
+    modoAdicao = true;
+    document.getElementById("botaoPegarAnime").disabled = false;
+    document.getElementById("botaoSalvarBD").disabled = false;
     atualizarValores(ano, estacao, undefined, 1);
   } catch (error) {
     console.error(error);
   }
 }
 
-// Função para buscar os dados de um anime por ID usando GraphQL
+// Funcao para pegar temporada do BD
+async function pegarTemporadaBD() {
+  ano = document.getElementById("ano").value;
+  estacao = document.getElementById("estacao").value;
+  const estacaoTraduzida = converterEstacao(estacao);
+
+  const chaveBD = `${ano}${estacaoTraduzida}`;
+
+  try {
+    console.log("🔍 Buscando no BD:", `${endereco}${chaveBD}`);
+    const response = await fetch(`${endereco}${chaveBD}`);
+
+    if (!response.ok) {
+      if (response.status === 404) {
+        console.log("📭 Arquivo nao encontrado (404)");
+        obj = [];
+        alert(
+          "❌ Esta temporada não existe no BD. Use 'Pegar do Anilist' para criar."
+        );
+        return;
+      } else {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+    } else {
+      const data = await response.json();
+      obj = Array.isArray(data) ? data : [];
+    }
+
+    console.log("📥 Dados carregados do BD:", obj);
+    console.log("🔢 Total de animes:", obj.length);
+
+    limparValores();
+    obj.forEach((item) => {
+      criarAnimeNaLista(item);
+    });
+
+    modoAdicao = true;
+    document.getElementById("botaoPegarAnime").disabled = false;
+    document.getElementById("botaoSalvarBD").disabled = false;
+
+    console.log("🎉 Dados do BD carregados com sucesso!");
+  } catch (error) {
+    console.error("❌ Erro ao carregar dados do BD:", error);
+    alert("❌ Erro ao carregar dados do BD: " + error.message);
+  }
+}
+
+// Funcao para buscar os dados de um anime por ID usando GraphQL
 async function pegarAnimeId(id) {
+  if (!modoAdicao) {
+    alert(
+      "Primeiro carregue uma temporada usando 'Pegar do Anilist' ou 'Pegar do BD'"
+    );
+    return;
+  }
+
   try {
     const variables = {
-      id: id,
+      id: parseInt(id),
     };
 
     const url = "https://graphql.anilist.co",
@@ -177,27 +239,216 @@ async function pegarAnimeId(id) {
     const response = await fetch(url, options);
     const data = await response.json();
 
-    // Adiciona o anime no início do array
+    if (data.errors) {
+      alert("Anime nao encontrado: " + data.errors[0].message);
+      return;
+    }
+
+    // Adiciona o anime no array existente
     var animeNovo = data.data.Media;
-    // Adiciona as propriedades opening e ending com edges vazios
     animeNovo.opening = { edges: [] };
     animeNovo.ending = { edges: [] };
+
+    await buscarVideosAnimethemes(animeNovo);
+
     console.log(animeNovo);
-    // Atualiza a interface do usuário para exibir o novo anime
-    atualizarValores(ano, estacao, animeNovo);
+
+    obj.push(animeNovo);
+    criarAnimeNaLista(animeNovo);
+    document.getElementById("idAnime").value = "";
+
+    alert("Anime adicionado com sucesso a temporada!");
   } catch (error) {
     console.error("Erro ao buscar os dados do anime por ID:", error);
+    alert("Erro ao buscar anime: " + error.message);
   }
 }
 
-// evento dos botões
+// Funcao para criar um anime na lista sem limpar os existentes
+function criarAnimeNaLista(item) {
+  if (!document.querySelector(`.anime-box[data-id="${item.id}"]`)) {
+    const animeDiv = document.createElement("div");
+    animeDiv.classList.add("anime-box");
+    animeDiv.dataset.id = item.id;
+
+    const image = document.createElement("img");
+    image.src = item.coverImage.large;
+    animeDiv.appendChild(image);
+
+    const episodesText = document.createElement("p");
+    episodesText.textContent = `Episodios: ${item.episodes}`;
+    animeDiv.appendChild(episodesText);
+
+    const infoDiv = document.createElement("div");
+    infoDiv.id = "info";
+    infoDiv.classList.add("item-container");
+
+    const japaneseNameLabel = document.createElement("label");
+    japaneseNameLabel.textContent = "Nome em japones:";
+    infoDiv.appendChild(japaneseNameLabel);
+    const japaneseNameInput = document.createElement("input");
+    japaneseNameInput.type = "text";
+    japaneseNameInput.id = "nomeJapones";
+    japaneseNameInput.value = item.title.romaji;
+    infoDiv.appendChild(japaneseNameInput);
+
+    const englishNameLabel = document.createElement("label");
+    englishNameLabel.textContent = "Nome em ingles:";
+    infoDiv.appendChild(englishNameLabel);
+    const englishNameInput = document.createElement("input");
+    englishNameInput.id = "nomeIngles";
+    englishNameInput.type = "text";
+    englishNameInput.value = item.title.english;
+    infoDiv.appendChild(englishNameInput);
+
+    const openingContainer = document.createElement("div");
+    openingContainer.classList.add("container__op");
+    const openingLabel = document.createElement("label");
+    openingLabel.textContent = "Abertura:";
+    openingContainer.appendChild(openingLabel);
+
+    if (item.opening.edges.length > 0) {
+      item.opening.edges.forEach((edge) => {
+        const openingOpEd = criarNovoOpEd(
+          "abertura",
+          edge.node.op.name,
+          edge.node.op.video
+        );
+        openingContainer.appendChild(openingOpEd);
+      });
+    }
+
+    const addOpeningButton = document.createElement("button");
+    addOpeningButton.textContent = "+ Adicionar Abertura";
+    addOpeningButton.classList.add("round-button", "add-abertura");
+    openingContainer.appendChild(addOpeningButton);
+
+    infoDiv.appendChild(openingContainer);
+
+    const endingContainer = document.createElement("div");
+    endingContainer.classList.add("container__ed");
+    const endingLabel = document.createElement("label");
+    endingLabel.textContent = "Encerramento:";
+    endingContainer.appendChild(endingLabel);
+
+    if (item.ending.edges.length > 0) {
+      item.ending.edges.forEach((edge) => {
+        const endingOpEd = criarNovoOpEd(
+          "encerramento",
+          edge.node.ed.name,
+          edge.node.ed.video
+        );
+        endingContainer.appendChild(endingOpEd);
+      });
+    }
+
+    const addEndingButton = document.createElement("button");
+    addEndingButton.textContent = "+ Adicionar Encerramento";
+    addEndingButton.classList.add("round-button", "add-encerramento");
+    endingContainer.appendChild(addEndingButton);
+
+    infoDiv.appendChild(endingContainer);
+
+    animeDiv.appendChild(infoDiv);
+
+    const escolhaDiv = document.createElement("div");
+    escolhaDiv.id = "escolha";
+
+    const buttonSalvar = document.createElement("button");
+    buttonSalvar.textContent = "Salvar";
+    buttonSalvar.classList.add("salvar");
+    escolhaDiv.appendChild(buttonSalvar);
+
+    const buttonApagar = document.createElement("button");
+    buttonApagar.textContent = "Apagar";
+    buttonApagar.classList.add("apagar");
+    escolhaDiv.appendChild(buttonApagar);
+
+    animeDiv.appendChild(escolhaDiv);
+    document.getElementById("lista").appendChild(animeDiv);
+  }
+}
+
+// Funcao para buscar videos no Animethemes
+async function buscarVideosAnimethemes(animeInfo) {
+  try {
+    const nomesTentativa = [
+      animeInfo.title.native,
+      animeInfo.title.romaji,
+      animeInfo.title.english,
+      animeInfo.title.native?.replace(/:/g, ""),
+      animeInfo.title.romaji?.replace(/:/g, ""),
+      animeInfo.title.native?.replace(/第2期/g, "2nd Season"),
+      animeInfo.title.romaji?.replace(/2nd Season/g, "Second Season"),
+      animeInfo.title.native?.replace(/第3期/g, "3rd Season"),
+      animeInfo.title.romaji?.replace(/3rd Season/g, "Third Season"),
+      animeInfo.title.native?.replace(/３Ｄ彼女/g, "3D Kanojo"),
+      animeInfo.title.romaji?.replace(/3D Kanojo/g, "Three-dimensional Girl"),
+      animeInfo.title.native?.replace(/[「」『』]/g, ""),
+      animeInfo.title.romaji?.replace(/[\[\]\(\)]/g, ""),
+    ].filter((nome) => nome && nome.length > 0);
+
+    for (const tentativa of nomesTentativa) {
+      const url = `https://api.animethemes.moe/anime?filter[name]=${encodeURIComponent(
+        tentativa
+      )}&include=animethemes,animethemes.animethemeentries.videos,animethemes.song,animethemes.song.artists`;
+
+      const res = await fetch(url);
+      const data = await res.json();
+
+      if (data?.anime?.length > 0) {
+        const animeThemes = data.anime[0];
+
+        animeThemes.animethemes?.forEach((theme) => {
+          if (theme.type === "OP") {
+            theme.animethemeentries?.forEach((entry) => {
+              entry.videos?.forEach((video) => {
+                animeInfo.opening.edges.push({
+                  node: {
+                    op: {
+                      name: theme.song?.title || "Opening",
+                      video: video.link,
+                    },
+                  },
+                });
+              });
+            });
+          } else if (theme.type === "ED") {
+            theme.animethemeentries?.forEach((entry) => {
+              entry.videos?.forEach((video) => {
+                animeInfo.ending.edges.push({
+                  node: {
+                    ed: {
+                      name: theme.song?.title || "Ending",
+                      video: video.link,
+                    },
+                  },
+                });
+              });
+            });
+          }
+        });
+
+        console.log(`✅ Videos encontrados no Animethemes para: ${tentativa}`);
+        break;
+      }
+    }
+  } catch (error) {
+    console.error("Erro ao buscar videos no Animethemes:", error);
+  }
+}
+
+// evento dos botoes
 document.addEventListener("click", function (event) {
   if (event.target.classList.contains("salvar")) {
     pegarAlteracoes();
     salvarValores(ano, estacao);
   } else if (event.target.classList.contains("apagar")) {
     const animeDiv = event.target.closest(".anime-box");
+    const animeId = animeDiv.dataset.id;
+    obj = obj.filter((item) => item.id != animeId);
     animeDiv.remove();
+    console.log(`🗑️ Anime ${animeId} removido`);
   } else if (event.target.classList.contains("add-abertura")) {
     criarInput("abertura", event.target);
   } else if (event.target.classList.contains("add-encerramento")) {
@@ -205,11 +456,9 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// Função auxiliar para criar um novo op_ed
 function criarInput(tipo, clickedElement) {
   const animeBox = clickedElement.closest(".anime-box");
   if (animeBox) {
-    // Cria o novo op_ed
     const novoOpEd = document.createElement("div");
     novoOpEd.className = "op_ed " + tipo;
 
@@ -219,15 +468,15 @@ function criarInput(tipo, clickedElement) {
 
     const inputNome = document.createElement("input");
     inputNome.type = "text";
-    inputNome.id = tipo === "abertura" ? "nomeOp" : "nomeEd"; // Define o ID com base no tipo
+    inputNome.id = tipo === "abertura" ? "nomeOp" : "nomeEd";
 
     const labelVideo = document.createElement("label");
     labelVideo.textContent =
-      tipo === "abertura" ? "Vídeo da Abertura: " : "Vídeo do Encerramento: ";
+      tipo === "abertura" ? "Video da Abertura: " : "Video do Encerramento: ";
 
     const inputVideo = document.createElement("input");
     inputVideo.type = "text";
-    inputVideo.id = tipo === "abertura" ? "videoOp" : "videoEd"; // Define o ID com base no tipo
+    inputVideo.id = tipo === "abertura" ? "videoOp" : "videoEd";
 
     const botaoRemover = document.createElement("button");
     botaoRemover.textContent = "x";
@@ -241,221 +490,60 @@ function criarInput(tipo, clickedElement) {
     novoOpEd.appendChild(inputVideo);
     novoOpEd.appendChild(botaoRemover);
 
-    // Adiciona o novo op_ed ao contêiner apropriado
     if (tipo === "abertura") {
-      const containerOp = animeBox.querySelector(".container__op");
-      if (containerOp) {
-        containerOp.appendChild(novoOpEd);
-      }
-    } else if (tipo === "encerramento") {
-      const containerEd = animeBox.querySelector(".container__ed");
-      if (containerEd) {
-        containerEd.appendChild(novoOpEd);
-      }
+      animeBox.querySelector(".container__op").appendChild(novoOpEd);
+    } else {
+      animeBox.querySelector(".container__ed").appendChild(novoOpEd);
     }
   }
 }
 
-// Adicione uma função para atualizar os valores na página com base no primeiro item do objeto
+async function salvarNoBD() {
+  pegarAlteracoes();
+  await salvarValores(ano, estacao);
+}
+
 function atualizarValores(ano, estacao, animeNovo, anilist) {
-  // ✅ GARANTE que obj sempre será array
   if (typeof obj === "undefined") {
     obj = [];
   }
 
   limparValores();
-  switch (estacao) {
-    case "WINTER":
-      estacao = "Inverno";
-      break;
-    case "SPRING":
-      estacao = "Primavera";
-      break;
-    case "SUMMER":
-      estacao = "Verao";
-      break;
-    case "FALL":
-      estacao = "Outono";
-      break;
-  }
+  const estacaoTraduzida = converterEstacao(estacao);
 
   console.log("🔍 Iniciando atualizarValores...");
-  console.log("🔍 URL que será buscada:", `${endereco}${ano}${estacao}`);
+  console.log(
+    "🌐 URL que sera buscada:",
+    `${endereco}${ano}${estacaoTraduzida}`
+  );
 
-  fetch(`${endereco}${ano}${estacao}`)
+  fetch(`${endereco}${ano}${estacaoTraduzida}`)
     .then(function (response) {
-      console.log("🔍 Response status:", response.status);
-      console.log("🔍 Response ok:", response.ok);
-
       if (!response.ok) {
         if (response.status === 404) {
-          console.log(
-            "🔍 Arquivo não encontrado (404), criando estrutura vazia"
-          );
-          return { dados: [], votos: {} };
+          obj = [];
+          return;
         }
         throw new Error(`HTTP error! status: ${response.status}`);
       }
       return response.json();
     })
     .then(function (data) {
-      // ✅ DEBUG COMPLETO
-      console.log("=== DEBUG COMPLETO ===");
-      console.log("🔍 Data recebida:", data);
-      console.log("🔍 Data.votos:", data.votos);
-      console.log("🔍 Data.dados:", data.dados);
-      console.log("🔍 Tipo de data.dados:", typeof data.dados);
-      console.log("🔍 É array?", Array.isArray(data.dados));
-      console.log("======================");
-
-      votos = data.votos || {};
-      obj = data.dados || []; // Garante que sempre será array
-
-      console.log("🔍 Obj após atribuição:", obj);
-      console.log("🔍 Obj length:", obj.length);
-
-      if (animeNovo !== undefined) {
-        obj.unshift(animeNovo);
-      }
-
+      obj = Array.isArray(data) ? data : [];
       if (anilist == 1) {
         obj = animes || [];
       }
-
-      // ✅ VERIFICAÇÃO FINAL ANTES DO forEach
-      console.log("🎯 ANTES DO forEach - obj:", obj);
-      console.log("🎯 ANTES DO forEach - obj length:", obj.length);
-      console.log("🎯 ANTES DO forEach - Array.isArray:", Array.isArray(obj));
-
-      if (!Array.isArray(obj)) {
-        console.error("❌ CRÍTICO: obj não é array, convertendo...");
-        obj = [];
-      }
-
-      // Itera sobre cada item do objeto e cria os elementos correspondentes na página
-      obj.forEach((item, index) => {
-        console.log(`🎬 Processando anime ${index + 1}/${obj.length}`);
-
-        if (!document.querySelector(`.anime-box[data-id="${item.id}"]`)) {
-          // Verifica se o anime já está na página
-          const animeDiv = document.createElement("div");
-          animeDiv.classList.add("anime-box");
-          animeDiv.dataset.id = item.id;
-
-          const image = document.createElement("img");
-          image.src = item.coverImage.large;
-          animeDiv.appendChild(image);
-
-          // Adiciona o elemento de texto para mostrar a quantidade de episódios
-          const episodesText = document.createElement("p");
-          episodesText.textContent = `Episódios: ${item.episodes}`;
-          animeDiv.appendChild(episodesText);
-
-          const infoDiv = document.createElement("div");
-          infoDiv.id = "info";
-          infoDiv.classList.add("item-container");
-
-          const japaneseNameLabel = document.createElement("label");
-          japaneseNameLabel.textContent = "Nome em japonês:";
-          infoDiv.appendChild(japaneseNameLabel);
-          const japaneseNameInput = document.createElement("input");
-          japaneseNameInput.type = "text";
-          japaneseNameInput.id = "nomeJapones";
-          japaneseNameInput.value = item.title.romaji;
-          infoDiv.appendChild(japaneseNameInput);
-
-          const englishNameLabel = document.createElement("label");
-          englishNameLabel.textContent = "Nome em inglês:";
-          infoDiv.appendChild(englishNameLabel);
-          const englishNameInput = document.createElement("input");
-          englishNameInput.id = "nomeIngles";
-          englishNameInput.type = "text";
-          englishNameInput.value = item.title.english;
-          infoDiv.appendChild(englishNameInput);
-
-          const openingContainer = document.createElement("div");
-          openingContainer.classList.add("container__op");
-          const openingLabel = document.createElement("label");
-          openingLabel.textContent = "Abertura:";
-          openingContainer.appendChild(openingLabel);
-
-          // Verifica se há dados nas aberturas antes de criar os campos
-          if (item.opening.edges.length > 0) {
-            item.opening.edges.forEach((edge) => {
-              const openingOpEd = criarNovoOpEd(
-                "abertura",
-                edge.node.op.name,
-                edge.node.op.video
-              );
-              openingContainer.appendChild(openingOpEd);
-            });
-          }
-
-          const addOpeningButton = document.createElement("button");
-          addOpeningButton.textContent = "+ Adicionar Abertura";
-          addOpeningButton.classList.add("round-button", "add-abertura");
-          openingContainer.appendChild(addOpeningButton);
-
-          infoDiv.appendChild(openingContainer);
-
-          const endingContainer = document.createElement("div");
-          endingContainer.classList.add("container__ed");
-          const endingLabel = document.createElement("label");
-          endingLabel.textContent = "Encerramento:";
-          endingContainer.appendChild(endingLabel);
-
-          // Verifica se há dados nos encerramentos antes de criar os campos
-          if (item.ending.edges.length > 0) {
-            item.ending.edges.forEach((edge) => {
-              const endingOpEd = criarNovoOpEd(
-                "encerramento",
-                edge.node.ed.name,
-                edge.node.ed.video
-              );
-              endingContainer.appendChild(endingOpEd);
-            });
-          }
-
-          const addEndingButton = document.createElement("button");
-          addEndingButton.textContent = "+ Adicionar Encerramento";
-          addEndingButton.classList.add("round-button", "add-encerramento");
-          endingContainer.appendChild(addEndingButton);
-
-          infoDiv.appendChild(endingContainer);
-
-          animeDiv.appendChild(infoDiv);
-
-          const escolhaDiv = document.createElement("div");
-          escolhaDiv.id = "escolha";
-
-          const buttonSalvar = document.createElement("button");
-          buttonSalvar.textContent = "Salvar";
-          buttonSalvar.classList.add("salvar");
-          escolhaDiv.appendChild(buttonSalvar);
-
-          const buttonApagar = document.createElement("button");
-          buttonApagar.textContent = "Apagar";
-          buttonApagar.classList.add("apagar");
-          escolhaDiv.appendChild(buttonApagar);
-
-          animeDiv.appendChild(escolhaDiv);
-
-          document.getElementById("lista").appendChild(animeDiv);
-
-          console.log(`✅ Anime ${index + 1} criado com sucesso`);
-        }
+      if (!Array.isArray(obj)) obj = [];
+      obj.forEach((item) => {
+        criarAnimeNaLista(item);
       });
-
-      console.log("🎉 Todos os animes processados!");
     })
     .catch(function (error) {
       console.error("❌ Erro ao carregar dados:", error);
-      // Em caso de erro, garante que obj seja array vazio
       obj = [];
     });
 }
 
-// Função auxiliar para criar um novo op_ed
 function criarNovoOpEd(tipo, nome, video) {
   const novoOpEd = document.createElement("div");
   novoOpEd.className = "op_ed " + tipo;
@@ -466,16 +554,16 @@ function criarNovoOpEd(tipo, nome, video) {
 
   const inputNome = document.createElement("input");
   inputNome.type = "text";
-  inputNome.id = tipo === "abertura" ? "nomeOp" : "nomeEd"; // Define o ID com base no tipo
+  inputNome.id = tipo === "abertura" ? "nomeOp" : "nomeEd";
   inputNome.value = nome;
 
   const labelVideo = document.createElement("label");
   labelVideo.textContent =
-    tipo === "abertura" ? "Vídeo da Abertura: " : "Vídeo do Encerramento: ";
+    tipo === "abertura" ? "Video da Abertura: " : "Video do Encerramento: ";
 
   const inputVideo = document.createElement("input");
   inputVideo.type = "text";
-  inputVideo.id = tipo === "abertura" ? "videoOp" : "videoEd"; // Define o ID com base no tipo
+  inputVideo.id = tipo === "abertura" ? "videoOp" : "videoEd";
   inputVideo.value = video;
 
   const botaoRemover = document.createElement("button");
@@ -489,11 +577,9 @@ function criarNovoOpEd(tipo, nome, video) {
   novoOpEd.appendChild(labelVideo);
   novoOpEd.appendChild(inputVideo);
   novoOpEd.appendChild(botaoRemover);
-
   return novoOpEd;
 }
 
-// Adicione uma função para limpar os valores na página
 function limparValores() {
   const lista = document.getElementById("lista");
   while (lista.firstChild) {
@@ -501,32 +587,21 @@ function limparValores() {
   }
 }
 
-// Função para pegar as alterações
 function pegarAlteracoes() {
-  // Limpa o array de animes antes de adicionar os valores atualizados
   animes = [];
-
-  // Seleciona todos os elementos com a classe "anime-box"
   const animeBoxes = document.querySelectorAll(".anime-box");
 
-  // Itera sobre cada "anime-box"
   animeBoxes.forEach((animeBox) => {
-    // Obtém o ID do anime
     const animeId = animeBox.dataset.id;
-
-    // Encontra o objeto correspondente ao anime usando o ID
     const anime = obj.find((item) => item.id == animeId);
 
-    // Verifica se o anime foi encontrado
     if (anime) {
       const abertura = animeBox.querySelectorAll(".op_ed.abertura");
       const encerramento = animeBox.querySelectorAll(".op_ed.encerramento");
 
-      // Limpa os arrays de abertura e encerramento
       anime.opening = { edges: [] };
       anime.ending = { edges: [] };
 
-      // Adiciona novos nós de abertura
       abertura.forEach((op) => {
         const openingNameInput = op.querySelector("#nomeOp");
         const openingVideoInput = op.querySelector("#videoOp");
@@ -539,11 +614,9 @@ function pegarAlteracoes() {
             },
           },
         };
-
         anime.opening.edges.push(newOpening);
       });
 
-      // Adiciona novos nós de encerramento
       encerramento.forEach((ed) => {
         const endingNameInput = ed.querySelector("#nomeEd");
         const endingVideoInput = ed.querySelector("#videoEd");
@@ -556,71 +629,74 @@ function pegarAlteracoes() {
             },
           },
         };
-
         anime.ending.edges.push(newEnding);
       });
 
-      // Obtém os inputs dentro da "anime-box" atual
       const japaneseNameInput = animeBox.querySelector("#nomeJapones");
       const englishNameInput = animeBox.querySelector("#nomeIngles");
 
-      // Atualiza os valores do anime com os valores dos inputs
       anime.title.romaji = japaneseNameInput.value;
       anime.title.english = englishNameInput.value;
-
-      // Adiciona o anime atualizado ao array animes
       animes.push(anime);
     }
   });
 }
 
-// Adicione uma função para salvar os valores
-function salvarValores(ano, estacao) {
+function converterEstacao(estacao) {
   switch (estacao) {
     case "WINTER":
-      estacao = "Inverno";
-      break;
+      return "Inverno";
     case "SPRING":
-      estacao = "Primavera";
-      break;
+      return "Primavera";
     case "SUMMER":
-      estacao = "Verao";
-      break;
+      return "Verao";
     case "FALL":
-      estacao = "Outono";
-      break;
+      return "Outono";
+    default:
+      return estacao;
   }
-  // Ordena os animes pelo título "romaji"
-  obj.sort((a, b) => (a.title.romaji > b.title.romaji ? 1 : -1));
-
-  // Substitui os valores null por strings vazias na string JSON
-  let jsonString = JSON.stringify(obj);
-  jsonString = jsonString.replace(/: null/g, ': ""');
-
-  // Remove as aspas simples
-  jsonString = jsonString.replace(/'/g, "");
-  console.log(ano, estacao);
-
-  // Cria um objeto com a estrutura correta
-  const data = {};
-  data.dados = JSON.parse(jsonString);
-  data.votos = votos;
-
-  fetch(`${endereco}${ano}${estacao}`, {
-    method: "PUT",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  })
-    .then((response) => response.json())
-    .then((dados) => {
-      console.log("Dados salvos com sucesso:", dados);
-    })
-    .catch((error) => {
-      console.error("Erro ao salvar dados:", error);
-    });
 }
 
-// Chame a função para atualizar os valores
+// =============== SALVAR LOCALMENTE =================
+async function salvarValores(ano, estacao) {
+  const estacaoTraduzida = converterEstacao(estacao);
+  const nomeArquivo = `${ano}${estacaoTraduzida}.json`;
+
+  obj.sort((a, b) => (a.title.romaji > b.title.romaji ? 1 : -1));
+
+  console.log("💾 Salvando dados:", nomeArquivo);
+  console.log("📊 Total de animes:", obj.length);
+
+  try {
+    // Criar blob com os dados
+    const blob = new Blob([JSON.stringify(obj, null, 2)], {
+      type: "application/json",
+    });
+
+    // Criar URL temporária
+    const url = URL.createObjectURL(blob);
+
+    // Criar elemento de link para download
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = nomeArquivo;
+    a.style.display = "none";
+
+    // Adicionar ao documento, clicar e remover
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+
+    // Liberar a URL
+    URL.revokeObjectURL(url);
+
+    console.log("✅ Dados salvos com sucesso!");
+    alert("✅ Dados salvos com sucesso como " + nomeArquivo);
+  } catch (error) {
+    console.error("❌ Erro ao salvar dados:", error);
+    alert("❌ Erro ao salvar dados: " + error.message);
+  }
+}
+// ===========================================
+
 atualizarValores(ano, estacao);

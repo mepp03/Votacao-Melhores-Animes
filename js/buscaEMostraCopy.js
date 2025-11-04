@@ -5,6 +5,18 @@ var nome = localStorage.getItem("usuario");
 
 buscar();
 
+// Função para tratar os caracteres especiais
+function tratarCaractere(str) {
+  if (!str) return "";
+  return str
+    .replace(/\\/g, "\\\\")
+    .replace(/'/g, "\\'")
+    .replace(/"/g, '\\"')
+    .replace(/`/g, "\\`")
+    .replace(/\n/g, "\\n")
+    .replace(/\r/g, "\\r");
+}
+
 // Cria os cards dos animes
 const criaCardAnime = (
   id,
@@ -21,11 +33,13 @@ const criaCardAnime = (
   novoCardAnime.classList.add("lista__item");
   const conteudo = `
         <img src="${large}" class="lista__item--img" id="${id}" data-nomeJ="${romaji}" data-nomeE="${english}" 
-            onclick="passarEscolha('${id}', '${romaji}', '${english}', '${large}')">        
+            onclick="passarEscolha('${id}', '${tratarCaractere(
+    romaji
+  )}', '${tratarCaractere(english)}', '${large}')">        
         <h3 class="lista__item--nome" id="nomeJ">${romaji}</h3>
         <h3 class="lista__item--nome" id="nomeE">${english}</h3>
         <a class="esconder" href="#">${op}</a>
-        <p class="esconder">${ed}</p>
+        <p class="esconder">${tratarCaractere(ed)}</p>
         `;
   // <a href="${video}" class="lista__item--link">${op}</a>
   //<a class="esconder" href="#" onClick="MyWindow=window.open('${video}','MyWindow','width=960,height=540'); return false;">${op}</a>
@@ -44,7 +58,9 @@ const criaCardAbertura = (id, op, video) => {
             <source src="${video}" type="video/webm">
         </video>
         <h3 class="lista__item--nome" id="nomeOP">${op}</h3>
-        <button class="lista__item--botao" id="${id}" data-nomeOp="${op}" onclick="passarEscolhaExtra('${op}')">Escolher</button>        
+        <button class="lista__item--botao" id="${id}" data-nomeOp="${op}" onclick="passarEscolhaExtra('${tratarCaractere(
+    op
+  )}')">Escolher</button>        
         `;
   // <a href="${video}" class="lista__item--link">${op}</a>
 
@@ -62,7 +78,9 @@ const criaCardEncerramento = (id, ed, video) => {
             <source src="${video}" type="video/webm">
         </video>
         <h3 class="lista__item--nome" id="nomeED">${ed}</h3>
-        <button class="lista__item--botao" id="${id}" data-nomeEd="${ed}" onclick="passarEscolhaExtra('${ed}')">Escolher</button>        
+        <button class="lista__item--botao" id="${id}" data-nomeEd="${ed}" onclick="passarEscolhaExtra('${tratarCaractere(
+    ed
+  )}')">Escolher</button>        
         `;
   novoCardExtra.innerHTML = conteudo;
   novoCardExtra.dataset.id = id;

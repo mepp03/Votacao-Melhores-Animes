@@ -499,8 +499,37 @@ function criarInput(tipo, clickedElement) {
 }
 
 async function salvarNoBD() {
-  pegarAlteracoes();
-  await salvarValores(ano, estacao);
+  pegarAlteracoes(); // Garante que obj está atualizado
+
+  // Ordenar por título romaji
+  obj.sort((a, b) => (a.title.romaji > b.title.romaji ? 1 : -1));
+
+  const estacaoTraduzida = converterEstacao(estacao);
+  const chaveBD = `${ano}${estacaoTraduzida}`;
+
+  console.log("💾 Salvando no BD:", obj);
+  console.log("📍 Rota:", `${endereco}${chaveBD}`);
+
+  try {
+    const response = await fetch(`${endereco}${chaveBD}`, {
+      method: "PUT",
+      body: JSON.stringify(obj),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`Erro HTTP: ${response.status}`);
+    }
+
+    const result = await response.json();
+    console.log("✅ Dados salvos com sucesso!", result);
+    alert("✅ Dados salvos com sucesso!");
+  } catch (error) {
+    console.error("❌ Erro ao salvar dados:", error);
+    alert("❌ Erro ao salvar dados: " + error.message);
+  }
 }
 
 function atualizarValores(ano, estacao, animeNovo, anilist) {
@@ -588,7 +617,6 @@ function limparValores() {
 }
 
 function pegarAlteracoes() {
-  animes = [];
   const animeBoxes = document.querySelectorAll(".anime-box");
 
   animeBoxes.forEach((animeBox) => {
@@ -599,47 +627,54 @@ function pegarAlteracoes() {
       const abertura = animeBox.querySelectorAll(".op_ed.abertura");
       const encerramento = animeBox.querySelectorAll(".op_ed.encerramento");
 
+      // Limpar openings e endings existentes
       anime.opening = { edges: [] };
       anime.ending = { edges: [] };
 
+      // Atualizar openings
       abertura.forEach((op) => {
         const openingNameInput = op.querySelector("#nomeOp");
         const openingVideoInput = op.querySelector("#videoOp");
 
-        const newOpening = {
-          node: {
-            op: {
-              name: openingNameInput.value,
-              video: openingVideoInput.value,
+        if (openingNameInput.value || openingVideoInput.value) {
+          anime.opening.edges.push({
+            node: {
+              op: {
+                name: openingNameInput.value,
+                video: openingVideoInput.value,
+              },
             },
-          },
-        };
-        anime.opening.edges.push(newOpening);
+          });
+        }
       });
 
+      // Atualizar endings
       encerramento.forEach((ed) => {
         const endingNameInput = ed.querySelector("#nomeEd");
         const endingVideoInput = ed.querySelector("#videoEd");
 
-        const newEnding = {
-          node: {
-            ed: {
-              name: endingNameInput.value,
-              video: endingVideoInput.value,
+        if (endingNameInput.value || endingVideoInput.value) {
+          anime.ending.edges.push({
+            node: {
+              ed: {
+                name: endingNameInput.value,
+                video: endingVideoInput.value,
+              },
             },
-          },
-        };
-        anime.ending.edges.push(newEnding);
+          });
+        }
       });
 
+      // Atualizar títulos
       const japaneseNameInput = animeBox.querySelector("#nomeJapones");
       const englishNameInput = animeBox.querySelector("#nomeIngles");
 
-      anime.title.romaji = japaneseNameInput.value;
-      anime.title.english = englishNameInput.value;
-      animes.push(anime);
+      if (japaneseNameInput) anime.title.romaji = japaneseNameInput.value;
+      if (englishNameInput) anime.title.english = englishNameInput.value;
     }
   });
+
+  console.log("📝 Alterações capturadas:", obj);
 }
 
 function converterEstacao(estacao) {
@@ -660,43 +695,32 @@ function converterEstacao(estacao) {
 // =============== SALVAR LOCALMENTE =================
 async function salvarValores(ano, estacao) {
   const estacaoTraduzida = converterEstacao(estacao);
-  const nomeArquivo = `${ano}${estacaoTraduzida}.json`;
 
   obj.sort((a, b) => (a.title.romaji > b.title.romaji ? 1 : -1));
 
-  console.log("💾 Salvando dados:", nomeArquivo);
-  console.log("📊 Total de animes:", obj.length);
+  console.log(obj);
+  console.log("Rota usada:", `${endereco}${ano}${estacaoTraduzida}`);
 
   try {
-    // Criar blob com os dados
-    const blob = new Blob([JSON.stringify(obj, null, 2)], {
-      type: "application/json",
+    const response = await fetch(`${endereco}${ano}${estacaoTraduzida}`, {
+      method: "PUT",
+      body: JSON.stringify(obj),
+      headers: {
+        "Content-Type": "application/json",
+      },
     });
 
-    // Criar URL temporária
-    const url = URL.createObjectURL(blob);
-
-    // Criar elemento de link para download
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = nomeArquivo;
-    a.style.display = "none";
-
-    // Adicionar ao documento, clicar e remover
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-
-    // Liberar a URL
-    URL.revokeObjectURL(url);
+    if (!response.ok) {
+      throw new Error(`Erro HTTP: ${response.status}`);
+    }
 
     console.log("✅ Dados salvos com sucesso!");
-    alert("✅ Dados salvos com sucesso como " + nomeArquivo);
   } catch (error) {
     console.error("❌ Erro ao salvar dados:", error);
     alert("❌ Erro ao salvar dados: " + error.message);
   }
 }
+
 // ===========================================
 
-atualizarValores(ano, estacao);
+// atualizarValores(ano, estacao);

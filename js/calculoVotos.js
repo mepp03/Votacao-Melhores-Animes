@@ -315,15 +315,6 @@ function votar() {
             terceiro: top3.length > 2 ? top3[2] : {},
           };
 
-          console.log(`✅ Categoria ${cat} processada:`, {
-            primeiro: top3[0]?.nomeJ,
-            pontosPrimeiro: top3[0]?.ponto,
-            segundo: top3[1]?.nomeJ,
-            pontosSegundo: top3[1]?.ponto,
-            terceiro: top3[2]?.nomeJ,
-            pontosTerceiro: top3[2]?.ponto,
-          });
-
           resolve();
         });
       }

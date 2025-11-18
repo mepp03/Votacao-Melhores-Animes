@@ -34905,6 +34905,148 @@
       }
     },
     {
+      "id": 106896,
+      "averageScore": 68,
+      "episodes": 1,
+      "title": {
+        "romaji": "PERSONA5 the Animation: Stars and Ours",
+        "english": "PERSONA5 the Animation: Stars and Ours"
+      },
+      "seasonYear": 2019,
+      "season": "WINTER",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx106896-hNj8pUGTdTcD.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx106896-hNj8pUGTdTcD.png"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Ann Takamaki"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b120335-122Vh3RaM4ZK.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Ren Amamiya"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b121590-0IyliPlkGSZa.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Futaba Sakura"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b121635-x3rT0I5xKaDu.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Ryuuji Sakamoto"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b122974-i5CTdJd6ae27.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Yuusuke Kitagawa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b122975-2R5JywKMTFOg.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Morgana"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b122976-Cx8eZHg8DZhN.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Makoto Niijima"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b122977-6OaO4teZ9qKT.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Haru Okumura"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b122978-OtZ7OEaRmK2i.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Sae Niijima"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b139199-G6O1eeWZsyBJ.png"
+              },
+              "gender": null
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Dark Sun...",
+                "video": "https://v.animethemes.moe/Persona5-OP2.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "With the Stars and Us",
+                "video": "https://v.animethemes.moe/Persona5-ed3.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": 107908,
       "averageScore": 57,
       "episodes": 1,
@@ -540052,10 +540194,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "ResoNAnce",
+                "video": "https://v.animethemes.moe/9NineRulersCrown-op1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Pale Blaze",
+                "video": "https://v.animethemes.moe/9NineRulersCrown-ED1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -540315,6 +540475,324 @@
               "ed": {
                 "name": "filled",
                 "video": "https://v.animethemes.moe/AmeToKimiTo-ED1.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 184639,
+      "averageScore": 76,
+      "episodes": 24,
+      "title": {
+        "romaji": "Anne Shirley",
+        "english": "Anne Shirley"
+      },
+      "seasonYear": 2025,
+      "season": "SPRING",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx184639-tmj8NbTroNeI.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx184639-tmj8NbTroNeI.jpg"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Anne Shirley"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b16661-nK6RNy5RTfDF.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Matthew Cuthbert"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b37146-IsSZYclpdopy.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Marilla Cuthbert"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b37178-0aulg0tjFysY.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Rachel Lynde"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b38020-54TqsjjZY8aN.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Minnie May Barry"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b38088-jzX591IAHDGA.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Diana Barry"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b38089-B6HB8dIs59rR.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Teddy Phillips"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/38092.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Ruby Gillis"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/38093.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Gilbert Blythe"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b38289-LVRCCRbyGpYS.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Muriel Stacy"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/38290.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Jane Andrews"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/38292.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Josie Pye"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/38295.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Charlie Sloane"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/64509.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Spencer Fujin"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/64541.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Flora Jane Spencer"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/64545.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Blewett Fujin"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/64547.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Paul Irving"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376149-9NnN4guVx0Ti.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Lavendar Lewis"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376150-UCjjHoNxQU8d.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Stella Maynard"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376151-Ns0S9q6gcyTv.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Philippa Gordon"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376152-Ufd0nHbOJbEr.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Priscilla Grant"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376153-pyxGfb2V6XU0.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Charlotta Yon-sei"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376154-0McTnNvj9dXF.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "James A. Harrison"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376155-56ifyOLF1sqc.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Davy Keith"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376159-6DWzTl6mVkEF.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Stephen Irving"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b376160-do8yMe6Pskv4.png"
+              },
+              "gender": "Male"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Yokan",
+                "video": "https://v.animethemes.moe/AnneShirley-OP1.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "heart",
+                "video": "https://v.animethemes.moe/AnneShirley-ED1.webm"
               }
             }
           }
@@ -541736,14 +542214,6 @@
                 "video": "https://v.animethemes.moe/CityTheAnimation-OP1.webm"
               }
             }
-          },
-          {
-            "node": {
-              "op": {
-                "name": "Hello",
-                "video": "https://v.animethemes.moe/CityTheAnimation-OP1v2.webm"
-              }
-            }
           }
         ]
       },
@@ -542675,10 +543145,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Ruler",
+                "video": "https://v.animethemes.moe/Clevatess-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Destiny",
+                "video": "https://v.animethemes.moe/Clevatess-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -543928,10 +544416,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "OP Mikansei ni Matataite",
+                "video": "https://v.animethemes.moe/FoodCourt-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "ED Tonari Awase",
+                "video": "https://v.animethemes.moe/FoodCourt-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -544169,10 +544675,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "OP Futari no Start Bottom",
+                "video": "https://v.animethemes.moe/GameCenterShoujo-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "ED Amusing Flavor",
+                "video": "https://v.animethemes.moe/GameCenterShoujo-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -544866,14 +545390,6 @@
             "node": {
               "op": {
                 "name": "Seishun Towa",
-                "video": "https://v.animethemes.moe/GrandBlueS2-OP1.webm"
-              }
-            }
-          },
-          {
-            "node": {
-              "op": {
-                "name": "Seishun Towa",
                 "video": "https://v.animethemes.moe/GrandBlueS2-OP1-NCBD1080.webm"
               }
             }
@@ -544882,14 +545398,6 @@
       },
       "ending": {
         "edges": [
-          {
-            "node": {
-              "ed": {
-                "name": "Hadaka de Dotsukiai feat. May'n",
-                "video": "https://v.animethemes.moe/GrandBlueS2-ED1.webm"
-              }
-            }
-          },
           {
             "node": {
               "ed": {
@@ -547439,10 +547947,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Umitsuki",
+                "video": "https://v.animethemes.moe/KanokariS4-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Boku no Vega",
+                "video": "https://v.animethemes.moe/KanokariS4-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -547739,10 +548265,36 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "OP Manazashi wa Hikari",
+                "video": "https://v.animethemes.moe/KaoruHana-op1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "ED1 Hare no Hi ni",
+                "video": "https://v.animethemes.moe/KaoruHana-ED1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "ED2 Hitohira",
+                "video": "https://v.animethemes.moe/KaoruHana-ED2.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -547797,10 +548349,287 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "HOWL",
+                "video": "https://v.animethemes.moe/KaraokeIko-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
         "edges": []
+      }
+    },
+    {
+      "id": 143598,
+      "averageScore": 70,
+      "episodes": 24,
+      "title": {
+        "romaji": "Kijin Gentoushou",
+        "english": "Sword of the Demon Hunter: Kijin Gentosho"
+      },
+      "seasonYear": 2025,
+      "season": "SPRING",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143598-FCvAhQJLllSP.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx143598-FCvAhQJLllSP.png"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Suzune"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b327970-rE4YFD1faYxH.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Jinta"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b327971-g1mC6rYBL3yt.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shirayuki"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b327972-4IOLSe2r2nUb.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Toumi no Kijo"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b335807-CnbXO8WFsi3d.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Douka no Oni"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b335808-TCFxoShJ0H2K.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Zenji"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b360513-nDP2bInVSwKP.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Chitose"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Yotaka"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Somegorou Akitsu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Juuzou"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b360519-E9NEpl0SREeB.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Oufu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b360520-AHWpZHIbe6I7.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kiyomasa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Natsu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b360522-ZVBu0KMBbPER.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Mosuke"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b362335-RKjyx5EGhsLc.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tenshu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b362336-RljOUiTD1NZM.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Hatsu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b364240-BZnnLFQN1ow6.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Naotsugu Miura"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b364241-E8UDunn0998a.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Naotsugu no Haha"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b364242-Zt74oWEbb4ky.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Nomari"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Female"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Continue",
+                "video": "https://v.animethemes.moe/KijinGentoushou-OP1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "Ash",
+                "video": "https://v.animethemes.moe/KijinGentoushou-OP2.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Senya Ichiya feat. Izumi Nakasone (HY)",
+                "video": "https://v.animethemes.moe/KijinGentoushou-ED1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Enrin",
+                "video": "https://v.animethemes.moe/KijinGentoushou-ED2.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -548651,10 +549480,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Wish for you",
+                "video": "https://v.animethemes.moe/KoujoDenkaNoKateiKyoushi-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Shoujo no Susume",
+                "video": "https://v.animethemes.moe/KoujoDenkaNoKateiKyoushi-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -549184,10 +550031,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Kimi ni Fusawashii Kiseki",
+                "video": "https://v.animethemes.moe/Mikadono-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Aimai Graffiti",
+                "video": "https://v.animethemes.moe/Mikadono-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -549396,10 +550261,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Blue Motion",
+                "video": "https://v.animethemes.moe/Mizuzoku-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Tayutau Mama ni",
+                "video": "https://v.animethemes.moe/Mizuzoku-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -549696,10 +550579,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Rubble",
+                "video": "https://v.animethemes.moe/Muchusa-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Bitansan Adolescence",
+                "video": "https://v.animethemes.moe/Muchusa-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -549807,22 +550708,6 @@
               "ed": {
                 "name": "Kawaii",
                 "video": "https://v.animethemes.moe/MyMelodyAndKuromi-ED1.webm"
-              }
-            }
-          },
-          {
-            "node": {
-              "ed": {
-                "name": "Kawaii",
-                "video": "https://v.animethemes.moe/MyMelodyAndKuromi-ED1v2.webm"
-              }
-            }
-          },
-          {
-            "node": {
-              "ed": {
-                "name": "Kawaii",
-                "video": "https://v.animethemes.moe/MyMelodyAndKuromi-ED1v3.webm"
               }
             }
           }
@@ -550823,10 +551708,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "CRY OUT CRY OVER",
+                "video": "https://v.animethemes.moe/OnmyouKaitenReBirth-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "TURN OVER",
+                "video": "https://v.animethemes.moe/OnmyouKaitenReBirth-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -552540,6 +553443,332 @@
       }
     },
     {
+      "id": 177476,
+      "averageScore": 71,
+      "episodes": 24,
+      "title": {
+        "romaji": "Shin Samurai-den YAIBA",
+        "english": "YAIBA: Samurai Legend"
+      },
+      "seasonYear": 2025,
+      "season": "SPRING",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177476-kduwwEfxcZtU.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177476-kduwwEfxcZtU.jpg"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Yaiba Kurogane"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b24709-ukomjh2yzd9s.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Sayaka Mine"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b24710-b1nf5o0ErgpH.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kenjuro Kurogane"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b24711-vGFXMEWe4sfr.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Takeshi Onimaru"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b24712-s26gR2wAfRzC.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Gerozaimon Geroda"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b26672-UlVX2YQ2VnlF.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shounosuke"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b26673-ohlAq8omihB0.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kagetora"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b32368-NeSHTxHOM3zA.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Narrator"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b36309-6KM0riV4lqfN.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kumo Otoko"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b43973-0eGd0rucRb8C.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Musashi Miyamoto"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b49169-stOyICnBkmHn.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Raizo Mine"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b49171-g5naKD4iuFmv.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shizuka Mine"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b49173-5Vtpg4cwpadF.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Fuji Mine"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b49175-ELwhl3brZn7o.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Keiko Momoi"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b178603-dS6UkwlWGION.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Bat Man"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b342221-cjw2GmquxL3O.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Mutou"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b360542-5bu4mNohpOPE.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Jungle no Omo"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b360549-jtlUlgRMAMUv.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Sagyouin"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Anchisukiru"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Announcer"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Namako Otoko"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b361257-LD7Uvq9QWesT.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kojirou Sasaki"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b361258-LhZpozSt6GdK.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Buin"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Doukyuusei"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Obaasan"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Female"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "BLADE",
+                "video": "https://v.animethemes.moe/ShinSamuraiDenYaiba-OP1.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "pineapple tart",
+                "video": "https://v.animethemes.moe/ShinSamuraiDenYaiba-ED1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "ACTION!",
+                "video": "https://v.animethemes.moe/ShinSamuraiDenYaiba-ED2.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": 192474,
       "averageScore": 45,
       "episodes": 1,
@@ -553377,6 +554606,249 @@
       }
     },
     {
+      "id": 143200,
+      "averageScore": 71,
+      "episodes": 26,
+      "title": {
+        "romaji": "Summer Pockets",
+        "english": "Summer Pockets"
+      },
+      "seasonYear": 2025,
+      "season": "SPRING",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx143200-42OaDCS6VEy3.png",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx143200-42OaDCS6VEy3.png"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Shiroha Naruse"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b274071-9lvsb2dkcSCK.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Hairi Takahara"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b278417-zvDclpboaOf7.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kamome Kushima"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b280051-4cqW0YjRJ9FW.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shizuku Mizuori"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b280052-IHFuuFfdsSvb.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tsumugi Wenders"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b280053-2BEt7PvETZo4.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Inari"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b280054-YOBExQifS112.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Miki Nomura"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b280055-ou0HJC8p4Fv1.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Ao Sorakado"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b280056-QWtDWueB5YMT.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Ryouichi Mitani"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b280057-gVuVnb7PMtin.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Umi Katou"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b345432-mkbo1oFSYFHU.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tenzen Kanou"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b345433-G2igap5PwfeU.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kyouko Misaki"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b345434-I2fTvLcUHxYx.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kobato Naruse"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b345435-mKfw4JeiZEcH.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shiki Kamiyama"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b361780-OuPBp747Xhy7.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Ai Sorakado"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Nanami"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b375600-Nx2f82742gJ5.png"
+              },
+              "gender": "Female"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Alka Tale",
+                "video": "https://v.animethemes.moe/SummerPockets-OP1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "Finis Teller",
+                "video": "https://v.animethemes.moe/SummerPockets-OP2.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Lasting Moment",
+                "video": "https://v.animethemes.moe/SummerPockets-ED1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Mahou no Enikki",
+                "video": "https://v.animethemes.moe/SummerPockets-ED2.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Hane no Yurikago",
+                "video": "https://v.animethemes.moe/SummerPockets-ED3.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": 185407,
       "averageScore": 87,
       "episodes": 6,
@@ -554119,10 +555591,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "CALLING†",
+                "video": "https://v.animethemes.moe/DainanaojiS2-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Meteor",
+                "video": "https://v.animethemes.moe/DainanaojiS2-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -554331,10 +555821,44 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "OVERNIGHT",
+                "video": "https://v.animethemes.moe/TougenAnki-OP1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "Amidakuji",
+                "video": "https://v.animethemes.moe/TougenAnki-OP2.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "What is justice?",
+                "video": "https://v.animethemes.moe/TougenAnki-ed1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "ACTION",
+                "video": "https://v.animethemes.moe/TougenAnki-ed2.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -554455,10 +555979,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Unique",
+                "video": "https://v.animethemes.moe/Tsuishoku-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Magokoro My Heart",
+                "video": "https://v.animethemes.moe/Tsuishoku-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -554634,10 +556176,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Enja",
+                "video": "https://v.animethemes.moe/TsuyokuteNewSaga-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "her",
+                "video": "https://v.animethemes.moe/TsuyokuteNewSaga-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -554780,10 +556340,229 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Hyakunichisou",
+                "video": "https://v.animethemes.moe/Turkey-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Moshimo",
+                "video": "https://v.animethemes.moe/Turkey-ed1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Flashback",
+                "video": "https://v.animethemes.moe/Turkey-ed2.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "sincerity flower",
+                "video": "https://v.animethemes.moe/Turkey-ed3.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Strike freedom!",
+                "video": "https://v.animethemes.moe/Turkey-ed4.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Natsu no Sumika",
+                "video": "https://v.animethemes.moe/Turkey-ed5.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 185070,
+      "averageScore": 62,
+      "episodes": 24,
+      "title": {
+        "romaji": "Uchuujin MuuMuu",
+        "english": "Me and the Alien MuMu"
+      },
+      "seasonYear": 2025,
+      "season": "SPRING",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185070-VKzUA4B9kmaX.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185070-VKzUA4B9kmaX.jpg"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "MuuMuu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b350716-bKtgIRJ46KMv.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Sakurako Umeyashiki"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b350717-ZEAaTNyvqIqW.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Decimal"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b353752-WK3rho7ogzBs.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Akihiro Tsurumi"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b353753-3H8fxkJB04ne.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Miwa Samezu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b353754-vu0ia0JK7zlj.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Wataru Tenkubashi"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b353756-PIp3wTSFMGUb.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tamotsu Rokugou"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b353757-ChF6ifPIDssa.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Sonoko Kagetsu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b353758-zRrtb17iB37v.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Siberia"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b355989-QXiDPthxU7E5.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Junichirou Anamori"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b355990-rL3t4Vmz40Y3.png"
+              },
+              "gender": "Male"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Fushigi na Kimi",
+                "video": "https://v.animethemes.moe/UchuujinMuuMuu-OP1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "MOVE MOVE",
+                "video": "https://v.animethemes.moe/UchuujinMuuMuu-OP2.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Sayonara Jinrui",
+                "video": "https://v.animethemes.moe/UchuujinMuuMuu-ED1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Subarashii Hibi",
+                "video": "https://v.animethemes.moe/UchuujinMuuMuu-ED2.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -555217,10 +556996,378 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Muri Muri Shinkaron",
+                "video": "https://v.animethemes.moe/Watanare-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Mayocchauwa",
+                "video": "https://v.animethemes.moe/Watanare-ed1.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 180367,
+      "averageScore": 72,
+      "episodes": 25,
+      "title": {
+        "romaji": "Witch Watch",
+        "english": "WITCH WATCH"
+      },
+      "seasonYear": 2025,
+      "season": "SPRING",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx180367-GlRuB2lG7Kaa.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx180367-GlRuB2lG7Kaa.jpg"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Joutarou Kuujou"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b4003-gWDSEGbeOAll.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Hideaki Sorachi"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/15452.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Narrator"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b36309-6KM0riV4lqfN.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Morihito Otogi"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207344-2LFtu73GjZsg.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Nico Wakatsuki"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b207345-iXoH3SVekrw6.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kanshi Kazamatsuri"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b233739-KNQGNMvqGZfI.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Nemu Miyao"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b253737-WsHYPntyvdFf.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Keigo Magami"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b265162-BkRabXvjfzWj.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kara Minami"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266623-rCPO0BRR1G2H.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kukumi Ureshino"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266624-VlAYFU9Q3DP8.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Miharu Kiryuu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266627-d9AX0oJkxMLV.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Reiji Otogi"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266630-IBY5VsWphKRE.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Momota"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266632-7ORwQMsOYCz3.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Inuzuka"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266633-0NbH3ifnyR6F.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Saruwatari"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266634-NnHM1Xldhhcy.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Yamamoto"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266635-ExOrSYP8XHJZ.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kamei"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266636-pgZG9eOyhGPp.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Sakaki"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266637-EDBCSpsnlcS6.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Yokoyama"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266638-MvrADayfDkjd.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kanda"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266639-cypgnvc7fH9r.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Yuuri Makuwa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266640-mWX66EqFKQBB.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tenryuu Kiyomiya"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266641-CxaHB71iNAq4.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Ibara Ibu"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266642-erJ3Trwa31HV.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Yuzuru Kenmochi"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266643-H1a34tN2SWlV.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Syrup Amai"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266644-gHM739uS2kd2.png"
+              },
+              "gender": "Female"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Watch me!",
+                "video": "https://v.animethemes.moe/WitchWatch-OP1-NCBD1080.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "Tokihanate!",
+                "video": "https://v.animethemes.moe/WitchWatch-OP2.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "Bitter end",
+                "video": "https://v.animethemes.moe/WitchWatch-OP3.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Mahou wa Spice",
+                "video": "https://v.animethemes.moe/WitchWatch-ED1-NCBD1080.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Tsuki to Watashi no Kakurenbo",
+                "video": "https://v.animethemes.moe/WitchWatch-ED2.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "FLASHBACK SYNDROME",
+                "video": "https://v.animethemes.moe/WitchWatch-ED3.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -555671,10 +557818,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Junjou de Are.",
+                "video": "https://v.animethemes.moe/TsuihouShiroMadoushi-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Mayocchauwa",
+                "video": "https://v.animethemes.moe/TsuihouShiroMadoushi-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -558435,10 +560600,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Sugary Story",
+                "video": "https://v.animethemes.moe/AkujikiReijou-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Kibou Koudo",
+                "video": "https://v.animethemes.moe/AkujikiReijou-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -559106,10 +561289,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "OP THE REVO",
+                "video": "https://v.animethemes.moe/BokuNoHeroAcademiaS8-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "I",
+                "video": "https://v.animethemes.moe/BokuNoHeroAcademiaS8-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -559559,10 +561760,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Mahou",
+                "video": "https://v.animethemes.moe/Hahanoha-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Family",
+                "video": "https://v.animethemes.moe/Hahanoha-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -561096,6 +563315,123 @@
       }
     },
     {
+      "id": 185965,
+      "averageScore": 63,
+      "episodes": 24,
+      "title": {
+        "romaji": "Futari Solo Camp",
+        "english": "Solo Camping for Two"
+      },
+      "seasonYear": 2025,
+      "season": "SUMMER",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx185965-LlzTLSTBUbEA.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx185965-LlzTLSTBUbEA.jpg"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Narrator"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b36309-6KM0riV4lqfN.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shizuku Kusano"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b192651-rVM3182aXjwa.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Gen Kinokura"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b205723-13BIP7OoVhT6.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Akihito Takigawa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b357217-4HmdwdVze8Z1.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Saya Oozora"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b359262-l4orPmfw5Ul9.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Mizuki Hino"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b359272-w5Jh6rauZOBp.png"
+              },
+              "gender": "Female"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Akari wa Tooku",
+                "video": "https://v.animethemes.moe/FutariSoloCamp-OP1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "Futari de Iyou ka",
+                "video": "https://v.animethemes.moe/FutariSoloCamp-OP2.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Futari Camp feat.SPECIAL OTHERS",
+                "video": "https://v.animethemes.moe/FutariSoloCamp-ED1.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": 198117,
       "averageScore": 53,
       "episodes": "",
@@ -561341,6 +563677,340 @@
       },
       "ending": {
         "edges": []
+      }
+    },
+    {
+      "id": 178025,
+      "averageScore": 80,
+      "episodes": 24,
+      "title": {
+        "romaji": "Gachiakuta",
+        "english": "Gachiakuta"
+      },
+      "seasonYear": 2025,
+      "season": "SUMMER",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx178025-cWJKEsZynkil.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx178025-cWJKEsZynkil.jpg"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Rudo"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266433-R4VXtmhxwDVG.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Chiwa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266434-Wkjo1jlTgDCm.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Regto"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266437-sUIpywq7P310.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Engine"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b266438-3Veykti1lXgg.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Zanka Nijiku"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b268742-PSWLnWDJH7HJ.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Riyou"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b275749-fglzDjaLZh1H.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tamsy Caines"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b291689-qUluOFlz7ZiD.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Amo Empool"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298929-tIibEBpixCaK.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Semiu Grier"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298949-JuGJkPVGfyaS.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tomme Mima"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298950-mRn2Qs3KAJ5a.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Abyss Workers Leader"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298951-Me9hTdzkyHZ3.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Chiwa no Haha"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298952-zoJOnw3jHmkB.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Jabber Wonger"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298953-2HajxxsIx9wd.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Follo Tunito"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298954-ciXAKksdyGJv.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Cthoni Andor"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298955-Ck2LPSBKjaQ3.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Gob"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298956-02k1tGCJwDeL.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Alha Korvus"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298957-y1XZXuqoXtOy.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Gris Rubion"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298958-2U6c3So0i8l4.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Remlin Tissark"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298959-ECaxJ4FdBKds.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Delmon Gates"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298960-Vahr3stH631y.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "August Stilza"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298961-rm1FALxMHvKK.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Eishia Stilza"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298962-lOEicLlWzNax.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Alice Stilza"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b298963-BEjtNOkIM70O.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Dear Santa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b306959-Peh0lBGX3Qbw.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Bro Santa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b306960-P1LtqzRBOmOB.jpg"
+              },
+              "gender": "Male"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "HUGs",
+                "video": "https://v.animethemes.moe/Gachiakuta-OP1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "LET'S JUST CRASH",
+                "video": "https://v.animethemes.moe/Gachiakuta-OP2.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Tomoshibi",
+                "video": "https://v.animethemes.moe/Gachiakuta-ED1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Ban",
+                "video": "https://v.animethemes.moe/Gachiakuta-ED2.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -562247,10 +564917,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Isekai Concerto",
+                "video": "https://v.animethemes.moe/IsekaiQuartetS3-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Kimi-iro, Boku-iro",
+                "video": "https://v.animethemes.moe/IsekaiQuartetS3-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -563438,10 +566126,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "1, 2, Play",
+                "video": "https://v.animethemes.moe/LetsPlayQuestDarakeNoMyLife-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Left & Right",
+                "video": "https://v.animethemes.moe/LetsPlayQuestDarakeNoMyLife-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -563562,10 +566268,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "OP Quest",
+                "video": "https://v.animethemes.moe/Hojomaho-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "ED Kakera",
+                "video": "https://v.animethemes.moe/Hojomaho-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -563675,10 +566399,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Reincarnation",
+                "video": "https://v.animethemes.moe/MushokuNoEiyuu-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Kiseki nanka Iranai",
+                "video": "https://v.animethemes.moe/MushokuNoEiyuu-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -563766,10 +566508,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Algorithm",
+                "video": "https://v.animethemes.moe/NagekiNoBoureiPart2-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Yume e no Hitokakera",
+                "video": "https://v.animethemes.moe/NagekiNoBoureiPart2-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -564445,10 +567205,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Koi no Magic Potion",
+                "video": "https://v.animethemes.moe/PotionWagamiWoTasukeru-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "MIRACRAID",
+                "video": "https://v.animethemes.moe/PotionWagamiWoTasukeru-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -564701,10 +567479,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Wo Ai Ni",
+                "video": "https://v.animethemes.moe/Ranma2024S2-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Panda Girl",
+                "video": "https://v.animethemes.moe/Ranma2024S2-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -565482,10 +568278,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Senjou no Hana",
+                "video": "https://v.animethemes.moe/Saihito-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "D Inferior",
+                "video": "https://v.animethemes.moe/Saihito-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -565573,10 +568387,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "U.K.U",
+                "video": "https://v.animethemes.moe/SawaranaideKotesashiKun-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Joujou↑High Tension",
+                "video": "https://v.animethemes.moe/SawaranaideKotesashiKun-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -565861,10 +568693,28 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Hira-yori Raiya, Sara-riya Takaki",
+                "video": "https://v.animethemes.moe/MugenGacha-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Shirogarasu",
+                "video": "https://v.animethemes.moe/MugenGacha-ed1.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {
@@ -566583,6 +569433,252 @@
               "ed": {
                 "name": "SALT AND PEPPER",
                 "video": "https://v.animethemes.moe/TonsukiS2-ED1.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": 177474,
+      "averageScore": 64,
+      "episodes": 24,
+      "title": {
+        "romaji": "Tougen Anki",
+        "english": "TOUGEN ANKI"
+      },
+      "seasonYear": 2025,
+      "season": "SUMMER",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx177474-oHil1yLWldfl.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx177474-oHil1yLWldfl.jpg"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Narrator"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b36309-6KM0riV4lqfN.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shiki Ichinose"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b174901-vsAAYYr9HU1T.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Ikari Yaoroshi"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b181336-l4qblok8MVEM.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Jyuuji Yusurube"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b181337-E88lfqRWfSFU.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Homare Byobugaura"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b181338-8F7WoXQj8O7v.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Naito Mudano"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b181339-wh2LH48Bw3tN.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Jin Kougasaki"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b181340-ZWQTlkhmJsp3.png"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kyouya Oiranzaka"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b212439-fC5L1vm6f633.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Mikado Momodera"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b281625-DDb0TzOjo8OH.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Rokuro Kiriyama"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b302354-VsiP2qKLUskn.png"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kuina Sazanami"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b353208-iK6t1zme1evP.png"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Yomogi Momokusa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tsubakiri Momomiya"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b367533-wl2P7IP1fAWW.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Samidare Momoya"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tsuyoshi Ichinose"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Kouchou"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shinya Momoiwa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Male"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "OVERNIGHT",
+                "video": "https://v.animethemes.moe/TougenAnki-OP1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "Amidakuji",
+                "video": "https://v.animethemes.moe/TougenAnki-OP2.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "What is justice?",
+                "video": "https://v.animethemes.moe/TougenAnki-ED1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "ACTION",
+                "video": "https://v.animethemes.moe/TougenAnki-ED2.webm"
               }
             }
           }
@@ -567375,6 +570471,153 @@
       }
     },
     {
+      "id": 169420,
+      "averageScore": 59,
+      "episodes": 26,
+      "title": {
+        "romaji": "Watari-kun no xx ga Houkai Sunzen",
+        "english": "Watari-kun's ****** Is about to Collapse"
+      },
+      "seasonYear": 2025,
+      "season": "SUMMER",
+      "coverImage": {
+        "large": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/bx169420-u4wDhHlTfX9P.jpg",
+        "medium": "https://s4.anilist.co/file/anilistcdn/media/anime/cover/small/bx169420-u4wDhHlTfX9P.jpg"
+      },
+      "characters": {
+        "edges": [
+          {
+            "node": {
+              "name": {
+                "full": "Satsuki Tachibana"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b162556-6Wc46MP9mLJw.jpg"
+              },
+              "gender": "Female"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Tamayo Watari"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b209141-nDU4pECwH99n.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Naoto Watari"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b209142-VAFRLEZfr2K1.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Suzushiro Watari"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b209143-BT6Tx8v8qVDO.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Yukari Ishihara"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b209144-M8g4uZj4zORq.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Makina Umezawa"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b209145-9U6qh5xpR2Fz.jpg"
+              },
+              "gender": null
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Shigenobu Tokui"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/default.jpg"
+              },
+              "gender": "Male"
+            }
+          },
+          {
+            "node": {
+              "name": {
+                "full": "Souichirou Fujioka"
+              },
+              "image": {
+                "large": "https://s4.anilist.co/file/anilistcdn/character/large/b374844-zoxHy6eVsCqV.jpg"
+              },
+              "gender": "Male"
+            }
+          }
+        ]
+      },
+      "opening": {
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "Yuurei ni Naritai",
+                "video": "https://v.animethemes.moe/WatariKunNoxxGaHoukaiSunzen-OP1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "op": {
+                "name": "Futaribun",
+                "video": "https://v.animethemes.moe/WatariKunNoxxGaHoukaiSunzen-OP2.webm"
+              }
+            }
+          }
+        ]
+      },
+      "ending": {
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Ai Ai Ai Ai Ai",
+                "video": "https://v.animethemes.moe/WatariKunNoxxGaHoukaiSunzen-ED1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Shippai Shinai Menhera no Sodatekata",
+                "video": "https://v.animethemes.moe/WatariKunNoxxGaHoukaiSunzen-ED2.webm"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
       "id": 183385,
       "averageScore": 71,
       "episodes": 13,
@@ -567635,10 +570878,36 @@
         ]
       },
       "opening": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "op": {
+                "name": "-nie-",
+                "video": "https://v.animethemes.moe/Watatabe-OP1.webm"
+              }
+            }
+          }
+        ]
       },
       "ending": {
-        "edges": []
+        "edges": [
+          {
+            "node": {
+              "ed": {
+                "name": "Lily",
+                "video": "https://v.animethemes.moe/Watatabe-ed1.webm"
+              }
+            }
+          },
+          {
+            "node": {
+              "ed": {
+                "name": "Taiyou, Natte Age Yokka? ♡",
+                "video": "https://v.animethemes.moe/Watatabe-ed2.webm"
+              }
+            }
+          }
+        ]
       }
     },
     {

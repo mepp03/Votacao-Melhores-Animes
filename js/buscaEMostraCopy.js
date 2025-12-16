@@ -1,5 +1,3 @@
-console.log("foi");
-
 const tabela = document.getElementById("lista");
 const tabelaExtra = document.getElementById("extra");
 var animes;
@@ -7,22 +5,67 @@ var nome = localStorage.getItem("usuario");
 
 buscar();
 
-// Função para tratar os caracteres especiais (APENAS para atributos HTML)
-function escaparCaractere(str) {
+// Versão melhorada que não causa scroll da página
+function prepararModalAbertura() {
+  // Pequeno delay para garantir que o modal está visível
+  setTimeout(function () {
+    // 1. Focar na barra de busca SEM causar scroll da página
+    const buscaInput = document.getElementById("busca");
+    if (buscaInput) {
+      // Guardar a posição atual do scroll da página
+      const scrollTopAnterior =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      // Focar no input
+      buscaInput.focus();
+      buscaInput.select();
+
+      // Restaurar a posição do scroll (evita que a página suba)
+      window.scrollTo(0, scrollTopAnterior);
+    }
+
+    // 2. Resetar rolagem APENAS dentro do modal
+    const modal = document.getElementById("myModal");
+    if (modal) {
+      // Resetar scroll do próprio modal
+      modal.scrollTop = 0;
+
+      // Resetar scroll de todos os elementos filhos que podem ter scroll
+      const elementosComScroll = modal.querySelectorAll("*");
+      elementosComScroll.forEach((el) => {
+        if (
+          el.scrollHeight > el.clientHeight &&
+          window.getComputedStyle(el).overflowY !== "hidden"
+        ) {
+          el.scrollTop = 0;
+        }
+      });
+    }
+
+    // 3. Resetar seções específicas que você sabe que têm scroll
+    const secoesParaResetar = ["secaoLista", "secaoExtra", "lista", "extra"];
+    secoesParaResetar.forEach((id) => {
+      const elemento = document.getElementById(id);
+      if (elemento) {
+        elemento.scrollTop = 0;
+      }
+    });
+  }, 100);
+}
+
+// Função para tratar caracteres especiais para conteúdo HTML (dentro de tags)
+function escaparParaHTML(str) {
   if (str === null || str === undefined) return "";
   if (typeof str !== "string") {
     str = String(str);
   }
 
   return str
-    .replace(/\\/g, "\\\\")
-    .replace(/'/g, "\\'")
-    .replace(/"/g, '\\"')
-    .replace(/`/g, "\\`")
-    .replace(/\n/g, "\\n")
-    .replace(/\r/g, "\\r")
-    .replace(/\t/g, "\\t")
-    .replace(/\f/g, "\\f");
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
 }
 
 // Função para destratar os caracteres especiais
@@ -39,7 +82,7 @@ function desescaparCaractere(str) {
     .replace(/\\f/g, "\f");
 }
 
-// Cria os cards dos animes
+// Cria os cards dos animes (USANDO EVENT LISTENERS)
 const criaCardAnime = (
   id,
   large,
@@ -53,15 +96,19 @@ const criaCardAnime = (
 ) => {
   const novoCardAnime = document.createElement("div");
   novoCardAnime.classList.add("lista__item");
+
+  // Para conteúdo HTML: escaparParaHTML
+  const romajiHTML = escaparParaHTML(romaji);
+  const englishHTML = escaparParaHTML(english);
+  const largeEscaped = large.replace(/"/g, "&quot;");
+
   const conteudo = `
-        <img src="${large}" class="lista__item--img" id="${id}" data-nomeJ="${escaparCaractere(
-    romaji
-  )}" data-nomeE="${escaparCaractere(english)}" 
-            onclick="passarEscolha('${id}', '${escaparCaractere(
-    romaji
-  )}', '${escaparCaractere(english)}', '${large}')">        
-        <h3 class="lista__item--nome" id="nomeJ">${romaji}</h3>
-        <h3 class="lista__item--nome" id="nomeE">${english}</h3>
+        <img src="${largeEscaped}" class="lista__item--img" id="img-${id}" 
+            data-id="${id}"
+            data-romaji="${romajiHTML}"
+            data-english="${englishHTML}">        
+        <h3 class="lista__item--nome" id="nomeJ">${romajiHTML}</h3>
+        <h3 class="lista__item--nome" id="nomeE">${englishHTML}</h3>
         <a class="esconder" href="#">${op}</a>
         <p class="esconder">${ed}</p>
         `;
@@ -69,109 +116,207 @@ const criaCardAnime = (
   novoCardAnime.innerHTML = conteudo;
   novoCardAnime.dataset.id = id;
 
+  // Adiciona event listener após criar o elemento
+  const img = novoCardAnime.querySelector(`#img-${id}`);
+  img.addEventListener("click", function () {
+    passarEscolha(
+      this.dataset.id,
+      this.dataset.romaji,
+      this.dataset.english,
+      large
+    );
+  });
+
   return novoCardAnime;
 };
 
-// Cria os cards das aberturas
+// Cria os cards das aberturas (USANDO EVENT LISTENERS)
 const criaCardAbertura = (id, op, video) => {
   const novoCardExtra = document.createElement("div");
   novoCardExtra.classList.add("lista__item--video");
+
+  // Para conteúdo HTML: escaparParaHTML
+  const opHTML = escaparParaHTML(op);
+  const videoEscaped = video.replace(/"/g, "&quot;");
+
+  const buttonId = `btn-op-${id}-${Date.now()}-${Math.random()
+    .toString(36)
+    .substr(2, 9)}`;
+
   const conteudo = `<video class="lista__item--video" id="video" width="720" height="480" controls>
-            <source src="${video}" type="video/webm">
+            <source src="${videoEscaped}" type="video/webm">
         </video>
-        <h3 class="lista__item--nome" id="nomeOP">${op}</h3>
-        <button class="lista__item--botao" id="${id}" data-nomeOp="${op}" onclick="passarEscolhaExtra('${escaparCaractere(
-    op
-  )}')">Escolher</button>        
+        <h3 class="lista__item--nome" id="nomeOP">${opHTML}</h3>
+        <button class="lista__item--botao" id="${buttonId}" data-op="${opHTML}">Escolher</button>        
         `;
 
   novoCardExtra.innerHTML = conteudo;
   novoCardExtra.dataset.id = id;
 
+  // Adiciona event listener após criar o elemento
+  setTimeout(() => {
+    const btn = document.getElementById(buttonId);
+    if (btn) {
+      btn.addEventListener("click", function () {
+        passarEscolhaExtra(this.dataset.op);
+      });
+    }
+  }, 0);
+
   return novoCardExtra;
 };
 
-// Cria os cards dos encerramentos
+// Cria os cards dos encerramentos (USANDO EVENT LISTENERS)
 const criaCardEncerramento = (id, ed, video) => {
   const novoCardExtra = document.createElement("div");
   novoCardExtra.classList.add("lista__item--video");
+
+  // Para conteúdo HTML: escaparParaHTML
+  const edHTML = escaparParaHTML(ed);
+  const videoEscaped = video.replace(/"/g, "&quot;");
+
+  const buttonId = `btn-ed-${id}-${Date.now()}-${Math.random()
+    .toString(36)
+    .substr(2, 9)}`;
+
   const conteudo = `<video class="lista__item--video" id="video" width="720" height="480" controls>
-            <source src="${video}" type="video/webm">
+            <source src="${videoEscaped}" type="video/webm">
         </video>
-        <h3 class="lista__item--nome" id="nomeED">${ed}</h3>
-        <button class="lista__item--botao" id="${id}" data-nomeEd="${ed}" onclick="passarEscolhaExtra('${escaparCaractere(
-    ed
-  )}')">Escolher</button>        
+        <h3 class="lista__item--nome" id="nomeED">${edHTML}</h3>
+        <button class="lista__item--botao" id="${buttonId}" data-ed="${edHTML}">Escolher</button>        
         `;
   novoCardExtra.innerHTML = conteudo;
   novoCardExtra.dataset.id = id;
 
+  // Adiciona event listener após criar o elemento
+  setTimeout(() => {
+    const btn = document.getElementById(buttonId);
+    if (btn) {
+      btn.addEventListener("click", function () {
+        passarEscolhaExtra(this.dataset.ed);
+      });
+    }
+  }, 0);
+
   return novoCardExtra;
 };
 
-// Cria os cards dos personagens
+// Cria os cards dos personagens (VERSÃO SIMPLIFICADA - SEM INNERHTML)
 const criaCardExtra = (id, romaji, english, gender, full, large) => {
   var genero = "";
   switch (gender) {
     case "Male":
       genero = "Masculino";
       break;
-
     case "Female":
       genero = "Feminino";
       break;
-
     default:
       genero = "Anilist não informou :/";
       break;
   }
+
+  // Para conteúdo HTML: escaparParaHTML
+  const fullHTML = escaparParaHTML(full);
+  const generoHTML = escaparParaHTML(genero);
+  const largeEscaped = large.replace(/"/g, "&quot;");
+
   const novoCardExtra = document.createElement("div");
   novoCardExtra.classList.add("lista__item");
-  const conteudo = `<img src="${large}" class="lista__item--img" onclick="passarEscolhaExtra('${escaparCaractere(
-    full
-  )}', '${large}')">        
-        <h3 class="lista__item--nome" id="nomeFull">${full}</h3>
-        <h3 class="lista__item--nome" id="genero">${genero}</h3>
-        `;
 
-  novoCardExtra.innerHTML = conteudo;
+  // Criar elementos manualmente em vez de usar innerHTML
+  const img = document.createElement("img");
+  img.src = largeEscaped;
+  img.className = "lista__item--img";
+  img.dataset.full = fullHTML;
+
+  // Adicionar event listener DIRETAMENTE
+  img.addEventListener("click", function () {
+    passarEscolhaExtra(this.dataset.full, large);
+  });
+
+  const h3Full = document.createElement("h3");
+  h3Full.className = "lista__item--nome";
+  h3Full.id = "nomeFull";
+  h3Full.innerHTML = fullHTML;
+
+  const h3Genero = document.createElement("h3");
+  h3Genero.className = "lista__item--nome";
+  h3Genero.id = "genero";
+  h3Genero.innerHTML = generoHTML;
+
+  // Montar o card
+  novoCardExtra.appendChild(img);
+  novoCardExtra.appendChild(h3Full);
+  novoCardExtra.appendChild(h3Genero);
   novoCardExtra.dataset.id = id;
 
   return novoCardExtra;
 };
 
-// Cria os cards dos pares
+// Cria os cards dos pares (VERSÃO SIMPLIFICADA - SEM INNERHTML)
 const criaCardPar = (id, romaji, english, gender, full, large) => {
   var genero = "";
   switch (gender) {
     case "Male":
       genero = "Masculino";
       break;
-
     case "Female":
       genero = "Feminino";
       break;
-
     default:
       genero = "Anilist não informou :/";
       break;
   }
+
+  // Para conteúdo HTML: escaparParaHTML
+  const fullHTML = escaparParaHTML(full);
+  const generoHTML = escaparParaHTML(genero);
+  const largeEscaped = large.replace(/"/g, "&quot;");
+  const romajiHTML = escaparParaHTML(romaji);
+  const englishHTML = escaparParaHTML(english);
+
   const novoCardExtra = document.createElement("div");
   novoCardExtra.classList.add("lista__item");
-  const conteudo = `<img src="${large}" class="lista__item--img">        
-    <h3 class="lista__item--nome" id="nomeFull">${full}</h3>
-    <h3 class="lista__item--nome" id="genero">${genero}</h3>
-    <label>
-    <input type="checkbox" name="par" value="${large}" data-nome="${escaparCaractere(
-    full
-  )}" data-nomeE="${escaparCaractere(english)}" data-nomeJ="${escaparCaractere(
-    romaji
-  )}" onclick="selecionarPares()">
-        Selecione o par
-    </label>
-    `;
 
-  novoCardExtra.innerHTML = conteudo;
+  // Criar elementos manualmente
+  const img = document.createElement("img");
+  img.src = largeEscaped;
+  img.className = "lista__item--img";
+
+  const h3Full = document.createElement("h3");
+  h3Full.className = "lista__item--nome";
+  h3Full.id = "nomeFull";
+  h3Full.innerHTML = fullHTML;
+
+  const h3Genero = document.createElement("h3");
+  h3Genero.className = "lista__item--nome";
+  h3Genero.id = "genero";
+  h3Genero.innerHTML = generoHTML;
+
+  const label = document.createElement("label");
+
+  const checkbox = document.createElement("input");
+  checkbox.type = "checkbox";
+  checkbox.name = "par";
+  checkbox.value = largeEscaped;
+  checkbox.dataset.nome = fullHTML;
+  checkbox.dataset.nomeE = englishHTML;
+  checkbox.dataset.nomeJ = romajiHTML;
+
+  // Adicionar event listener DIRETAMENTE
+  checkbox.addEventListener("change", selecionarPares);
+
+  // Criar text node para o label
+  const labelText = document.createTextNode(" Selecione o par");
+  label.appendChild(checkbox);
+  label.appendChild(labelText);
+
+  // Montar o card
+  novoCardExtra.appendChild(img);
+  novoCardExtra.appendChild(h3Full);
+  novoCardExtra.appendChild(h3Genero);
+  novoCardExtra.appendChild(label);
   novoCardExtra.dataset.id = id;
 
   return novoCardExtra;
@@ -300,10 +445,7 @@ function fechar() {
 }
 
 function passarEscolha(id, nomeJ, nomeE, imagem) {
-  // Desescapar os nomes antes de usar
-  const nomeJDesescapado = desescaparCaractere(nomeJ);
-  const nomeEDesescapado = desescaparCaractere(nomeE);
-
+  // Os dados já vêm desescapados dos data-attributes
   idAnime = id;
   imagemVoto.src = imagem;
   imagemVoto.setAttribute("data-identificacao", idAnime);
@@ -311,9 +453,11 @@ function passarEscolha(id, nomeJ, nomeE, imagem) {
   imagemVoto.setAttribute("data-nomeE", nomeE);
   imagemVoto.setAttribute("data-extra", "sem");
 
-  // Exibe os nomes desescapados
-  nomeJVoto.innerHTML = nomeJDesescapado;
-  nomeEVoto.innerHTML = nomeEDesescapado;
+  // Exibe os nomes (já escapados para HTML)
+  nomeJVoto.innerHTML = nomeJ;
+  nomeEVoto.innerHTML = nomeE;
+
+  prepararModalAbertura();
 
   switch (escolhaExtra) {
     case "abertura":
@@ -449,16 +593,14 @@ function passarEscolha(id, nomeJ, nomeE, imagem) {
   resetarLista();
 }
 
-function passarEscolhaExtra(infoComEscape, imagemPersonagem) {
+function passarEscolhaExtra(info, imagemPersonagem) {
   if (imagemPersonagem != null) {
     imagemVoto.src = imagemPersonagem;
   }
 
-  // Desescapar a string antes de exibir
-  const info = desescaparCaractere(infoComEscape);
   extraVoto.innerHTML = info;
   imagemVoto.setAttribute("data-identificacao", idAnime);
-  imagemVoto.setAttribute("data-extra", infoComEscape);
+  imagemVoto.setAttribute("data-extra", info);
 
   document.getElementById("secaoExtra").classList.add("esconder");
   document.getElementById("secaoLista").classList.remove("esconder");
@@ -532,6 +674,7 @@ function filtrarVideo(video) {
       filtrarVideo("op");
       escolhaExtra = "abertura";
       modal.style.display = "block";
+      prepararModalAbertura();
       idVoto = document.getElementById("aberturaImg1").dataset.identificacao;
       imagemVoto = document.getElementById("aberturaImg1");
       nomeJVoto = document.getElementById("aberturaNomeJapones1");
@@ -547,6 +690,7 @@ function filtrarVideo(video) {
       filtrarVideo("op");
       escolhaExtra = "abertura";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("aberturaImg2");
       nomeJVoto = document.getElementById("aberturaNomeJapones2");
       nomeEVoto = document.getElementById("aberturaNomeIngles2");
@@ -561,6 +705,7 @@ function filtrarVideo(video) {
       filtrarVideo("op");
       escolhaExtra = "abertura";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("aberturaImg3");
       nomeJVoto = document.getElementById("aberturaNomeJapones3");
       nomeEVoto = document.getElementById("aberturaNomeIngles3");
@@ -577,6 +722,7 @@ function filtrarVideo(video) {
       filtrarVideo("ed");
       escolhaExtra = "encerramento";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("encerramentoImg1");
       nomeJVoto = document.getElementById("encerramentoNomeJapones1");
       nomeEVoto = document.getElementById("encerramentoNomeIngles1");
@@ -591,6 +737,7 @@ function filtrarVideo(video) {
       filtrarVideo("ed");
       escolhaExtra = "encerramento";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("encerramentoImg2");
       nomeJVoto = document.getElementById("encerramentoNomeJapones2");
       nomeEVoto = document.getElementById("encerramentoNomeIngles2");
@@ -605,6 +752,7 @@ function filtrarVideo(video) {
       filtrarVideo("ed");
       escolhaExtra = "encerramento";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("encerramentoImg3");
       nomeJVoto = document.getElementById("encerramentoNomeJapones3");
       nomeEVoto = document.getElementById("encerramentoNomeIngles3");
@@ -620,6 +768,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagemFeminino";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("femininoImg1");
       nomeJVoto = document.getElementById("femininoNomeJapones1");
       nomeEVoto = document.getElementById("femininoNomeIngles1");
@@ -633,6 +782,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagemFeminino";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("femininoImg2");
       nomeJVoto = document.getElementById("femininoNomeJapones2");
       nomeEVoto = document.getElementById("femininoNomeIngles2");
@@ -646,6 +796,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagemFeminino";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("femininoImg3");
       nomeJVoto = document.getElementById("femininoNomeJapones3");
       nomeEVoto = document.getElementById("femininoNomeIngles3");
@@ -661,6 +812,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagemMasculino";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("masculinoImg1");
       nomeJVoto = document.getElementById("masculinoNomeJapones1");
       nomeEVoto = document.getElementById("masculinoNomeIngles1");
@@ -674,6 +826,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagemMasculino";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("masculinoImg2");
       nomeJVoto = document.getElementById("masculinoNomeJapones2");
       nomeEVoto = document.getElementById("masculinoNomeIngles2");
@@ -687,6 +840,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagemMasculino";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("masculinoImg3");
       nomeJVoto = document.getElementById("masculinoNomeJapones3");
       nomeEVoto = document.getElementById("masculinoNomeIngles3");
@@ -701,6 +855,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("surpresaImg1");
       nomeJVoto = document.getElementById("surpresaNomeJapones1");
       nomeEVoto = document.getElementById("surpresaNomeIngles1");
@@ -712,6 +867,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("surpresaImg2");
       nomeJVoto = document.getElementById("surpresaNomeJapones2");
       nomeEVoto = document.getElementById("surpresaNomeIngles2");
@@ -723,6 +879,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("surpresaImg3");
       nomeJVoto = document.getElementById("surpresaNomeJapones3");
       nomeEVoto = document.getElementById("surpresaNomeIngles3");
@@ -736,6 +893,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("decepcaoImg1");
       nomeJVoto = document.getElementById("decepcaoNomeJapones1");
       nomeEVoto = document.getElementById("decepcaoNomeIngles1");
@@ -747,6 +905,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("decepcaoImg2");
       nomeJVoto = document.getElementById("decepcaoNomeJapones2");
       nomeEVoto = document.getElementById("decepcaoNomeIngles2");
@@ -758,6 +917,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("decepcaoImg3");
       nomeJVoto = document.getElementById("decepcaoNomeJapones3");
       nomeEVoto = document.getElementById("decepcaoNomeIngles3");
@@ -771,6 +931,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("animacaoImg1");
       nomeJVoto = document.getElementById("animacaoNomeJapones1");
       nomeEVoto = document.getElementById("animacaoNomeIngles1");
@@ -782,6 +943,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("animacaoImg2");
       nomeJVoto = document.getElementById("animacaoNomeJapones2");
       nomeEVoto = document.getElementById("animacaoNomeIngles2");
@@ -793,6 +955,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("animacaoImg3");
       nomeJVoto = document.getElementById("animacaoNomeJapones3");
       nomeEVoto = document.getElementById("animacaoNomeIngles3");
@@ -807,6 +970,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagem";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("antagonistaImg1");
       nomeJVoto = document.getElementById("antagonistaNomeJapones1");
       nomeEVoto = document.getElementById("antagonistaNomeIngles1");
@@ -820,6 +984,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagem";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("antagonistaImg2");
       nomeJVoto = document.getElementById("antagonistaNomeJapones2");
       nomeEVoto = document.getElementById("antagonistaNomeIngles2");
@@ -833,6 +998,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagem";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("antagonistaImg3");
       nomeJVoto = document.getElementById("antagonistaNomeJapones3");
       nomeEVoto = document.getElementById("antagonistaNomeIngles3");
@@ -848,6 +1014,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "par";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("par1Img1");
       imagemVoto2 = document.getElementById("par2Img1");
       nomeJVoto = document.getElementById("parNomeJapones1");
@@ -862,6 +1029,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "par";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("par1Img2");
       imagemVoto2 = document.getElementById("par2Img2");
       nomeJVoto = document.getElementById("parNomeJapones2");
@@ -876,6 +1044,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "par";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("par1Img3");
       imagemVoto2 = document.getElementById("par2Img3");
       nomeJVoto = document.getElementById("parNomeJapones3");
@@ -892,6 +1061,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagem";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("doenteImg1");
       nomeJVoto = document.getElementById("doenteNomeJapones1");
       nomeEVoto = document.getElementById("doenteNomeIngles1");
@@ -905,6 +1075,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagem";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("doenteImg2");
       nomeJVoto = document.getElementById("doenteNomeJapones2");
       nomeEVoto = document.getElementById("doenteNomeIngles2");
@@ -918,6 +1089,7 @@ function filtrarVideo(video) {
       esconderExtra();
       escolhaExtra = "personagem";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("doenteImg3");
       nomeJVoto = document.getElementById("doenteNomeJapones3");
       nomeEVoto = document.getElementById("doenteNomeIngles3");
@@ -932,6 +1104,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("emocaoImg1");
       nomeJVoto = document.getElementById("emocaoNomeJapones1");
       nomeEVoto = document.getElementById("emocaoNomeIngles1");
@@ -943,6 +1116,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("emocaoImg2");
       nomeJVoto = document.getElementById("emocaoNomeJapones2");
       nomeEVoto = document.getElementById("emocaoNomeIngles2");
@@ -954,6 +1128,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("emocaoImg3");
       nomeJVoto = document.getElementById("emocaoNomeJapones3");
       nomeEVoto = document.getElementById("emocaoNomeIngles3");
@@ -967,6 +1142,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("animeImg1");
       nomeJVoto = document.getElementById("animeNomeJapones1");
       nomeEVoto = document.getElementById("animeNomeIngles1");
@@ -978,6 +1154,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("animeImg2");
       nomeJVoto = document.getElementById("animeNomeJapones2");
       nomeEVoto = document.getElementById("animeNomeIngles2");
@@ -989,6 +1166,7 @@ function filtrarVideo(video) {
       filtrar();
       escolhaExtra = "false";
       modal.style.display = "block";
+      prepararModalAbertura();
       imagemVoto = document.getElementById("animeImg3");
       nomeJVoto = document.getElementById("animeNomeJapones3");
       nomeEVoto = document.getElementById("animeNomeIngles3");
